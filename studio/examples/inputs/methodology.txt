@@ -1,0 +1,103 @@
+Methodology Document: Acme Corp Employee Engagement Survey
+==============================================================
+
+Survey Approach
+---------------
+This will be a conversational, narrative-based survey that balances quantitative ratings with qualitative open-ended responses. The survey should feel personal and engaging, not corporate or transactional.
+
+Question Framework
+------------------
+
+Section 1: Overall Satisfaction & Engagement (Foundation)
+- Overall job satisfaction rating (1-5 scale)
+- Engagement level / enthusiasm about work
+- Likelihood to recommend Acme as employer (eNPS style)
+- Open: What's working well? What could be better?
+
+Section 2: Hybrid Work Experience (Recent Change)
+- Current work arrangement (remote/hybrid/office)
+- Satisfaction with work arrangement
+- Impact on productivity
+- Open: Hybrid policy improvements or concerns
+
+Section 3: Team & Collaboration (Connection)
+- Connection to team members
+- Effectiveness of communication
+- Support from manager
+- Open: What would improve team dynamics?
+
+Section 4: Benefits & Perks (Recent Implementation)
+- Awareness of new benefits
+- Satisfaction with benefits package
+- Which benefits matter most (multi-select)
+
+Section 5: Career & Development (Growth)
+- Clarity on career path
+- Access to learning opportunities
+- Open: What would accelerate your growth?
+
+Section 6: Priorities & Future (Action-Oriented)
+- Top priorities for improvement (multi-select, up to 3)
+- Likelihood to still be at Acme in 1 year
+- (Conditional) If low retention: What would make you stay?
+- Open: One thing to change if you could
+
+Question Types to Use
+---------------------
+1. Scale/Rating Questions (1-5)
+   - Overall satisfaction
+   - Agreement statements (strongly disagree to strongly agree)
+
+2. Single Choice
+   - Work arrangement (remote/hybrid/office)
+   - Role type
+
+3. Multiple Choice
+   - Important benefits (select up to 3)
+   - Top priorities for improvement (select up to 3)
+
+4. Open Text
+   - "What's working well?"
+   - "What would you improve?"
+
+5. Conditional/Branching Logic
+   - If satisfaction < 3: "What would improve your satisfaction?"
+   - If retention likelihood low: "What would make you more likely to stay?"
+
+Tone and Voice Guidelines
+--------------------------
+- Conversational: "How are you feeling about..." vs "Rate your satisfaction with..."
+- Direct: "What could we do better?"
+- Human: Use "we," "you," avoid third-person
+- Appreciative: Thank for time investment
+
+Design Principles
+-----------------
+1. Progressive disclosure: Don't show all questions at once
+2. One question at a time: Focus attention, reduce cognitive load
+3. Visual variety: Mix question types to maintain engagement
+4. Progress indication: Show % complete throughout
+5. Mobile-first: Design for thumb-friendly tapping
+
+Branching Logic
+---------------
+- Low satisfaction (1-2) → Follow-up: "What would most improve your satisfaction?"
+- Low retention likelihood → Follow-up: "What would make you more likely to stay?"
+
+Duration Management
+-------------------
+- Target: 5-8 minutes
+- Estimated time per question type:
+  * Rating/scale: 10-15 seconds
+  * Single choice: 15-20 seconds
+  * Multiple choice: 20-30 seconds
+  * Short text: 30-45 seconds
+  * Long text: 60-90 seconds
+- Limit open-ended questions to 5-6 maximum
+
+Archetypes to Design For
+-------------------------
+1. The Skeptic: Needs anonymity assurance, direct questions
+2. The Enthusiast: Wants to share detailed feedback, appreciates open-ended
+3. The Busy Professional: Needs fast, efficient survey experience
+4. The Mobile User: Requires thumb-friendly design

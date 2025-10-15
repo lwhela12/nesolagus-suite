@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "name": "Simple Test Theme",
+    "organizationName": "Test Organization"
+  },
+  "colors": {
+    "primary": "#6366F1",
+    "secondary": "#EC4899",
+    "background": "#F9FAFB",
+    "surface": "#FFFFFF",
+    "text": {
+      "primary": "#111827",
+      "secondary": "#6B7280",
+      "light": "#9CA3AF",
+      "inverse": "#FFFFFF"
+    }
+  },
+  "fonts": {
+    "primary": "'Inter', sans-serif",
+    "display": "'Poppins', sans-serif"
+  },
+  "assets": {
+    "logo": "/assets/logo.png"
+  }
+}

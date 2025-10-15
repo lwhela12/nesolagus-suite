@@ -1,0 +1,233 @@
+{
+  "survey": {
+    "id": "example-complex-001",
+    "name": "Customer Research Survey",
+    "description": "A comprehensive example showing branching logic, multiple question types, and conditional routing",
+    "metadata": {
+      "estimatedMinutes": 8,
+      "version": "1.0.0",
+      "clientId": "example-complex",
+      "targetAudience": "Product users"
+    }
+  },
+  "blocks": {
+    "b0": {
+      "id": "b0",
+      "type": "dynamic-message",
+      "content": "Welcome! This survey takes about 8 minutes. Your honest feedback helps us improve.",
+      "autoAdvance": true,
+      "autoAdvanceDelay": 3000,
+      "next": "b1"
+    },
+    "b1": {
+      "id": "b1",
+      "type": "text-input",
+      "content": "First, what's your name?",
+      "placeholder": "Your name",
+      "variable": "user_name",
+      "required": true,
+      "next": "b2"
+    },
+    "b2": {
+      "id": "b2",
+      "type": "single-choice",
+      "content": "How long have you been using our product?",
+      "variable": "usage_duration",
+      "options": [
+        {
+          "id": "new",
+          "label": "Less than 1 month",
+          "value": "new"
+        },
+        {
+          "id": "short",
+          "label": "1-6 months",
+          "value": "short"
+        },
+        {
+          "id": "medium",
+          "label": "6-12 months",
+          "value": "medium"
+        },
+        {
+          "id": "long",
+          "label": "Over a year",
+          "value": "long"
+        }
+      ],
+      "next": "b3"
+    },
+    "b3": {
+      "id": "b3",
+      "type": "scale",
+      "content": "On a scale of 1-5, how satisfied are you with our product?",
+      "variable": "satisfaction_score",
+      "options": [
+        { "id": "1", "value": "1", "label": "Very dissatisfied", "emoji": "😞" },
+        { "id": "2", "value": "2", "label": "Dissatisfied", "emoji": "😐" },
+        { "id": "3", "value": "3", "label": "Neutral", "emoji": "🙂" },
+        { "id": "4", "value": "4", "label": "Satisfied", "emoji": "😊" },
+        { "id": "5", "value": "5", "label": "Very satisfied", "emoji": "🤩" }
+      ],
+      "next": "b4"
+    },
+    "b4": {
+      "id": "b4",
+      "type": "multi-choice",
+      "content": "Which features do you use most? (Select up to 3)",
+      "variable": "used_features",
+      "maxSelections": 3,
+      "options": [
+        {
+          "id": "dashboard",
+          "label": "Dashboard & Analytics",
+          "value": "dashboard"
+        },
+        {
+          "id": "reporting",
+          "label": "Reporting Tools",
+          "value": "reporting"
+        },
+        {
+          "id": "integrations",
+          "label": "Integrations",
+          "value": "integrations"
+        },
+        {
+          "id": "collaboration",
+          "label": "Team Collaboration",
+          "value": "collaboration"
+        },
+        {
+          "id": "mobile",
+          "label": "Mobile App",
+          "value": "mobile"
+        },
+        {
+          "id": "api",
+          "label": "API Access",
+          "value": "api"
+        }
+      ],
+      "next": "b5"
+    },
+    "b5": {
+      "id": "b5",
+      "type": "yes-no",
+      "content": "Would you recommend our product to a colleague?",
+      "variable": "would_recommend",
+      "next": "b6"
+    },
+    "b6": {
+      "id": "b6",
+      "type": "text-input",
+      "content": "What's the main reason for your answer?",
+      "placeholder": "Please explain...",
+      "variable": "recommendation_reason",
+      "required": false,
+      "next": "b7"
+    },
+    "b7": {
+      "id": "b7",
+      "type": "single-choice",
+      "content": "How likely are you to continue using our product?",
+      "variable": "retention_likelihood",
+      "options": [
+        {
+          "id": "very-likely",
+          "label": "Very likely",
+          "value": "very_likely"
+        },
+        {
+          "id": "likely",
+          "label": "Likely",
+          "value": "likely"
+        },
+        {
+          "id": "unsure",
+          "label": "Unsure",
+          "value": "unsure"
+        },
+        {
+          "id": "unlikely",
+          "label": "Unlikely",
+          "value": "unlikely"
+        }
+      ],
+      "next": {
+        "if": [
+          {
+            "when": {
+              "variable": "retention_likelihood",
+              "equals": "unlikely"
+            },
+            "goto": "b8"
+          }
+        ],
+        "else": "b9"
+      }
+    },
+    "b8": {
+      "id": "b8",
+      "type": "text-input",
+      "content": "We're sorry to hear that. What would make you more likely to continue?",
+      "placeholder": "Your suggestions are valuable to us...",
+      "variable": "retention_feedback",
+      "required": false,
+      "next": "b9"
+    },
+    "b9": {
+      "id": "b9",
+      "type": "text-input",
+      "content": "What's the #1 feature or improvement you'd like to see?",
+      "placeholder": "Describe your ideal feature...",
+      "variable": "feature_request",
+      "required": false,
+      "next": "b10"
+    },
+    "b10": {
+      "id": "b10",
+      "type": "single-choice",
+      "content": "Which best describes your role?",
+      "variable": "user_role",
+      "options": [
+        {
+          "id": "individual",
+          "label": "Individual Contributor",
+          "value": "individual"
+        },
+        {
+          "id": "manager",
+          "label": "Manager/Lead",
+          "value": "manager"
+        },
+        {
+          "id": "executive",
+          "label": "Executive/C-Level",
+          "value": "executive"
+        },
+        {
+          "id": "founder",
+          "label": "Founder/Owner",
+          "value": "founder"
+        }
+      ],
+      "next": "b11"
+    },
+    "b11": {
+      "id": "b11",
+      "type": "text-input",
+      "content": "Finally, anything else you'd like to share?",
+      "placeholder": "Additional comments, questions, or concerns...",
+      "variable": "additional_feedback",
+      "required": false,
+      "next": "b12"
+    },
+    "b12": {
+      "id": "b12",
+      "type": "final-message",
+      "content": "Thank you so much, {{user_name}}! Your feedback is incredibly valuable and will help us improve. 🙏",
+      "buttonText": "Finish Survey"
+    }
+  }
+}

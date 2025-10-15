@@ -1,0 +1,196 @@
+{
+  "drafts": {
+    "drf_mgitl95f_jaaok35r": {
+      "id": "drf_mgitl95f_jaaok35r",
+      "client": "Acme",
+      "methodBrief": {
+        "client": "Acme",
+        "goals": [
+          "Improve onboarding",
+          "Gather insights"
+        ],
+        "segments": [
+          "New users; admins"
+        ],
+        "archetypes": [
+          "general"
+        ],
+        "tone": [
+          "neutral"
+        ],
+        "constraints": {
+          "max_minutes": 5,
+          "anonymity": "anonymous"
+        },
+        "keywords": [
+          "goals",
+          "improve",
+          "onboarding",
+          "segments",
+          "users",
+          "admins",
+          "objective",
+          "gather",
+          "insights",
+          "constraints",
+          "minutes"
+        ]
+      },
+      "draftConfig": {
+        "version": "1.0.0",
+        "meta": {
+          "title": "Acme — Survey",
+          "lang": "en"
+        },
+        "flow": {
+          "start": "intro-1",
+          "nodes": {
+            "intro-1": {
+              "type": "message",
+              "text": "Hi! We’re gathering input for Acme. This takes about 5 minutes.",
+              "next": "q-2",
+              "tags": [
+                "general"
+              ]
+            },
+            "q-2": {
+              "type": "text",
+              "prompt": "In your own words, improve onboarding.",
+              "next": "q-3",
+              "tags": [
+                "general"
+              ]
+            },
+            "q-3": {
+              "type": "text",
+              "prompt": "In your own words, gather insights.",
+              "next": "sc-4",
+              "tags": [
+                "general"
+              ]
+            },
+            "sc-4": {
+              "type": "singleChoice",
+              "prompt": "Which of the following best describes you?",
+              "options": [
+                {
+                  "id": "new-users-admins",
+                  "label": "New users; admins"
+                }
+              ],
+              "next": "rate-5",
+              "tags": [
+                "general"
+              ]
+            },
+            "rate-5": {
+              "type": "rating",
+              "prompt": "Overall, how satisfied are you?",
+              "next": {
+                "if": [
+                  {
+                    "when": {
+                      "lt": {
+                        "answer": 3
+                      }
+                    },
+                    "goto": "low-sat-followup"
+                  }
+                ],
+                "else": "mc-6"
+              },
+              "tags": [
+                "general"
+              ],
+              "scale": {
+                "min": 1,
+                "max": 5,
+                "labelMin": "Not at all",
+                "labelMax": "Very"
+              }
+            },
+            "mc-6": {
+              "type": "multiChoice",
+              "prompt": "Which of these matter most to you?",
+              "options": [
+                {
+                  "id": "goals",
+                  "label": "goals"
+                },
+                {
+                  "id": "improve",
+                  "label": "improve"
+                },
+                {
+                  "id": "onboarding",
+                  "label": "onboarding"
+                },
+                {
+                  "id": "segments",
+                  "label": "segments"
+                },
+                {
+                  "id": "users",
+                  "label": "users"
+                }
+              ],
+              "next": "end",
+              "tags": [
+                "general"
+              ]
+            },
+            "low-sat-followup": {
+              "type": "text",
+              "prompt": "What could be improved to increase your satisfaction?",
+              "next": "end"
+            },
+            "end": {
+              "type": "end"
+            }
+          }
+        }
+      },
+      "llmVendor": "mock-local",
+      "llmModel": "mock-local",
+      "status": "generated",
+      "sourceDocIds": [
+        "src_mgitl8yd_tbdmm7oc",
+        "src_mgitl924_7gytm3ln"
+      ],
+      "createdAt": "2025-10-09T02:50:19.155Z",
+      "updatedAt": "2025-10-09T02:50:19.270Z",
+      "params": {
+        "constraints": {
+          "max_minutes": 5
+        }
+      }
+    }
+  },
+  "sources": {
+    "src_mgitl8yd_tbdmm7oc": {
+      "id": "src_mgitl8yd_tbdmm7oc",
+      "draftId": null,
+      "title": "discovery",
+      "driveFileId": null,
+      "sha256": "ceee762528addf86208a9188e46d489ee81fdaaf453040c47b8e53e9ffc4c404",
+      "kind": "discovery",
+      "extracted": {
+        "text": "Goals: Improve onboarding\nSegments: New users; Admins"
+      },
+      "createdAt": "2025-10-09T02:50:18.904Z"
+    },
+    "src_mgitl924_7gytm3ln": {
+      "id": "src_mgitl924_7gytm3ln",
+      "draftId": null,
+      "title": "methodology",
+      "driveFileId": null,
+      "sha256": "67eebdcfa24eab41120719aa75b4dead89c528fe67b6c09f92aa149882ead05e",
+      "kind": "methodology",
+      "extracted": {
+        "text": "Objective: Gather insights\nConstraints: Max 5 minutes"
+      },
+      "createdAt": "2025-10-09T02:50:19.036Z"
+    }
+  },
+  "releases": {}
+}

@@ -1,0 +1,133 @@
+{
+  "version": "1.0.0",
+  "meta": {
+    "title": "Acme — Survey",
+    "lang": "en"
+  },
+  "flow": {
+    "start": "intro-1",
+    "nodes": {
+      "intro-1": {
+        "type": "message",
+        "text": "Hi! We’re gathering input for Acme. This takes about 8 minutes.",
+        "next": "q-2",
+        "tags": [
+          "Explorers, pragmatists",
+          "Warm, trust-based, inviting"
+        ]
+      },
+      "q-2": {
+        "type": "text",
+        "prompt": "In your own words, understand user needs around onboarding.",
+        "next": "q-3",
+        "tags": [
+          "Explorers, pragmatists",
+          "Warm, trust-based, inviting"
+        ]
+      },
+      "q-3": {
+        "type": "text",
+        "prompt": "In your own words, identify friction points in the first week.",
+        "next": "q-4",
+        "tags": [
+          "Explorers, pragmatists",
+          "Warm, trust-based, inviting"
+        ]
+      },
+      "q-4": {
+        "type": "text",
+        "prompt": "In your own words, elicit qualitative insights and quantitative ratings.",
+        "next": "sc-5",
+        "tags": [
+          "Explorers, pragmatists",
+          "Warm, trust-based, inviting"
+        ]
+      },
+      "sc-5": {
+        "type": "singleChoice",
+        "prompt": "Which of the following best describes you?",
+        "options": [
+          {
+            "id": "new-users-power-users-admins",
+            "label": "New users; power users; admins"
+          },
+          {
+            "id": "general-user-base",
+            "label": "General user base"
+          }
+        ],
+        "next": "rate-6",
+        "tags": [
+          "Explorers, pragmatists",
+          "Warm, trust-based, inviting"
+        ]
+      },
+      "rate-6": {
+        "type": "rating",
+        "prompt": "Overall, how satisfied are you?",
+        "next": {
+          "if": [
+            {
+              "when": {
+                "lt": {
+                  "answer": 3
+                }
+              },
+              "goto": "low-sat-followup"
+            }
+          ],
+          "else": "mc-7"
+        },
+        "tags": [
+          "Explorers, pragmatists",
+          "Warm, trust-based, inviting"
+        ],
+        "scale": {
+          "min": 1,
+          "max": 5,
+          "labelMin": "Not at all",
+          "labelMax": "Very"
+        }
+      },
+      "mc-7": {
+        "type": "multiChoice",
+        "prompt": "Which of these matter most to you?",
+        "options": [
+          {
+            "id": "goals",
+            "label": "goals"
+          },
+          {
+            "id": "user",
+            "label": "user"
+          },
+          {
+            "id": "needs",
+            "label": "needs"
+          },
+          {
+            "id": "around",
+            "label": "around"
+          },
+          {
+            "id": "onboarding",
+            "label": "onboarding"
+          }
+        ],
+        "next": "end",
+        "tags": [
+          "Explorers, pragmatists",
+          "Warm, trust-based, inviting"
+        ]
+      },
+      "low-sat-followup": {
+        "type": "text",
+        "prompt": "What could be improved to increase your satisfaction?",
+        "next": "end"
+      },
+      "end": {
+        "type": "end"
+      }
+    }
+  }
+}

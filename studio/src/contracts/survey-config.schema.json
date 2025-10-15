@@ -1,0 +1,239 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/survey-config.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "meta", "flow"],
+  "properties": {
+    "version": { "type": "string" },
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "lang"],
+      "properties": {
+        "title": { "type": "string" },
+        "lang": { "type": "string" }
+      }
+    },
+    "theme": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "preset": { "type": "string" },
+        "tokens": {
+          "type": "object",
+          "additionalProperties": { "type": ["string", "number"] }
+        }
+      }
+    },
+    "flow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start", "nodes"],
+      "properties": {
+        "start": { "type": "string" },
+        "nodes": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/definitions/Node" }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Next": {
+      "oneOf": [
+        { "type": "string" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["if", "else"],
+          "properties": {
+            "if": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["when", "goto"],
+                "properties": {
+                  "when": { "$ref": "#/definitions/Condition" },
+                  "goto": { "type": "string" }
+                }
+              }
+            },
+            "else": { "type": "string" }
+          }
+        }
+      ]
+    },
+    "Condition": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["equals"],
+          "properties": {
+            "equals": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["answer"],
+              "properties": { "answer": { "type": ["string", "number", "boolean"] } }
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["in"],
+          "properties": {
+            "in": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["answer"],
+              "properties": { "answer": { "type": "array", "items": { "type": "string" } } }
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["gt"],
+          "properties": {
+            "gt": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["answer"],
+              "properties": { "answer": { "type": "number" } }
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["lt"],
+          "properties": {
+            "lt": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["answer"],
+              "properties": { "answer": { "type": "number" } }
+            }
+          }
+        }
+      ]
+    },
+    "Option": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label"],
+      "properties": {
+        "id": { "type": "string" },
+        "label": { "type": "string" }
+      }
+    },
+    "Node": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type", "text", "next"],
+          "properties": {
+            "type": { "const": "message" },
+            "text": { "type": "string" },
+            "next": { "$ref": "#/definitions/Next" },
+            "tags": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type", "prompt", "next"],
+          "properties": {
+            "type": { "const": "text" },
+            "prompt": { "type": "string" },
+            "next": { "$ref": "#/definitions/Next" },
+            "tags": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type", "prompt", "next"],
+          "properties": {
+            "type": { "const": "number" },
+            "prompt": { "type": "string" },
+            "min": { "type": "number" },
+            "max": { "type": "number" },
+            "next": { "$ref": "#/definitions/Next" },
+            "tags": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type", "prompt", "options", "next"],
+          "properties": {
+            "type": { "const": "singleChoice" },
+            "prompt": { "type": "string" },
+            "options": { "type": "array", "items": { "$ref": "#/definitions/Option" } },
+            "next": { "$ref": "#/definitions/Next" },
+            "tags": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type", "prompt", "options", "next"],
+          "properties": {
+            "type": { "const": "multiChoice" },
+            "prompt": { "type": "string" },
+            "options": { "type": "array", "items": { "$ref": "#/definitions/Option" } },
+            "next": { "$ref": "#/definitions/Next" },
+            "tags": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type", "prompt", "scale", "next"],
+          "properties": {
+            "type": { "const": "rating" },
+            "prompt": { "type": "string" },
+            "scale": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["min", "max"],
+              "properties": {
+                "min": { "type": "number" },
+                "max": { "type": "number" },
+                "labelMin": { "type": "string" },
+                "labelMax": { "type": "string" }
+              }
+            },
+            "next": { "$ref": "#/definitions/Next" },
+            "tags": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type", "prompt", "next"],
+          "properties": {
+            "type": { "const": "video" },
+            "prompt": { "type": "string" },
+            "next": { "$ref": "#/definitions/Next" },
+            "tags": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type"],
+          "properties": {
+            "type": { "const": "end" }
+          }
+        }
+      ]
+    }
+  }
+}
+

@@ -1,0 +1,179 @@
+{
+  "survey": {
+    "id": "acme-pj6b9o",
+    "name": "Acme — Survey",
+    "description": "Understand user needs",
+    "metadata": {
+      "estimatedMinutes": 8,
+      "version": "1.0.0",
+      "generatedBy": "question-generator",
+      "generatedAt": "2025-10-13T19:33:09.132Z"
+    }
+  },
+  "blocks": {
+    "b0": {
+      "id": "b0",
+      "type": "dynamic-message",
+      "content": "Hi! We’re gathering input for Acme. This takes about 8 minutes.",
+      "autoAdvance": true,
+      "autoAdvanceDelay": 2000,
+      "next": "b1"
+    },
+    "b1": {
+      "id": "b1",
+      "type": "text-input",
+      "content": "In your own words, understand user needs.",
+      "variable": "text_2",
+      "placeholder": "Type your answer here...",
+      "next": "b2"
+    },
+    "b2": {
+      "id": "b2",
+      "type": "dynamic-message",
+      "content": "Thank you for sharing that with us",
+      "autoAdvance": true,
+      "autoAdvanceDelay": 2000,
+      "next": "b3"
+    },
+    "b3": {
+      "id": "b3",
+      "type": "single-choice",
+      "content": "Which of the following best describes you?",
+      "variable": "choice_4",
+      "options": [
+        {
+          "id": "general",
+          "label": "general",
+          "value": "general"
+        }
+      ],
+      "next": "b4"
+    },
+    "b4": {
+      "id": "b4",
+      "type": "dynamic-message",
+      "content": "Thank you, that's helpful to know",
+      "autoAdvance": true,
+      "autoAdvanceDelay": 2000,
+      "next": "b5"
+    },
+    "b5": {
+      "id": "b5",
+      "type": "scale",
+      "content": "Overall, how satisfied are you?",
+      "variable": "rating_6",
+      "options": [
+        {
+          "id": "1",
+          "value": "1",
+          "label": "Not at all",
+          "emoji": "😞"
+        },
+        {
+          "id": "2",
+          "value": "2",
+          "label": "2",
+          "emoji": "😐"
+        },
+        {
+          "id": "3",
+          "value": "3",
+          "label": "3",
+          "emoji": "🙂"
+        },
+        {
+          "id": "4",
+          "value": "4",
+          "label": "4",
+          "emoji": "😊"
+        },
+        {
+          "id": "5",
+          "value": "5",
+          "label": "Very",
+          "emoji": "🤩"
+        }
+      ],
+      "next": "b5_router"
+    },
+    "b6": {
+      "id": "b6",
+      "type": "dynamic-message",
+      "content": "I'm sorry to hear that. We'll work to do better",
+      "autoAdvance": true,
+      "autoAdvanceDelay": 2000,
+      "next": "b7"
+    },
+    "b7": {
+      "id": "b7",
+      "type": "multi-choice",
+      "content": "Which of these matter most to you?",
+      "variable": "multi_8",
+      "options": [
+        {
+          "id": "discovery",
+          "label": "discovery",
+          "value": "discovery"
+        },
+        {
+          "id": "document",
+          "label": "document",
+          "value": "document"
+        },
+        {
+          "id": "acme",
+          "label": "acme",
+          "value": "acme"
+        },
+        {
+          "id": "corp",
+          "label": "corp",
+          "value": "corp"
+        },
+        {
+          "id": "employee",
+          "label": "employee",
+          "value": "employee"
+        }
+      ],
+      "maxSelections": 5,
+      "next": "b8"
+    },
+    "b8": {
+      "id": "b8",
+      "type": "final-message",
+      "content": ""
+    },
+    "b9": {
+      "id": "b9",
+      "type": "dynamic-message",
+      "content": "I'm really glad to hear that!",
+      "autoAdvance": true,
+      "autoAdvanceDelay": 2000,
+      "next": "b7"
+    },
+    "b10": {
+      "id": "b10",
+      "type": "dynamic-message",
+      "content": "Thank you for your feedback",
+      "autoAdvance": true,
+      "autoAdvanceDelay": 2000,
+      "next": "b7"
+    },
+    "b5_router": {
+      "id": "b5_router",
+      "type": "dynamic-message",
+      "content": "",
+      "autoAdvance": true,
+      "autoAdvanceDelay": 0,
+      "conditionalNext": {
+        "if": {
+          "variable": "rating_6",
+          "lessThan": 3
+        },
+        "then": "b6",
+        "else": "b7"
+      }
+    }
+  }
+}

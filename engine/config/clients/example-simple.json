@@ -1,0 +1,75 @@
+{
+  "survey": {
+    "id": "example-simple-001",
+    "name": "Simple Feedback Survey",
+    "description": "A minimal example survey with basic question types",
+    "metadata": {
+      "estimatedMinutes": 2,
+      "version": "1.0.0",
+      "clientId": "example-simple"
+    }
+  },
+  "blocks": {
+    "b0": {
+      "id": "b0",
+      "type": "dynamic-message",
+      "content": "Thanks for taking a moment to share your feedback!",
+      "autoAdvance": true,
+      "autoAdvanceDelay": 2000,
+      "next": "b1"
+    },
+    "b1": {
+      "id": "b1",
+      "type": "text-input",
+      "content": "What's your name?",
+      "placeholder": "Enter your name",
+      "variable": "user_name",
+      "required": true,
+      "next": "b2"
+    },
+    "b2": {
+      "id": "b2",
+      "type": "single-choice",
+      "content": "How would you rate your overall experience?",
+      "variable": "overall_rating",
+      "options": [
+        {
+          "id": "excellent",
+          "label": "Excellent",
+          "value": "excellent"
+        },
+        {
+          "id": "good",
+          "label": "Good",
+          "value": "good"
+        },
+        {
+          "id": "fair",
+          "label": "Fair",
+          "value": "fair"
+        },
+        {
+          "id": "poor",
+          "label": "Poor",
+          "value": "poor"
+        }
+      ],
+      "next": "b3"
+    },
+    "b3": {
+      "id": "b3",
+      "type": "text-input",
+      "content": "Any additional comments?",
+      "placeholder": "Share your thoughts...",
+      "variable": "comments",
+      "required": false,
+      "next": "b4"
+    },
+    "b4": {
+      "id": "b4",
+      "type": "final-message",
+      "content": "Thank you for your feedback, {{user_name}}! We appreciate you taking the time.",
+      "buttonText": "Complete"
+    }
+  }
+}

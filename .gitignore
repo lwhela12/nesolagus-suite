@@ -53,3 +53,6 @@ Thumbs.db
 
 # Generated files
 studio/out.survey.config.json
+
+# Git backups
+.git-backups/

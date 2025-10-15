@@ -1,0 +1,130 @@
+{
+  "survey": {
+    "id": "00000000-0000-0000-0000-000000000000",
+    "name": "Example Survey Template",
+    "description": "A comprehensive example showing all major question types and features",
+    "metadata": {
+      "estimatedMinutes": 5,
+      "version": "1.0.0"
+    }
+  },
+  "blocks": {
+    "b0": {
+      "id": "b0",
+      "type": "dynamic-message",
+      "content": "Welcome! Let's get started.",
+      "autoAdvance": true,
+      "autoAdvanceDelay": 2000,
+      "next": "b1"
+    },
+    "b1": {
+      "id": "b1",
+      "type": "text-input",
+      "content": "What's your name?",
+      "placeholder": "Enter your name",
+      "variable": "user_name",
+      "required": true,
+      "next": "b2"
+    },
+    "b2": {
+      "id": "b2",
+      "type": "single-choice",
+      "content": "How did you hear about us?",
+      "variable": "referral_source",
+      "options": [
+        {
+          "id": "search",
+          "label": "Search Engine",
+          "value": "search"
+        },
+        {
+          "id": "social",
+          "label": "Social Media",
+          "value": "social"
+        },
+        {
+          "id": "friend",
+          "label": "Friend or Colleague",
+          "value": "friend"
+        },
+        {
+          "id": "other",
+          "label": "Other",
+          "value": "other"
+        }
+      ],
+      "next": "b3"
+    },
+    "b3": {
+      "id": "b3",
+      "type": "scale",
+      "content": "On a scale of 1-5, how would you rate your experience?",
+      "variable": "satisfaction_rating",
+      "options": [
+        { "id": "1", "value": "1", "label": "Poor", "emoji": "😞" },
+        { "id": "2", "value": "2", "label": "Fair", "emoji": "😐" },
+        { "id": "3", "value": "3", "label": "Good", "emoji": "🙂" },
+        { "id": "4", "value": "4", "label": "Great", "emoji": "😊" },
+        { "id": "5", "value": "5", "label": "Excellent", "emoji": "🤩" }
+      ],
+      "next": "b4"
+    },
+    "b4": {
+      "id": "b4",
+      "type": "multi-choice",
+      "content": "Which features are most important to you? (Select all that apply)",
+      "variable": "important_features",
+      "maxSelections": 3,
+      "options": [
+        {
+          "id": "ease",
+          "label": "Ease of Use",
+          "value": "ease_of_use"
+        },
+        {
+          "id": "speed",
+          "label": "Speed",
+          "value": "speed"
+        },
+        {
+          "id": "design",
+          "label": "Design",
+          "value": "design"
+        },
+        {
+          "id": "support",
+          "label": "Customer Support",
+          "value": "customer_support"
+        },
+        {
+          "id": "price",
+          "label": "Pricing",
+          "value": "pricing"
+        }
+      ],
+      "next": "b5"
+    },
+    "b5": {
+      "id": "b5",
+      "type": "yes-no",
+      "content": "Would you recommend us to a friend?",
+      "variable": "would_recommend",
+      "next": "b6"
+    },
+    "b6": {
+      "id": "b6",
+      "type": "text-input",
+      "content": "Any additional comments or suggestions?",
+      "placeholder": "Share your thoughts...",
+      "variable": "additional_comments",
+      "required": false,
+      "next": "b7"
+    },
+    "b7": {
+      "id": "b7",
+      "type": "final-message",
+      "content": "Thank you for your feedback, {{user_name}}! We appreciate your time.",
+      "buttonText": "Complete Survey"
+    }
+  }
+}

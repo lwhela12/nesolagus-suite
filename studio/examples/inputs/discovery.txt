@@ -1,0 +1,75 @@
+Discovery Document: Acme Corp Employee Engagement Survey
+================================================================
+
+Project Overview
+----------------
+Acme Corp is a mid-sized technology company with 250 employees across 5 offices. They want to understand employee satisfaction, identify areas for improvement, and gather feedback on recent organizational changes.
+
+Background
+----------
+- Company has grown 40% in the past year
+- Recently transitioned to hybrid work model
+- Implemented new benefits package
+- Leadership team wants anonymous, honest feedback
+- Previous engagement surveys had low response rates (~35%)
+- Employees expressed survey fatigue with overly long questionnaires
+
+Research Goals
+--------------
+1. Measure overall employee satisfaction and engagement
+2. Understand perception of hybrid work policy
+3. Gather feedback on new benefits package
+4. Identify top priorities for improvement
+5. Assess team dynamics and collaboration effectiveness
+6. Understand career development and growth opportunities
+
+Target Audience
+---------------
+- All Acme Corp employees (250 people)
+- Mix of technical and non-technical roles
+- Age range: 22-60 years
+- Tenure: From new hires (< 3 months) to long-term employees (10+ years)
+- Geographic distribution: USA (60%), Europe (30%), Asia (10%)
+
+Key Segments to Consider
+------------------------
+1. New employees (< 6 months) vs. tenured employees
+2. Remote vs. hybrid vs. in-office workers
+3. Individual contributors vs. managers vs. executives
+4. Technical roles vs. non-technical roles
+
+Tone and Approach
+-----------------
+- Conversational and approachable
+- Build trust through anonymity guarantees
+- Short and engaging (target 5-8 minutes)
+- Balance qualitative insights with quantitative metrics
+- Avoid corporate jargon
+- Make it feel like a dialogue, not an interrogation
+
+Constraints
+-----------
+- Must be anonymous (no identifiable information)
+- Target completion time: 5-8 minutes
+- Mobile-friendly (40% will complete on phones)
+- Must work in multiple languages (English primary, Spanish and German secondary)
+- Data needs to integrate with existing HRIS system
+- Results must be available for quarterly board meeting
+
+Success Criteria
+----------------
+- Response rate > 60%
+- Average completion time 5-8 minutes
+- < 10% abandonment rate
+- Actionable insights for leadership team
+- Qualitative feedback that can be themed and analyzed
+
+Key Questions Leadership Wants Answered
+----------------------------------------
+1. How satisfied are employees overall?
+2. Is the hybrid work policy working?
+3. Are employees feeling connected to their teams?
+4. Do employees feel valued and heard?
+5. What would most improve the employee experience?
+6. Are employees likely to stay at Acme long-term?
+7. How effective is our leadership and communication?

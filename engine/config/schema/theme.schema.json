@@ -1,0 +1,114 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Survey Engine Theme Configuration",
+  "description": "Configuration for branding and styling a survey deployment",
+  "type": "object",
+  "required": ["metadata", "colors", "fonts"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["name", "organizationName"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Theme name for reference"
+        },
+        "organizationName": {
+          "type": "string",
+          "description": "Organization or client name"
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+    "colors": {
+      "type": "object",
+      "required": ["primary", "secondary"],
+      "properties": {
+        "primary": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$",
+          "description": "Primary brand color (hex)"
+        },
+        "secondary": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$",
+          "description": "Secondary brand color (hex)"
+        },
+        "background": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        },
+        "surface": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        },
+        "accent": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^#[0-9A-Fa-f]{6}$"
+          }
+        },
+        "text": {
+          "type": "object",
+          "properties": {
+            "primary": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+            "secondary": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+            "light": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+            "inverse": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" }
+          }
+        },
+        "gradients": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "fonts": {
+      "type": "object",
+      "required": ["primary"],
+      "properties": {
+        "primary": {
+          "type": "string",
+          "description": "Primary font family"
+        },
+        "display": {
+          "type": "string",
+          "description": "Display/heading font family"
+        }
+      }
+    },
+    "assets": {
+      "type": "object",
+      "properties": {
+        "logo": {
+          "type": "string",
+          "description": "Path or URL to logo image"
+        },
+        "favicon": {
+          "type": "string",
+          "description": "Path or URL to favicon"
+        },
+        "backgroundImage": {
+          "type": "string"
+        }
+      }
+    },
+    "spacing": {
+      "type": "object",
+      "description": "Custom spacing values (optional override of defaults)"
+    },
+    "borderRadius": {
+      "type": "object",
+      "description": "Custom border radius values (optional override of defaults)"
+    },
+    "shadows": {
+      "type": "object",
+      "description": "Custom shadow values (optional override of defaults)"
+    }
+  }
+}

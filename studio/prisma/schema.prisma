@@ -1,0 +1,140 @@
+// Nesolagus Studio Database Schema
+// This schema is based on the design document (DESIGN.md Section 3.2)
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Client represents an organization receiving a custom survey
+model Client {
+  id              String   @id @default(cuid())
+  name            String   @unique              // "Acme Corp"
+  slug            String   @unique              // "acme" (for CLIENT_ID)
+  domain          String?                       // Custom domain
+  vercelProjectId String?                       // Vercel project ID
+
+  // Theme customization
+  theme           Json?                         // Custom theme configuration (colors, fonts, spacing)
+
+  // Metadata
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  // Relations
+  drafts          Draft[]
+  deployments     Deployment[]
+
+  @@index([slug])
+  @@map("clients")
+}
+
+// Draft represents a work-in-progress survey
+model Draft {
+  id          String   @id @default(cuid())
+  clientId    String
+  client      Client   @relation(fields: [clientId], references: [id], onDelete: Cascade)
+
+  // Generation inputs
+  discoveryDoc    String   @db.Text         // Uploaded doc content
+  methodologyDoc  String   @db.Text
+
+  // Generation parameters
+  maxMinutes      Int      @default(8)
+  tone            String[] @default([])
+  segments        String[] @default([])
+  archetypes      String[] @default([])
+
+  // Generated output
+  config          Json                      // SurveyConfig JSON
+  flowLayout      Json?                     // Flow editor positions { blockId: { x, y } }
+  methodBrief     Json?                     // AI-extracted brief
+
+  // Status tracking
+  status          DraftStatus @default(NEW)
+  validationErrors Json?                    // Validation issues
+
+  // AI metadata
+  llmModel        String?                   // "claude-sonnet-4-5"
+  llmTokens       Int?                      // Tokens used
+  generationTime  Int?                      // Milliseconds
+
+  // Timestamps
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  // Relations
+  deployments     Deployment[]
+
+  @@index([clientId, status])
+  @@map("drafts")
+}
+
+enum DraftStatus {
+  NEW              // Just created
+  GENERATING       // AI processing
+  GENERATED        // AI complete
+  VALIDATION_FAILED
+  READY            // Valid, ready to deploy
+  DEPLOYED         // Deployed to production
+  ARCHIVED         // No longer active
+}
+
+// Deployment represents a deployed survey instance
+model Deployment {
+  id              String   @id @default(cuid())
+  clientId        String
+  client          Client   @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  draftId         String
+  draft           Draft    @relation(fields: [draftId], references: [id], onDelete: Cascade)
+
+  // Deployment details
+  environment     String                    // "production" | "preview"
+  vercelDeploymentId String?               // Vercel deployment ID
+  vercelUrl       String?                   // Deployment URL
+  configSnapshot  Json                      // Config at deployment time
+
+  // Status
+  status          DeploymentStatus @default(PENDING)
+  errorMessage    String?          @db.Text
+
+  // Timestamps
+  deployedAt      DateTime @default(now())
+  deployedBy      String?                   // User email/ID
+
+  @@index([clientId, environment])
+  @@index([draftId])
+  @@map("deployments")
+}
+
+enum DeploymentStatus {
+  PENDING
+  BUILDING
+  READY
+  ERROR
+  CANCELED
+}
+
+// User model (for Phase 3 - Auth)
+model User {
+  id            String   @id @default(cuid())
+  email         String   @unique
+  name          String?
+  role          UserRole @default(EDITOR)
+
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@index([email])
+  @@map("users")
+}
+
+enum UserRole {
+  ADMIN          // Full access
+  EDITOR         // Can generate and deploy
+  VIEWER         // Read-only access
+}

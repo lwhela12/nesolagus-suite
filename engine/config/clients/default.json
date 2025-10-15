@@ -1,0 +1,36 @@
+{
+  "survey": {
+    "id": "default-survey-001",
+    "name": "Default Survey Template",
+    "description": "Default survey configuration - replace with client-specific survey",
+    "metadata": {
+      "estimatedMinutes": 5,
+      "version": "1.0.0"
+    }
+  },
+  "blocks": {
+    "b0": {
+      "id": "b0",
+      "type": "dynamic-message",
+      "content": "Welcome! This is a default survey template.",
+      "autoAdvance": true,
+      "autoAdvanceDelay": 2000,
+      "next": "b1"
+    },
+    "b1": {
+      "id": "b1",
+      "type": "text-input",
+      "content": "What's your name?",
+      "placeholder": "Enter your name",
+      "variable": "user_name",
+      "required": true,
+      "next": "b2"
+    },
+    "b2": {
+      "id": "b2",
+      "type": "final-message",
+      "content": "Thank you, {{user_name}}! This is a placeholder survey.",
+      "buttonText": "Complete"
+    }
+  }
+}

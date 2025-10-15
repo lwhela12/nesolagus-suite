@@ -1,0 +1,42 @@
+{
+  "name": "nesolagus-suite",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Unified survey generation and deployment platform",
+  "workspaces": [
+    "studio",
+    "engine",
+    "engine/frontend",
+    "engine/backend",
+    "packages/survey-components"
+  ],
+  "scripts": {
+    "setup": "npm install && npm run setup:studio && npm run setup:engine",
+    "setup:studio": "cd studio && npm install",
+    "setup:engine": "cd engine && npm install",
+    "dev": "echo 'Use npm run dev:studio or npm run dev:engine'",
+    "dev:studio": "cd studio && npm run web",
+    "dev:engine": "cd engine && npm run dev",
+    "generate": "node scripts/generate.js",
+    "test-client": "scripts/test-client.sh",
+    "deploy-client": "scripts/deploy-client.sh",
+    "validate": "node scripts/validate.js",
+    "clean": "rm -rf node_modules studio/node_modules engine/node_modules engine/frontend/node_modules engine/backend/node_modules",
+    "lint": "npm run lint:studio && npm run lint:engine",
+    "lint:studio": "cd studio && npm run lint",
+    "lint:engine": "cd engine && npm run lint"
+  },
+  "keywords": [
+    "survey",
+    "conversational",
+    "ai-generation",
+    "monorepo"
+  ],
+  "author": "Nesolagus Team",
+  "license": "UNLICENSED",
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

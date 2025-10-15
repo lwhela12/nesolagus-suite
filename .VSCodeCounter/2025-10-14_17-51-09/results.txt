@@ -1,0 +1,402 @@
+Date : 2025-10-14 17:51:09
+Directory : /Users/lucaswhelan/nesolagus-suite
+Total : 267 files,  69751 codes, 1353 comments, 5488 blanks, all 76592 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |         28 |     38,457 |          0 |         24 |     38,481 |
+| TypeScript JSX     |         93 |     12,946 |        327 |      1,541 |     14,814 |
+| Markdown           |         31 |      8,850 |          0 |      2,641 |     11,491 |
+| TypeScript         |         54 |      5,901 |        532 |        774 |      7,207 |
+| JavaScript         |         23 |      2,396 |        320 |        345 |      3,061 |
+| MS SQL             |         22 |        496 |         70 |         52 |        618 |
+| Shell Script       |          6 |        309 |         82 |         89 |        480 |
+| JSON with Comments |          6 |        183 |          0 |          2 |        185 |
+| YAML               |          2 |        112 |         20 |         10 |        142 |
+| PostCSS            |          1 |         71 |          0 |          6 |         77 |
+| HTML               |          1 |         30 |          2 |          4 |         36 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                   |        267 |     69,751 |      1,353 |      5,488 |     76,592 |
+| . (Files)                                                                                                           |          5 |     17,934 |          0 |        277 |     18,211 |
+| .claude                                                                                                             |          1 |         19 |          0 |          1 |         20 |
+| docs                                                                                                                |          2 |      1,627 |          0 |        353 |      1,980 |
+| engine                                                                                                              |        147 |     36,458 |        638 |      2,527 |     39,623 |
+| engine (Files)                                                                                                      |         12 |      1,986 |          0 |        308 |      2,294 |
+| engine/backend                                                                                                      |         49 |     12,574 |        380 |        547 |     13,501 |
+| engine/backend (Files)                                                                                              |         22 |      7,548 |         40 |         22 |      7,610 |
+| engine/backend/src                                                                                                  |         27 |      5,026 |        340 |        525 |      5,891 |
+| engine/backend/src (Files)                                                                                          |          1 |         88 |         11 |         15 |        114 |
+| engine/backend/src/config                                                                                           |          1 |        160 |         33 |         28 |        221 |
+| engine/backend/src/controllers                                                                                      |          4 |      1,513 |        142 |        216 |      1,871 |
+| engine/backend/src/database                                                                                         |          5 |      1,751 |         18 |         31 |      1,800 |
+| engine/backend/src/middleware                                                                                       |          4 |        173 |         11 |         34 |        218 |
+| engine/backend/src/routes                                                                                           |          7 |        470 |         57 |         80 |        607 |
+| engine/backend/src/services                                                                                         |          2 |        784 |         66 |        107 |        957 |
+| engine/backend/src/utils                                                                                            |          1 |         36 |          0 |          9 |         45 |
+| engine/backend/src/validators                                                                                       |          2 |         51 |          2 |          5 |         58 |
+| engine/config                                                                                                       |          9 |      1,010 |          0 |         22 |      1,032 |
+| engine/config (Files)                                                                                               |          2 |        209 |          0 |          2 |        211 |
+| engine/config/clients                                                                                               |          5 |        567 |          0 |         18 |        585 |
+| engine/config/schema                                                                                                |          2 |        234 |          0 |          2 |        236 |
+| engine/docs                                                                                                         |          5 |      2,128 |          0 |        597 |      2,725 |
+| engine/examples                                                                                                     |          1 |         25 |          0 |          1 |         26 |
+| engine/examples/simple-feedback                                                                                     |          1 |         25 |          0 |          1 |         26 |
+| engine/frontend                                                                                                     |         65 |     18,144 |        208 |        953 |     19,305 |
+| engine/frontend (Files)                                                                                             |          7 |     10,095 |          2 |          7 |     10,104 |
+| engine/frontend/src                                                                                                 |         58 |      8,049 |        206 |        946 |      9,201 |
+| engine/frontend/src (Files)                                                                                         |          4 |        193 |          6 |         12 |        211 |
+| engine/frontend/src/components                                                                                      |         35 |      5,723 |        113 |        690 |      6,526 |
+| engine/frontend/src/components (Files)                                                                              |          1 |         89 |          1 |         16 |        106 |
+| engine/frontend/src/components/Admin                                                                                |         13 |      1,793 |         15 |        242 |      2,050 |
+| engine/frontend/src/components/Admin (Files)                                                                        |          7 |      1,562 |          9 |        203 |      1,774 |
+| engine/frontend/src/components/Admin/ui                                                                             |          6 |        231 |          6 |         39 |        276 |
+| engine/frontend/src/components/Survey                                                                               |         21 |      3,841 |         97 |        432 |      4,370 |
+| engine/frontend/src/components/Survey (Files)                                                                       |          6 |      1,181 |         47 |        146 |      1,374 |
+| engine/frontend/src/components/Survey/QuestionTypes                                                                 |         15 |      2,660 |         50 |        286 |      2,996 |
+| engine/frontend/src/contexts                                                                                        |          2 |        148 |         14 |         23 |        185 |
+| engine/frontend/src/hooks                                                                                           |          1 |          4 |          0 |          1 |          5 |
+| engine/frontend/src/pages                                                                                           |          6 |        817 |          9 |        104 |        930 |
+| engine/frontend/src/services                                                                                        |          2 |        282 |         16 |         50 |        348 |
+| engine/frontend/src/store                                                                                           |          3 |        293 |         15 |         22 |        330 |
+| engine/frontend/src/store (Files)                                                                                   |          1 |         11 |          0 |          2 |         13 |
+| engine/frontend/src/store/slices                                                                                    |          2 |        282 |         15 |         20 |        317 |
+| engine/frontend/src/styles                                                                                          |          2 |        272 |          2 |          1 |        275 |
+| engine/frontend/src/types                                                                                           |          1 |         81 |          0 |          7 |         88 |
+| engine/frontend/src/utils                                                                                           |          2 |        236 |         31 |         36 |        303 |
+| engine/scripts                                                                                                      |          6 |        591 |         50 |         99 |        740 |
+| packages                                                                                                            |         24 |      3,117 |         57 |        352 |      3,526 |
+| packages/survey-components                                                                                          |         24 |      3,117 |         57 |        352 |      3,526 |
+| packages/survey-components (Files)                                                                                  |          3 |        118 |          0 |         23 |        141 |
+| packages/survey-components/src                                                                                      |         21 |      2,999 |         57 |        329 |      3,385 |
+| packages/survey-components/src (Files)                                                                              |          1 |         19 |          5 |          3 |         27 |
+| packages/survey-components/src/components                                                                           |         18 |      2,828 |         52 |        317 |      3,197 |
+| packages/survey-components/src/components (Files)                                                                   |          4 |        478 |          4 |         61 |        543 |
+| packages/survey-components/src/components/QuestionTypes                                                             |         14 |      2,350 |         48 |        256 |      2,654 |
+| packages/survey-components/src/types                                                                                |          2 |        152 |          0 |          9 |        161 |
+| scripts                                                                                                             |          5 |        844 |         89 |        218 |      1,151 |
+| studio                                                                                                              |         83 |      9,752 |        569 |      1,760 |     12,081 |
+| studio (Files)                                                                                                      |         18 |      2,353 |         30 |        752 |      3,135 |
+| studio/app                                                                                                          |         10 |      1,075 |         50 |        120 |      1,245 |
+| studio/app (Files)                                                                                                  |          2 |         89 |          0 |         10 |         99 |
+| studio/app/api                                                                                                      |          3 |        415 |         34 |         50 |        499 |
+| studio/app/api/clients                                                                                              |          1 |        106 |         11 |         12 |        129 |
+| studio/app/api/clients/[slug]                                                                                       |          1 |        106 |         11 |         12 |        129 |
+| studio/app/api/clients/[slug]/theme                                                                                 |          1 |        106 |         11 |         12 |        129 |
+| studio/app/api/drafts                                                                                               |          1 |        152 |          1 |         17 |        170 |
+| studio/app/api/drafts/[id]                                                                                          |          1 |        152 |          1 |         17 |        170 |
+| studio/app/api/generate                                                                                             |          1 |        157 |         22 |         21 |        200 |
+| studio/app/clients                                                                                                  |          2 |        232 |          6 |         12 |        250 |
+| studio/app/clients (Files)                                                                                          |          1 |        184 |          3 |          5 |        192 |
+| studio/app/clients/[slug]                                                                                           |          1 |         48 |          3 |          7 |         58 |
+| studio/app/clients/[slug]/theme                                                                                     |          1 |         48 |          3 |          7 |         58 |
+| studio/app/flow                                                                                                     |          1 |         89 |          2 |         10 |        101 |
+| studio/app/flow/[id]                                                                                                |          1 |         89 |          2 |         10 |        101 |
+| studio/app/generate                                                                                                 |          1 |        205 |          6 |         30 |        241 |
+| studio/app/preview                                                                                                  |          1 |         45 |          2 |          8 |         55 |
+| studio/app/preview/[draftId]                                                                                        |          1 |         45 |          2 |          8 |         55 |
+| studio/components                                                                                                   |         25 |      2,933 |        160 |        356 |      3,449 |
+| studio/components/flow                                                                                              |          4 |        534 |         72 |         73 |        679 |
+| studio/components/generation                                                                                        |          4 |        606 |         23 |         65 |        694 |
+| studio/components/preview                                                                                           |          6 |      1,145 |         53 |        138 |      1,336 |
+| studio/components/theme                                                                                             |          1 |        296 |         12 |         33 |        341 |
+| studio/components/ui                                                                                                |         10 |        352 |          0 |         47 |        399 |
+| studio/data                                                                                                         |          1 |        196 |          0 |          0 |        196 |
+| studio/docs                                                                                                         |          2 |      1,081 |          0 |        261 |      1,342 |
+| studio/lib                                                                                                          |          5 |        259 |         52 |         40 |        351 |
+| studio/prisma                                                                                                       |          3 |         69 |         20 |         24 |        113 |
+| studio/prisma/migrations                                                                                            |          3 |         69 |         20 |         24 |        113 |
+| studio/prisma/migrations/20251013224611_new                                                                         |          1 |         67 |         18 |         22 |        107 |
+| studio/prisma/migrations/20251014011949_add_client_theme                                                            |          1 |          1 |          1 |          1 |          3 |
+| studio/prisma/migrations/20251015000657_add_flow_layout                                                             |          1 |          1 |          1 |          1 |          3 |
+| studio/scripts                                                                                                      |          3 |        472 |         11 |         24 |        507 |
+| studio/src                                                                                                          |         15 |      1,243 |        246 |        177 |      1,666 |
+| studio/src/contracts                                                                                                |          2 |        239 |         43 |         11 |        293 |
+| studio/src/llm                                                                                                      |          1 |         64 |         11 |          7 |         82 |
+| studio/src/pipeline                                                                                                 |          6 |        668 |        140 |        112 |        920 |
+| studio/src/pipeline (Files)                                                                                         |          1 |         22 |          6 |          5 |         33 |
+| studio/src/pipeline/steps                                                                                           |          5 |        646 |        134 |        107 |        887 |
+| studio/src/utils                                                                                                    |          2 |         35 |          7 |         13 |         55 |
+| studio/src/validation                                                                                               |          4 |        237 |         45 |         34 |        316 |
+| studio/styles                                                                                                       |          1 |         71 |          0 |          6 |         77 |
++---------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                                            | language           | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| /Users/lucaswhelan/nesolagus-suite/.claude/settings.local.json                                                      | JSON               |         19 |          0 |          1 |         20 |
+| /Users/lucaswhelan/nesolagus-suite/IMPLEMENTATION_STATUS.md                                                         | Markdown           |        237 |          0 |         96 |        333 |
+| /Users/lucaswhelan/nesolagus-suite/PHASE_1_COMPLETE.md                                                              | Markdown           |        330 |          0 |         93 |        423 |
+| /Users/lucaswhelan/nesolagus-suite/README.md                                                                        | Markdown           |        221 |          0 |         86 |        307 |
+| /Users/lucaswhelan/nesolagus-suite/docs/DESIGN.md                                                                   | Markdown           |      1,170 |          0 |        242 |      1,412 |
+| /Users/lucaswhelan/nesolagus-suite/docs/PRD.md                                                                      | Markdown           |        457 |          0 |        111 |        568 |
+| /Users/lucaswhelan/nesolagus-suite/engine/DEPLOYMENT.md                                                             | Markdown           |        121 |          0 |         35 |        156 |
+| /Users/lucaswhelan/nesolagus-suite/engine/PORT_CHANGES.md                                                           | Markdown           |         44 |          0 |         10 |         54 |
+| /Users/lucaswhelan/nesolagus-suite/engine/QUICK_START.md                                                            | Markdown           |         45 |          0 |         17 |         62 |
+| /Users/lucaswhelan/nesolagus-suite/engine/README.md                                                                 | Markdown           |        117 |          0 |         43 |        160 |
+| /Users/lucaswhelan/nesolagus-suite/engine/TESTING.md                                                                | Markdown           |        326 |          0 |        115 |        441 |
+| /Users/lucaswhelan/nesolagus-suite/engine/VERCEL_DEPLOYMENT.md                                                      | Markdown           |        138 |          0 |         38 |        176 |
+| /Users/lucaswhelan/nesolagus-suite/engine/VERCEL_FRONTEND_SETUP.md                                                  | Markdown           |         63 |          0 |         23 |         86 |
+| /Users/lucaswhelan/nesolagus-suite/engine/VIDEOASK_WEBHOOK_SETUP.md                                                 | Markdown           |        130 |          0 |         20 |        150 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/.eslintrc.json                                                    | JSON with Comments |         31 |          0 |          0 |         31 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/check-all-blocks.sql                                              | MS SQL             |         24 |          2 |          1 |         27 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/check-answer-schema.sql                                           | MS SQL             |          2 |          2 |          1 |          5 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/check-answer-storage-detail.sql                                   | MS SQL             |         15 |          1 |          0 |         16 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/check-answer-values.sql                                           | MS SQL             |         22 |          2 |          1 |         25 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/check-b7-b9-specific.sql                                          | MS SQL             |         23 |          3 |          2 |         28 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/check-b9-full-record.sql                                          | MS SQL             |         23 |          2 |          1 |         26 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/check-b9-response.sql                                             | MS SQL             |         13 |          1 |          0 |         14 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/check-complex-answers.sql                                         | MS SQL             |         30 |          3 |          2 |         35 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/check-data.sql                                                    | MS SQL             |         18 |          5 |          4 |         27 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/check-latest-b9.sql                                               | MS SQL             |         28 |          2 |          1 |         31 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/check-metadata-complexity.sql                                     | MS SQL             |         16 |          2 |          1 |         19 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/check-metadata-content.sql                                        | MS SQL             |         21 |          2 |          1 |         24 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/check-question-flow.sql                                           | MS SQL             |         35 |          4 |          1 |         40 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/check-rating-answers.sql                                          | MS SQL             |         24 |          3 |          2 |         29 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/check-rating-storage.sql                                          | MS SQL             |         26 |          3 |          1 |         30 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/check-semantic-answers.sql                                        | MS SQL             |         25 |          2 |          1 |         28 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/diagnose-question-mapping.sql                                     | MS SQL             |         14 |          1 |          0 |         15 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/package-lock.json                                                 | JSON               |      7,056 |          0 |          1 |      7,057 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/package.json                                                      | JSON               |         60 |          0 |          1 |         61 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/railway.json                                                      | JSON               |         12 |          0 |          0 |         12 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/config/configLoader.ts                                        | TypeScript         |        160 |         33 |         28 |        221 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/controllers/admin.controller.ts                               | TypeScript         |        923 |         44 |        100 |      1,067 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/controllers/config.controller.ts                              | TypeScript         |         67 |         15 |          8 |         90 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/controllers/preview.controller.ts                             | TypeScript         |        400 |         71 |         80 |        551 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/controllers/survey.controller.ts                              | TypeScript         |        123 |         12 |         28 |        163 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/database/init.sql                                             | MS SQL             |         61 |          9 |          8 |         78 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/database/initialize.ts                                        | TypeScript         |         87 |          7 |         15 |        109 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/database/seed.sql                                             | MS SQL             |          7 |          1 |          0 |          8 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/database/seed.ts                                              | TypeScript         |         26 |          1 |          7 |         34 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/database/survey-structure.json                                | JSON               |      1,570 |          0 |          1 |      1,571 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/index.ts                                                      | TypeScript         |         88 |         11 |         15 |        114 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/middleware/auth.ts                                            | TypeScript         |         39 |          2 |          8 |         49 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/middleware/clerkAuth.ts                                       | TypeScript         |         74 |          8 |         15 |         97 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/middleware/errorHandler.ts                                    | TypeScript         |         37 |          1 |          7 |         45 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/middleware/validateRequest.ts                                 | TypeScript         |         23 |          0 |          4 |         27 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/routes/admin-mock.routes.ts                                   | TypeScript         |        133 |         10 |         23 |        166 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/routes/admin.routes.ts                                        | TypeScript         |         22 |          4 |          8 |         34 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/routes/clerkAdmin.routes.ts                                   | TypeScript         |         14 |          3 |          6 |         23 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/routes/config.routes.ts                                       | TypeScript         |          7 |          3 |          6 |         16 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/routes/preview.routes.ts                                      | TypeScript         |         16 |          8 |          7 |         31 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/routes/survey.routes.ts                                       | TypeScript         |         29 |          4 |          6 |         39 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/routes/webhook.routes.ts                                      | TypeScript         |        249 |         25 |         24 |        298 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/services/survey.service.ts                                    | TypeScript         |        239 |         13 |         29 |        281 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/services/surveyEngine.ts                                      | TypeScript         |        545 |         53 |         78 |        676 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/utils/logger.ts                                               | TypeScript         |         36 |          0 |          9 |         45 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/validators/admin.validators.ts                                | TypeScript         |          5 |          0 |          1 |          6 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/validators/survey.validators.ts                               | TypeScript         |         46 |          2 |          4 |         52 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/tsconfig.json                                                     | JSON with Comments |         30 |          0 |          0 |         30 |
+| /Users/lucaswhelan/nesolagus-suite/engine/config/clients/README.md                                                  | Markdown           |         44 |          0 |         15 |         59 |
+| /Users/lucaswhelan/nesolagus-suite/engine/config/clients/acme-corp.json                                             | JSON               |        179 |          0 |          0 |        179 |
+| /Users/lucaswhelan/nesolagus-suite/engine/config/clients/default.json                                               | JSON               |         36 |          0 |          1 |         37 |
+| /Users/lucaswhelan/nesolagus-suite/engine/config/clients/example-complex.json                                       | JSON               |        233 |          0 |          1 |        234 |
+| /Users/lucaswhelan/nesolagus-suite/engine/config/clients/example-simple.json                                        | JSON               |         75 |          0 |          1 |         76 |
+| /Users/lucaswhelan/nesolagus-suite/engine/config/schema/survey.schema.json                                          | JSON               |        120 |          0 |          1 |        121 |
+| /Users/lucaswhelan/nesolagus-suite/engine/config/schema/theme.schema.json                                           | JSON               |        114 |          0 |          1 |        115 |
+| /Users/lucaswhelan/nesolagus-suite/engine/config/survey.example.json                                                | JSON               |        130 |          0 |          1 |        131 |
+| /Users/lucaswhelan/nesolagus-suite/engine/config/theme.example.json                                                 | JSON               |         79 |          0 |          1 |         80 |
+| /Users/lucaswhelan/nesolagus-suite/engine/docker-compose.yml                                                        | YAML               |         69 |          0 |          4 |         73 |
+| /Users/lucaswhelan/nesolagus-suite/engine/docs/CONFIGURATION_GUIDE.md                                               | Markdown           |        452 |          0 |        122 |        574 |
+| /Users/lucaswhelan/nesolagus-suite/engine/docs/CONVERSION.md                                                        | Markdown           |        559 |          0 |        119 |        678 |
+| /Users/lucaswhelan/nesolagus-suite/engine/docs/DEPLOYMENT_GUIDE.md                                                  | Markdown           |        461 |          0 |        153 |        614 |
+| /Users/lucaswhelan/nesolagus-suite/engine/docs/QUESTION_TYPES.md                                                    | Markdown           |        522 |          0 |        142 |        664 |
+| /Users/lucaswhelan/nesolagus-suite/engine/docs/SETUP_WIZARD_GUIDE.md                                                | Markdown           |        134 |          0 |         61 |        195 |
+| /Users/lucaswhelan/nesolagus-suite/engine/examples/simple-feedback/theme.json                                       | JSON               |         25 |          0 |          1 |         26 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/.eslintrc.json                                                   | JSON with Comments |         45 |          0 |          0 |         45 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/index.html                                                       | HTML               |         30 |          2 |          4 |         36 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/package-lock.json                                                | JSON               |      9,906 |          0 |          1 |      9,907 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/package.json                                                     | JSON               |         65 |          0 |          1 |         66 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/App.tsx                                                      | TypeScript JSX     |         68 |          4 |          7 |         79 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/AdminOverview.tsx                           | TypeScript JSX     |        143 |          2 |         25 |        170 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/Analytics.tsx                               | TypeScript JSX     |        391 |          2 |         51 |        444 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/ClerkPrivateRoute.tsx                       | TypeScript JSX     |         17 |          2 |          6 |         25 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/PrivateRoute.tsx                            | TypeScript JSX     |         14 |          0 |          5 |         19 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/QuestionBreakdown.tsx                       | TypeScript JSX     |        238 |          0 |         30 |        268 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/ResponseDetail.tsx                          | TypeScript JSX     |        369 |          0 |         46 |        415 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/ResponsesList.tsx                           | TypeScript JSX     |        390 |          3 |         40 |        433 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/ui/Badge.tsx                                | TypeScript JSX     |         25 |          1 |          4 |         30 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/ui/Buttons.tsx                              | TypeScript JSX     |         47 |          1 |          4 |         52 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/ui/Card.tsx                                 | TypeScript JSX     |         21 |          1 |          6 |         28 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/ui/Spinner.tsx                              | TypeScript JSX     |         12 |          1 |          4 |         17 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/ui/Table.tsx                                | TypeScript JSX     |         35 |          1 |          6 |         42 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/ui/icons.tsx                                | TypeScript JSX     |         91 |          1 |         15 |        107 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/ErrorBoundary.tsx                                 | TypeScript JSX     |         89 |          1 |         16 |        106 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/ChatInterface.tsx                          | TypeScript JSX     |        356 |         21 |         50 |        427 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/ChatMessage.tsx                            | TypeScript JSX     |        351 |         23 |         35 |        409 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/ProgressBar.tsx                            | TypeScript JSX     |        170 |          1 |         17 |        188 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionRenderer.tsx                       | TypeScript JSX     |         63 |          1 |         17 |         81 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/ContactForm.tsx              | TypeScript JSX     |         92 |          0 |         13 |        105 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/Demographics.tsx             | TypeScript JSX     |        292 |          6 |         31 |        329 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/FinalMessage.tsx             | TypeScript JSX     |         65 |          0 |          6 |         71 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/MixedMedia.tsx               | TypeScript JSX     |        207 |          3 |         21 |        231 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/MultiChoice.tsx              | TypeScript JSX     |        161 |          6 |         17 |        184 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/QuickReply.tsx               | TypeScript JSX     |        139 |          1 |         15 |        155 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/Ranking.tsx                  | TypeScript JSX     |        317 |          2 |         30 |        349 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/Scale.tsx                    | TypeScript JSX     |        159 |          2 |         18 |        179 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/SemanticDifferential.tsx     | TypeScript JSX     |        146 |          0 |         17 |        163 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/SingleChoice.tsx             | TypeScript JSX     |        234 |          4 |         21 |        259 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/TextInput.tsx                | TypeScript JSX     |        148 |          2 |         14 |        164 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/VideoAskQuestion.tsx         | TypeScript JSX     |        169 |          6 |         26 |        201 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/VideoAutoplay.tsx            | TypeScript JSX     |        324 |         15 |         33 |        372 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/VideoRecorder.tsx            | TypeScript JSX     |        150 |          3 |         18 |        171 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/YesNo.tsx                    | TypeScript JSX     |         57 |          0 |          6 |         63 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/TypingIndicator.tsx                        | TypeScript JSX     |         89 |          1 |          9 |         99 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/WelcomeScreen.tsx                          | TypeScript JSX     |        152 |          0 |         18 |        170 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/contexts/ConfigContext.tsx                                   | TypeScript JSX     |        119 |          9 |         18 |        146 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/contexts/DynamicThemeProvider.tsx                            | TypeScript JSX     |         29 |          5 |          5 |         39 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/hooks/redux.ts                                               | TypeScript         |          4 |          0 |          1 |          5 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/index.tsx                                                    | TypeScript JSX     |         11 |          0 |          2 |         13 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/pages/AdminDashboard.tsx                                     | TypeScript JSX     |        203 |          6 |         29 |        238 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/pages/AdminDisabled.tsx                                      | TypeScript JSX     |         99 |          0 |         15 |        114 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/pages/AdminLogin.tsx                                         | TypeScript JSX     |        146 |          0 |         20 |        166 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/pages/ClerkSignIn.tsx                                        | TypeScript JSX     |         75 |          0 |          7 |         82 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/pages/ClerkSignUp.tsx                                        | TypeScript JSX     |         75 |          0 |          7 |         82 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/pages/SurveyPage.tsx                                         | TypeScript JSX     |        219 |          3 |         26 |        248 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/services/api.ts                                              | TypeScript         |        220 |          9 |         34 |        263 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/services/clerkApi.ts                                         | TypeScript         |         62 |          7 |         16 |         85 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/store/slices/adminSlice.ts                                   | TypeScript         |         70 |          2 |          7 |         79 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/store/slices/surveySlice.ts                                  | TypeScript         |        212 |         13 |         13 |        238 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/store/store.ts                                               | TypeScript         |         11 |          0 |          2 |         13 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/styled.d.ts                                                  | TypeScript         |        107 |          0 |          1 |        108 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/styles/GlobalStyle.ts                                        | TypeScript         |        168 |          1 |          1 |        170 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/styles/theme.ts                                              | TypeScript         |        104 |          1 |          0 |        105 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/types/survey.ts                                              | TypeScript         |         81 |          0 |          7 |         88 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/utils/questionTextMapping.ts                                 | TypeScript         |        177 |         29 |         25 |        231 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/utils/tracking.ts                                            | TypeScript         |         59 |          2 |         11 |         72 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/src/vite-env.d.ts                                                | TypeScript         |          7 |          2 |          2 |         11 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/tsconfig.json                                                    | JSON with Comments |         24 |          0 |          0 |         24 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/tsconfig.node.json                                               | JSON               |         10 |          0 |          0 |         10 |
+| /Users/lucaswhelan/nesolagus-suite/engine/frontend/vite.config.ts                                                   | TypeScript         |         15 |          0 |          1 |         16 |
+| /Users/lucaswhelan/nesolagus-suite/engine/package-lock.json                                                         | JSON               |        867 |          0 |          1 |        868 |
+| /Users/lucaswhelan/nesolagus-suite/engine/package.json                                                              | JSON               |         45 |          0 |          1 |         46 |
+| /Users/lucaswhelan/nesolagus-suite/engine/scripts/setup-wizard.js                                                   | JavaScript         |        255 |         13 |         27 |        295 |
+| /Users/lucaswhelan/nesolagus-suite/engine/scripts/start-dev.sh                                                      | Shell Script       |         49 |          9 |         11 |         69 |
+| /Users/lucaswhelan/nesolagus-suite/engine/scripts/start-docker.sh                                                   | Shell Script       |         28 |          7 |         10 |         45 |
+| /Users/lucaswhelan/nesolagus-suite/engine/scripts/start-local.sh                                                    | Shell Script       |         51 |         12 |         13 |         76 |
+| /Users/lucaswhelan/nesolagus-suite/engine/scripts/test-webhook.js                                                   | JavaScript         |         89 |          6 |         18 |        113 |
+| /Users/lucaswhelan/nesolagus-suite/engine/scripts/validate-config.js                                                | JavaScript         |        119 |          3 |         20 |        142 |
+| /Users/lucaswhelan/nesolagus-suite/engine/vercel.json                                                               | JSON               |         21 |          0 |          1 |         22 |
+| /Users/lucaswhelan/nesolagus-suite/package-lock.json                                                                | JSON               |     17,104 |          0 |          1 |     17,105 |
+| /Users/lucaswhelan/nesolagus-suite/package.json                                                                     | JSON               |         42 |          0 |          1 |         43 |
+| /Users/lucaswhelan/nesolagus-suite/packages/survey-components/README.md                                             | Markdown           |         62 |          0 |         21 |         83 |
+| /Users/lucaswhelan/nesolagus-suite/packages/survey-components/package.json                                          | JSON               |         34 |          0 |          1 |         35 |
+| /Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/ProgressBar.tsx                        | TypeScript JSX     |        170 |          1 |         17 |        188 |
+| /Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionRenderer.tsx                   | TypeScript JSX     |         63 |          2 |         17 |         82 |
+| /Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionTypes/ContactForm.tsx          | TypeScript JSX     |         92 |          0 |         13 |        105 |
+| /Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionTypes/Demographics.tsx         | TypeScript JSX     |        292 |          6 |         31 |        329 |
+| /Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionTypes/FinalMessage.tsx         | TypeScript JSX     |         65 |          0 |          6 |         71 |
+| /Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionTypes/MixedMedia.tsx           | TypeScript JSX     |        207 |          3 |         21 |        231 |
+| /Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionTypes/MultiChoice.tsx          | TypeScript JSX     |        161 |          6 |         17 |        184 |
+| /Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionTypes/QuickReply.tsx           | TypeScript JSX     |        139 |          1 |         15 |        155 |
+| /Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionTypes/Scale.tsx                | TypeScript JSX     |        159 |          2 |         18 |        179 |
+| /Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionTypes/SemanticDifferential.tsx | TypeScript JSX     |        146 |          0 |         17 |        163 |
+| /Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionTypes/SingleChoice.tsx         | TypeScript JSX     |        239 |          4 |         21 |        264 |
+| /Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionTypes/TextInput.tsx            | TypeScript JSX     |        148 |          2 |         14 |        164 |
+| /Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionTypes/VideoAskQuestion.tsx     | TypeScript JSX     |        169 |          6 |         26 |        201 |
+| /Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionTypes/VideoAutoplay.tsx        | TypeScript JSX     |        324 |         15 |         33 |        372 |
+| /Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionTypes/VideoRecorder.tsx        | TypeScript JSX     |        152 |          3 |         18 |        173 |
+| /Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionTypes/YesNo.tsx                | TypeScript JSX     |         57 |          0 |          6 |         63 |
+| /Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/TypingIndicator.tsx                    | TypeScript JSX     |         91 |          1 |         10 |        102 |
+| /Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/WelcomeScreen.tsx                      | TypeScript JSX     |        154 |          0 |         17 |        171 |
+| /Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/index.ts                                          | TypeScript         |         19 |          5 |          3 |         27 |
+| /Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/types/styled.d.ts                                 | TypeScript         |         71 |          0 |          2 |         73 |
+| /Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/types/survey.ts                                   | TypeScript         |         81 |          0 |          7 |         88 |
+| /Users/lucaswhelan/nesolagus-suite/packages/survey-components/tsconfig.json                                         | JSON with Comments |         22 |          0 |          1 |         23 |
+| /Users/lucaswhelan/nesolagus-suite/scripts/README.md                                                                | Markdown           |        237 |          0 |         90 |        327 |
+| /Users/lucaswhelan/nesolagus-suite/scripts/deploy-client.sh                                                         | Shell Script       |        108 |         27 |         31 |        166 |
+| /Users/lucaswhelan/nesolagus-suite/scripts/generate.js                                                              | JavaScript         |        200 |         17 |         38 |        255 |
+| /Users/lucaswhelan/nesolagus-suite/scripts/test-client.sh                                                           | Shell Script       |         70 |         17 |         18 |        105 |
+| /Users/lucaswhelan/nesolagus-suite/scripts/validate.js                                                              | JavaScript         |        229 |         28 |         41 |        298 |
+| /Users/lucaswhelan/nesolagus-suite/studio/DOCKER_SETUP.md                                                           | Markdown           |        222 |          0 |        105 |        327 |
+| /Users/lucaswhelan/nesolagus-suite/studio/PHASE_2.1_COMPLETE.md                                                     | Markdown           |        263 |          0 |         82 |        345 |
+| /Users/lucaswhelan/nesolagus-suite/studio/PHASE_2.2_COMPLETE.md                                                     | Markdown           |        375 |          0 |         96 |        471 |
+| /Users/lucaswhelan/nesolagus-suite/studio/PHASE_2_PLAN.md                                                           | Markdown           |        318 |          0 |         92 |        410 |
+| /Users/lucaswhelan/nesolagus-suite/studio/README.md                                                                 | Markdown           |        128 |          0 |         31 |        159 |
+| /Users/lucaswhelan/nesolagus-suite/studio/SETUP.md                                                                  | Markdown           |        214 |          0 |         87 |        301 |
+| /Users/lucaswhelan/nesolagus-suite/studio/app/api/clients/[slug]/theme/route.ts                                     | TypeScript         |        106 |         11 |         12 |        129 |
+| /Users/lucaswhelan/nesolagus-suite/studio/app/api/drafts/[id]/route.ts                                              | TypeScript         |        152 |          1 |         17 |        170 |
+| /Users/lucaswhelan/nesolagus-suite/studio/app/api/generate/route.ts                                                 | TypeScript         |        157 |         22 |         21 |        200 |
+| /Users/lucaswhelan/nesolagus-suite/studio/app/clients/[slug]/theme/page.tsx                                         | TypeScript JSX     |         48 |          3 |          7 |         58 |
+| /Users/lucaswhelan/nesolagus-suite/studio/app/clients/page.tsx                                                      | TypeScript JSX     |        184 |          3 |          5 |        192 |
+| /Users/lucaswhelan/nesolagus-suite/studio/app/flow/[id]/page.tsx                                                    | TypeScript JSX     |         89 |          2 |         10 |        101 |
+| /Users/lucaswhelan/nesolagus-suite/studio/app/generate/page.tsx                                                     | TypeScript JSX     |        205 |          6 |         30 |        241 |
+| /Users/lucaswhelan/nesolagus-suite/studio/app/layout.tsx                                                            | TypeScript JSX     |         19 |          0 |          4 |         23 |
+| /Users/lucaswhelan/nesolagus-suite/studio/app/page.tsx                                                              | TypeScript JSX     |         70 |          0 |          6 |         76 |
+| /Users/lucaswhelan/nesolagus-suite/studio/app/preview/[draftId]/page.tsx                                            | TypeScript JSX     |         45 |          2 |          8 |         55 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/flow/BlockNode.tsx                                             | TypeScript JSX     |         86 |         11 |         12 |        109 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/flow/FlowEditor.tsx                                            | TypeScript JSX     |        206 |         20 |         33 |        259 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/flow/layout.ts                                                 | TypeScript         |        127 |         24 |         20 |        171 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/flow/types.ts                                                  | TypeScript         |        115 |         17 |          8 |        140 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/generation/DocumentUpload.tsx                                  | TypeScript JSX     |        130 |          4 |         16 |        150 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/generation/GeneratedSurveyView.tsx                             | TypeScript JSX     |        244 |         11 |         20 |        275 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/generation/GenerationForm.tsx                                  | TypeScript JSX     |        159 |          5 |         22 |        186 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/generation/GenerationProgress.tsx                              | TypeScript JSX     |         73 |          3 |          7 |         83 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/preview/DeviceToggle.tsx                                       | TypeScript JSX     |         32 |          0 |          6 |         38 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/preview/InlineThemeEditor.tsx                                  | TypeScript JSX     |        314 |         11 |         24 |        349 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/preview/MessageHistory.tsx                                     | TypeScript JSX     |         83 |          1 |         11 |         95 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/preview/PreviewRenderer.tsx                                    | TypeScript JSX     |        424 |         29 |         62 |        515 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/preview/SurveyPreview.tsx                                      | TypeScript JSX     |        139 |          6 |         16 |        161 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/preview/TestModePanel.tsx                                      | TypeScript JSX     |        153 |          6 |         19 |        178 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/theme/ThemeEditor.tsx                                          | TypeScript JSX     |        296 |         12 |         33 |        341 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/ui/badge.tsx                                                   | TypeScript JSX     |         31 |          0 |          5 |         36 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/ui/button.tsx                                                  | TypeScript JSX     |         51 |          0 |          5 |         56 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/ui/card.tsx                                                    | TypeScript JSX     |         71 |          0 |          8 |         79 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/ui/input.tsx                                                   | TypeScript JSX     |         21 |          0 |          4 |         25 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/ui/label.tsx                                                   | TypeScript JSX     |         20 |          0 |          4 |         24 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/ui/progress.tsx                                                | TypeScript JSX     |         23 |          0 |          3 |         26 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/ui/scroll-area.tsx                                             | TypeScript JSX     |         42 |          0 |          5 |         47 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/ui/separator.tsx                                               | TypeScript JSX     |         26 |          0 |          3 |         29 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/ui/tabs.tsx                                                    | TypeScript JSX     |         47 |          0 |          6 |         53 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/ui/textarea.tsx                                                | TypeScript JSX     |         20 |          0 |          4 |         24 |
+| /Users/lucaswhelan/nesolagus-suite/studio/data/db.json                                                              | JSON               |        196 |          0 |          0 |        196 |
+| /Users/lucaswhelan/nesolagus-suite/studio/design-document.md                                                        | Markdown           |        178 |          0 |         90 |        268 |
+| /Users/lucaswhelan/nesolagus-suite/studio/docker-compose.yml                                                        | YAML               |         43 |         20 |          6 |         69 |
+| /Users/lucaswhelan/nesolagus-suite/studio/docs/CONVERSION.md                                                        | Markdown           |        559 |          0 |        119 |        678 |
+| /Users/lucaswhelan/nesolagus-suite/studio/docs/QUESTION_TYPES.md                                                    | Markdown           |        522 |          0 |        142 |        664 |
+| /Users/lucaswhelan/nesolagus-suite/studio/lib/db.ts                                                                 | TypeScript         |          9 |          3 |          6 |         18 |
+| /Users/lucaswhelan/nesolagus-suite/studio/lib/pipeline-adapter.ts                                                   | TypeScript         |         87 |         20 |         12 |        119 |
+| /Users/lucaswhelan/nesolagus-suite/studio/lib/preview-api.ts                                                        | TypeScript         |         55 |         13 |         14 |         82 |
+| /Users/lucaswhelan/nesolagus-suite/studio/lib/survey-theme.ts                                                       | TypeScript         |         68 |          1 |          1 |         70 |
+| /Users/lucaswhelan/nesolagus-suite/studio/lib/utils.ts                                                              | TypeScript         |         40 |         15 |          7 |         62 |
+| /Users/lucaswhelan/nesolagus-suite/studio/next-env.d.ts                                                             | TypeScript         |          0 |          4 |          2 |          6 |
+| /Users/lucaswhelan/nesolagus-suite/studio/next.config.js                                                            | JavaScript         |         24 |          6 |          7 |         37 |
+| /Users/lucaswhelan/nesolagus-suite/studio/package-lock.json                                                         | JSON               |         12 |          0 |          1 |         13 |
+| /Users/lucaswhelan/nesolagus-suite/studio/package.json                                                              | JSON               |         76 |          0 |          1 |         77 |
+| /Users/lucaswhelan/nesolagus-suite/studio/postcss.config.js                                                         | JavaScript         |          6 |          0 |          1 |          7 |
+| /Users/lucaswhelan/nesolagus-suite/studio/prd.md                                                                    | Markdown           |        201 |          0 |        145 |        346 |
+| /Users/lucaswhelan/nesolagus-suite/studio/prisma/migrations/20251013224611_new/migration.sql                        | MS SQL             |         67 |         18 |         22 |        107 |
+| /Users/lucaswhelan/nesolagus-suite/studio/prisma/migrations/20251014011949_add_client_theme/migration.sql           | MS SQL             |          1 |          1 |          1 |          3 |
+| /Users/lucaswhelan/nesolagus-suite/studio/prisma/migrations/20251015000657_add_flow_layout/migration.sql            | MS SQL             |          1 |          1 |          1 |          3 |
+| /Users/lucaswhelan/nesolagus-suite/studio/scripts/cli.js                                                            | JavaScript         |         56 |          0 |          9 |         65 |
+| /Users/lucaswhelan/nesolagus-suite/studio/scripts/init-db.sh                                                        | Shell Script       |          3 |         10 |          6 |         19 |
+| /Users/lucaswhelan/nesolagus-suite/studio/scripts/web.js                                                            | JavaScript         |        413 |          1 |          9 |        423 |
+| /Users/lucaswhelan/nesolagus-suite/studio/src/contracts/survey-config.schema.json                                   | JSON               |        238 |          0 |          2 |        240 |
+| /Users/lucaswhelan/nesolagus-suite/studio/src/contracts/types.js                                                    | JavaScript         |          1 |         43 |          9 |         53 |
+| /Users/lucaswhelan/nesolagus-suite/studio/src/llm/index.js                                                          | JavaScript         |         64 |         11 |          7 |         82 |
+| /Users/lucaswhelan/nesolagus-suite/studio/src/pipeline/index.js                                                     | JavaScript         |         22 |          6 |          5 |         33 |
+| /Users/lucaswhelan/nesolagus-suite/studio/src/pipeline/steps/convertToEngineFormat.js                               | JavaScript         |        245 |         76 |         51 |        372 |
+| /Users/lucaswhelan/nesolagus-suite/studio/src/pipeline/steps/draftQuestions.js                                      | JavaScript         |         80 |          7 |          8 |         95 |
+| /Users/lucaswhelan/nesolagus-suite/studio/src/pipeline/steps/extractBrief.js                                        | JavaScript         |         75 |          8 |          9 |         92 |
+| /Users/lucaswhelan/nesolagus-suite/studio/src/pipeline/steps/structureToConfig.js                                   | JavaScript         |        198 |         33 |         30 |        261 |
+| /Users/lucaswhelan/nesolagus-suite/studio/src/pipeline/steps/validateAndRepair.js                                   | JavaScript         |         48 |         10 |          9 |         67 |
+| /Users/lucaswhelan/nesolagus-suite/studio/src/utils/id.js                                                           | JavaScript         |          6 |          0 |          3 |          9 |
+| /Users/lucaswhelan/nesolagus-suite/studio/src/utils/loadEnv.js                                                      | JavaScript         |         29 |          7 |         10 |         46 |
+| /Users/lucaswhelan/nesolagus-suite/studio/src/validation/duration.js                                                | JavaScript         |         48 |          8 |          7 |         63 |
+| /Users/lucaswhelan/nesolagus-suite/studio/src/validation/jsonSchemaValidator.js                                     | JavaScript         |         21 |          1 |          3 |         25 |
+| /Users/lucaswhelan/nesolagus-suite/studio/src/validation/lints.js                                                   | JavaScript         |        105 |         28 |         15 |        148 |
+| /Users/lucaswhelan/nesolagus-suite/studio/src/validation/validator.js                                               | JavaScript         |         63 |          8 |          9 |         80 |
+| /Users/lucaswhelan/nesolagus-suite/studio/styled.d.ts                                                               | TypeScript         |         51 |          0 |          2 |         53 |
+| /Users/lucaswhelan/nesolagus-suite/studio/styles/globals.css                                                        | PostCSS            |         71 |          0 |          6 |         77 |
+| /Users/lucaswhelan/nesolagus-suite/studio/survey.config.json                                                        | JSON               |        133 |          0 |          0 |        133 |
+| /Users/lucaswhelan/nesolagus-suite/studio/tailwind.config.ts                                                        | TypeScript         |         78 |          0 |          3 |         81 |
+| /Users/lucaswhelan/nesolagus-suite/studio/tsconfig.json                                                             | JSON with Comments |         31 |          0 |          1 |         32 |
+| Total                                                                                                               |                    |     69,751 |      1,353 |      5,488 |     76,592 |
++---------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+

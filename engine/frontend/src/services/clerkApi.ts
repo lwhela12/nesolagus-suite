@@ -79,6 +79,9 @@ export const clerkAdminApi = {
   
   getQuestionStats: () =>
     clerkApi.get('/api/clerk-admin/analytics/questions'),
+
+  getDashboardConfig: () =>
+    clerkApi.get('/api/clerk-admin/analytics/dashboard'),
 };
 
 export default clerkApi;

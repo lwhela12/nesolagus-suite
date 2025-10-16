@@ -91,12 +91,18 @@ if command -v jq &> /dev/null; then
   SURVEY_NAME=$(jq -r '.survey.name' "$CONFIG_PATH")
   BLOCKS_COUNT=$(jq '.blocks | length' "$CONFIG_PATH")
   DURATION=$(jq -r '.survey.metadata.estimatedMinutes' "$CONFIG_PATH")
+  DASHBOARD_WIDGETS=$(jq '(.dashboard.widgets // []) | length' "$CONFIG_PATH")
 
   echo ""
   print_info "Survey Details:"
   echo "   Name: $SURVEY_NAME"
   echo "   Blocks: $BLOCKS_COUNT"
   echo "   Duration: ${DURATION} minutes"
+  echo "   Dashboard Widgets: $DASHBOARD_WIDGETS"
+
+  if [ "$DASHBOARD_WIDGETS" -eq 0 ]; then
+    print_warning "Dashboard has no widgets. Studio dashboard builder can add analytics before deploy."
+  fi
 fi
 
 echo ""

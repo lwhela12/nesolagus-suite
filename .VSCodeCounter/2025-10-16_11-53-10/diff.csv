@@ -1,0 +1,35 @@
+"filename", "language", "TypeScript", "JSON", "TypeScript JSX", "PostCSS", "MS SQL", "comment", "blank", "total"
+"/Users/lucaswhelan/nesolagus-suite/.claude/settings.local.json", "JSON", 0, 1, 0, 0, 0, 0, 0, 1
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/controllers/preview.controller.ts", "TypeScript", -42, 0, 0, 0, 0, -6, -10, -58
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/services/conditionalRouting.ts", "TypeScript", 125, 0, 0, 0, 0, 62, 31, 218
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/services/surveyEngine.ts", "TypeScript", -42, 0, 0, 0, 0, -3, -9, -54
+"/Users/lucaswhelan/nesolagus-suite/package-lock.json", "JSON", 0, 249, 0, 0, 0, 0, 0, 249
+"/Users/lucaswhelan/nesolagus-suite/package.json", "JSON", 0, 3, 0, 0, 0, 0, 0, 3
+"/Users/lucaswhelan/nesolagus-suite/packages/dashboard-widgets/src/components/SegmentDonut.tsx", "TypeScript JSX", 0, 0, 57, 0, 0, 0, 1, 58
+"/Users/lucaswhelan/nesolagus-suite/studio/app/api/drafts/[id]/preview-data/route.ts", "TypeScript", 30, 0, 0, 0, 0, 0, 0, 30
+"/Users/lucaswhelan/nesolagus-suite/studio/app/api/drafts/[id]/preview-data/seed/route.ts", "TypeScript", 82, 0, 0, 0, 0, 0, 9, 91
+"/Users/lucaswhelan/nesolagus-suite/studio/app/clients/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 1, 0, 1
+"/Users/lucaswhelan/nesolagus-suite/studio/app/dashboard/[id]/page.tsx", "TypeScript JSX", 0, 0, 1, 0, 0, 0, 0, 1
+"/Users/lucaswhelan/nesolagus-suite/studio/app/layout.tsx", "TypeScript JSX", 0, 0, 15, 0, 0, 0, 0, 15
+"/Users/lucaswhelan/nesolagus-suite/studio/app/page.tsx", "TypeScript JSX", 0, 0, 34, 0, 0, 4, 2, 40
+"/Users/lucaswhelan/nesolagus-suite/studio/components/dashboard/DashboardCanvas.tsx", "TypeScript JSX", 0, 0, 221, 0, 0, 4, 22, 247
+"/Users/lucaswhelan/nesolagus-suite/studio/components/dashboard/DashboardEditor.tsx", "TypeScript JSX", 0, 0, 26, 0, 0, 0, 0, 26
+"/Users/lucaswhelan/nesolagus-suite/studio/components/dashboard/WidgetInspector.tsx", "TypeScript JSX", 0, 0, 1, 0, 0, 0, 0, 1
+"/Users/lucaswhelan/nesolagus-suite/studio/components/flow/ConditionalLogicBuilder.tsx", "TypeScript JSX", 0, 0, 3, 0, 0, 1, 0, 4
+"/Users/lucaswhelan/nesolagus-suite/studio/components/flow/types.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 1
+"/Users/lucaswhelan/nesolagus-suite/studio/components/generation/GeneratedSurveyView.tsx", "TypeScript JSX", 0, 0, 1, 0, 0, 0, 0, 1
+"/Users/lucaswhelan/nesolagus-suite/studio/components/layout/AppHeader.tsx", "TypeScript JSX", 0, 0, 88, 0, 0, 3, 8, 99
+"/Users/lucaswhelan/nesolagus-suite/studio/components/layout/ThemeProvider.tsx", "TypeScript JSX", 0, 0, 7, 0, 0, 0, 3, 10
+"/Users/lucaswhelan/nesolagus-suite/studio/components/ui/button.tsx", "TypeScript JSX", 0, 0, 1, 0, 0, 0, 0, 1
+"/Users/lucaswhelan/nesolagus-suite/studio/hooks/useDashboardPreview.ts", "TypeScript", 88, 0, 0, 0, 0, 0, 9, 97
+"/Users/lucaswhelan/nesolagus-suite/studio/lib/brand.ts", "TypeScript", 139, 0, 0, 0, 0, 17, 24, 180
+"/Users/lucaswhelan/nesolagus-suite/studio/lib/dashboardPreview.ts", "TypeScript", 131, 0, 0, 0, 0, 0, 21, 152
+"/Users/lucaswhelan/nesolagus-suite/studio/lib/dashboardPreviewLLM.ts", "TypeScript", 396, 0, 0, 0, 0, 0, 46, 442
+"/Users/lucaswhelan/nesolagus-suite/studio/package.json", "JSON", 0, 1, 0, 0, 0, 0, 0, 1
+"/Users/lucaswhelan/nesolagus-suite/studio/prisma/migrations/20251016164042_add_dashboard_preview/migration.sql", "MS SQL", 0, 0, 0, 0, 4, 2, 2, 8
+"/Users/lucaswhelan/nesolagus-suite/studio/prisma/migrations/20251016183954_add_dashboard_preview/migration.sql", "MS SQL", 0, 0, 0, 0, 2, 7, 1, 10
+"/Users/lucaswhelan/nesolagus-suite/studio/prisma/migrations/20251017100000_add_dashboard_preview_responses/migration.sql", "MS SQL", 0, 0, 0, 0, 2, 1, 1, 4
+"/Users/lucaswhelan/nesolagus-suite/studio/styles/globals.css", "PostCSS", 0, 0, 0, 27, 0, 13, 19, 59
+"/Users/lucaswhelan/nesolagus-suite/studio/tailwind.config.ts", "TypeScript", 25, 0, 0, 0, 0, 0, 0, 25
+"/Users/lucaswhelan/nesolagus-suite/studio/tsconfig.tsbuildinfo", "JSON", 0, 1, 0, 0, 0, 0, 0, 1
+"Total", "-", 933, 255, 455, 27, 8, 106, 180, 1964

@@ -2,6 +2,8 @@ import { Request, Response, NextFunction } from 'express';
 import { v4 as uuidv4 } from 'uuid';
 import { AppError } from '../middleware/errorHandler';
 import { logger } from '../utils/logger';
+import { getConfigLoader } from '../config/configLoader';
+import { evaluateConditionalNext, evaluateCondition } from '../services/conditionalRouting';
 
 interface SurveyState {
   surveyId: string;
@@ -298,8 +300,8 @@ class PreviewController {
       }
       nextBlockId = currentBlock.onEmpty.next || currentBlock.next;
     }
-    // Default next
-    else if (currentBlock.next) {
+    // Default next (only if it's a string, not a conditional object)
+    else if (currentBlock.next && typeof currentBlock.next === 'string') {
       nextBlockId = currentBlock.next;
     }
 
@@ -313,16 +315,23 @@ class PreviewController {
       }
     }
 
-    // Handle conditionalNext
-    if (!nextBlockId && currentBlock.conditionalNext) {
-      nextBlockId = this.evaluateConditionalNext(currentBlock.conditionalNext, state.variables);
+    // Handle conditional routing - check both new format (next) and legacy format (conditionalNext)
+    if (!nextBlockId) {
+      // New format: next field with if/else array
+      if (currentBlock.next && typeof currentBlock.next === 'object') {
+        nextBlockId = evaluateConditionalNext(currentBlock.next, state.variables, currentBlock.variable);
+      }
+      // Legacy format: conditionalNext field
+      else if (currentBlock.conditionalNext) {
+        nextBlockId = evaluateConditionalNext(currentBlock.conditionalNext, state.variables, currentBlock.variable);
+      }
     }
 
     // Handle showIf conditional display
     if (nextBlockId) {
       const nextBlock = config.blocks[nextBlockId];
       if (nextBlock && nextBlock.showIf) {
-        const shouldShow = this.evaluateCondition(nextBlock.showIf, state.variables);
+        const shouldShow = evaluateCondition(nextBlock.showIf, state.variables);
         if (!shouldShow) {
           state.currentBlockId = nextBlockId;
           return this.getNextQuestion(session, nextBlockId, null);
@@ -347,72 +356,6 @@ class PreviewController {
     }
 
     return null;
-  }
-
-  /**
-   * Evaluate conditional next routing
-   * Mirrors surveyEngine.evaluateConditionalNext logic
-   */
-  private evaluateConditionalNext(conditionalNext: any, variables: Record<string, any>): string | null {
-    if (!conditionalNext) return null;
-
-    if (this.evaluateCondition(conditionalNext.if, variables)) {
-      return conditionalNext.then;
-    } else {
-      if (typeof conditionalNext.else === 'object' && 'if' in conditionalNext.else) {
-        return this.evaluateConditionalNext(conditionalNext.else, variables);
-      } else {
-        return conditionalNext.else;
-      }
-    }
-  }
-
-  /**
-   * Evaluate a condition against variables
-   * Mirrors surveyEngine.evaluateCondition logic
-   */
-  private evaluateCondition(condition: any, variables: Record<string, any>): boolean {
-    if ('variable' in condition && 'equals' in condition) {
-      if (Array.isArray(condition.equals) && Array.isArray(variables[condition.variable])) {
-        const a = [...condition.equals].sort();
-        const b = [...variables[condition.variable]].sort();
-        return JSON.stringify(a) === JSON.stringify(b);
-      }
-      return variables[condition.variable] === condition.equals;
-    }
-
-    if ('variable' in condition && 'contains' in condition) {
-      const varValue = variables[condition.variable];
-      if (Array.isArray(varValue)) {
-        return varValue.includes(condition.contains);
-      }
-      return false;
-    }
-
-    if ('variable' in condition && 'greaterThan' in condition) {
-      return variables[condition.variable] > condition.greaterThan;
-    }
-
-    if ('variable' in condition && 'lessThan' in condition) {
-      return variables[condition.variable] < condition.lessThan;
-    }
-
-    if ('not' in condition) {
-      return !this.evaluateCondition(condition.not, variables);
-    }
-
-    if ('or' in condition) {
-      if (Array.isArray(condition.or)) {
-        return condition.or.some((cond: any) => this.evaluateCondition(cond, variables));
-      }
-      return this.evaluateCondition(condition.or, variables);
-    }
-
-    if ('and' in condition) {
-      return condition.and.every((cond: any) => this.evaluateCondition(cond, variables));
-    }
-
-    return true;
   }
 
   /**
@@ -497,7 +440,7 @@ class PreviewController {
     if (typeof formatted.content === 'string') {
       formatted.content = replaceVariables(formatted.content);
     } else if (typeof formatted.content === 'object' && formatted.contentCondition) {
-      const conditionResult = this.evaluateCondition(formatted.contentCondition.if, variables);
+      const conditionResult = evaluateCondition(formatted.contentCondition.if, variables);
       const contentKey = conditionResult ? formatted.contentCondition.then : formatted.contentCondition.else;
       formatted.content = replaceVariables(formatted.content[contentKey]);
     } else if (formatted.type === 'dynamic-message' && typeof formatted.content === 'object') {
@@ -519,7 +462,7 @@ class PreviewController {
           matchedContent = item.content;
           break;
         }
-        if (this.evaluateCondition(item.condition, variables)) {
+        if (evaluateCondition(item.condition, variables)) {
           matchedContent = item.content;
           break;
         }
@@ -544,6 +487,28 @@ class PreviewController {
     }
 
     return formatted;
+  }
+
+  async getDashboardConfig(_req: Request, res: Response, next: NextFunction) {
+    try {
+      const configLoader = getConfigLoader();
+      const dashboard = await configLoader.getDashboard();
+
+      if (!dashboard) {
+        res.status(404).json({
+          success: false,
+          message: 'Dashboard configuration not found'
+        });
+        return;
+      }
+
+      res.json({
+        success: true,
+        dashboard
+      });
+    } catch (error) {
+      next(error);
+    }
   }
 }
 

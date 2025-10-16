@@ -32,5 +32,17 @@
       "content": "Thank you, {{user_name}}! This is a placeholder survey.",
       "buttonText": "Complete"
     }
+  },
+  "dashboard": {
+    "version": "1.0.0",
+    "metadata": {
+      "title": "Default Dashboard"
+    },
+    "layout": {
+      "columns": 12,
+      "gap": 24
+    },
+    "filters": [],
+    "widgets": []
   }
 }

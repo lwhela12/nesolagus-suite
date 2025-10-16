@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Loyal Supporter",
+    "color": "#2F6D49",
+    "inputs": [
+      "Current donor",
+      "Arts are essential",
+      "Positive GHAC perception",
+      "Mid/High giving"
+    ],
+    "questionPatterns": [
+      "currently support ghac",
+      "role of arts",
+      "how essential",
+      "giving amount"
+    ],
+    "visuals": ["Profile card", "Loyalty trend line"]
+  },
+  {
+    "name": "Lapsed Donor / Workplace Alumni",
+    "color": "#86C99B",
+    "inputs": [
+      "Past supporter",
+      "Workplace campaign alumni",
+      "Medium passion, low activity"
+    ],
+    "questionPatterns": [
+      "supported ghac in the past",
+      "workplace giving",
+      "travelers",
+      "alumni"
+    ],
+    "visuals": ["Drop-off funnel", "ZIP heatmap"]
+  },
+  {
+    "name": "Artist-Connector",
+    "color": "#64B37A",
+    "inputs": [
+      "Artist / arts org",
+      "Creative profession or hobby",
+      "High ecosystem activity"
+    ],
+    "questionPatterns": [
+      "artist",
+      "arts org",
+      "creative",
+      "perform",
+      "curator",
+      "dance",
+      "music",
+      "gallery"
+    ],
+    "visuals": ["Network map", "Creative identity grid"]
+  },
+  {
+    "name": "Community-Curious",
+    "color": "#A9D8B7",
+    "inputs": [
+      "New to GHAC",
+      "Motivated by access/youth programs",
+      "Barriers to entry"
+    ],
+    "questionPatterns": [
+      "first time learning",
+      "youth",
+      "access",
+      "barriers",
+      "time",
+      "financial",
+      "information"
+    ],
+    "visuals": ["Journey map", "Barriers diverging bars"]
+  },
+  {
+    "name": "High-Capacity Prospect",
+    "color": "#2F7D52",
+    "inputs": [
+      "$1K+ potential",
+      "Sustainability / economy motivations"
+    ],
+    "questionPatterns": [
+      "donation",
+      "gift",
+      "sustainable funding",
+      "economic"
+    ],
+    "visuals": ["Pledge pyramid", "Capacity vs. interest bubbles"]
+  },
+  {
+    "name": "Ambassador / Future Leader",
+    "color": "#0E2A23",
+    "inputs": [
+      "Wants to be included in decisions",
+      "Advisory interest",
+      "Professional/creative crossover"
+    ],
+    "questionPatterns": [
+      "include me in decisions",
+      "advisory",
+      "share expertise",
+      "board",
+      "lead"
+    ],
+    "visuals": ["Values radar", "Sankey: interest → engagement"]
+  }
+]
+

@@ -12,6 +12,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { DASHBOARD_WIDGET_TYPES } = require('@nesolagus/config');
 
 function printHelp() {
   console.log(`
@@ -213,6 +214,10 @@ function validateSurveyConfig(config) {
     warnings.push(`Estimated duration (${estimatedMinutes.toFixed(1)}min) differs significantly from metadata (${metaMinutes}min)`);
   }
 
+  const dashboardCheck = validateDashboardConfig(config.dashboard);
+  errors.push(...dashboardCheck.errors);
+  warnings.push(...dashboardCheck.warnings);
+
   return {
     valid: errors.length === 0,
     errors,
@@ -221,8 +226,48 @@ function validateSurveyConfig(config) {
       totalBlocks: blockIds.length,
       reachableBlocks: reachableBlocks.size,
       estimatedMinutes: parseFloat(estimatedMinutes.toFixed(1)),
+      dashboardWidgets: dashboardCheck.widgetCount,
     },
   };
+}
+
+function validateDashboardConfig(dashboard) {
+  const errors = [];
+  const warnings = [];
+
+  if (!dashboard) {
+    warnings.push('Dashboard configuration not found – Studio dashboard builder will create one automatically.');
+    return { errors, warnings, widgetCount: 0 };
+  }
+
+  if (typeof dashboard.version !== 'string') {
+    warnings.push('dashboard.version missing or invalid (expected string)');
+  }
+
+  if (!Array.isArray(dashboard.widgets)) {
+    errors.push('dashboard.widgets must be an array');
+    return { errors, warnings, widgetCount: 0 };
+  }
+
+  dashboard.widgets.forEach((widget, idx) => {
+    const prefix = `dashboard.widgets[${idx}]`;
+    if (!widget.id) {
+      errors.push(`${prefix}: missing id`);
+    }
+    if (!widget.type) {
+      errors.push(`${prefix}: missing type`);
+    } else if (!DASHBOARD_WIDGET_TYPES.includes(widget.type)) {
+      errors.push(`${prefix}: unknown type "${widget.type}"`);
+    }
+    if (!widget.title) {
+      warnings.push(`${prefix}: missing title`);
+    }
+    if (!widget.data) {
+      warnings.push(`${prefix}: missing data binding`);
+    }
+  });
+
+  return { errors, warnings, widgetCount: dashboard.widgets.length };
 }
 
 async function main() {
@@ -285,6 +330,7 @@ async function main() {
   console.log(`   Total Blocks: ${result.stats.totalBlocks}`);
   console.log(`   Reachable Blocks: ${result.stats.reachableBlocks}`);
   console.log(`   Estimated Duration: ${result.stats.estimatedMinutes} minutes`);
+  console.log(`   Dashboard Widgets: ${result.stats.dashboardWidgets}`);
   console.log('');
 
   // Exit with appropriate code

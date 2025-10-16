@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
 
   // Configure for monorepo setup
-  transpilePackages: ['survey-components'],
+  transpilePackages: ['survey-components', '@nesolagus/config', '@nesolagus/dashboard-widgets'],
 
   experimental: {
     // Enable server actions

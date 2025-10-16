@@ -14,6 +14,7 @@ export interface SurveyBlock {
     label: string;
     value: string;
     next?: string;
+    emoji?: string;
   }>;
   next?: string | ConditionalNext;
   conditionalNext?: ConditionalNext;

@@ -15,6 +15,7 @@ function structureToConfig(blocks, brief) {
 
   // Build nodes, pruning if duration exceeds cap
   // Also insert acknowledgement messages after key questions
+  // Process LLM-generated branches if present
   let accSec = 0
   for (let i = 0; i < blocks.length; i++) {
     const b = blocks[i]
@@ -23,10 +24,16 @@ function structureToConfig(blocks, brief) {
     const sec = estimateNodeSeconds(node)
     if ((accSec + sec) / 60 > brief.constraints.max_minutes) break
     accSec += sec
+
+    // If block has LLM-generated branches, store them for later processing
+    if (b.branch) {
+      node._llmBranch = b.branch
+    }
+
     add(id, node)
 
-    // Add acknowledgement after certain question types (unless it's already a message)
-    if (shouldAddAcknowledgement(b.kind, i, blocks.length)) {
+    // Add acknowledgement after certain question types (unless it's already a message or has custom branches)
+    if (!b.branch && shouldAddAcknowledgement(b.kind, i, blocks.length)) {
       const ackId = `ack-${order.length}`
       const ackNode = createAcknowledgement(b.kind, brief.tone)
       const ackSec = estimateNodeSeconds(ackNode)
@@ -37,96 +44,51 @@ function structureToConfig(blocks, brief) {
     }
   }
 
-  // Add conditional acknowledgements for ratings (positive vs negative feedback)
-  const ratingIds = order.filter(id => nodes[id].type === 'rating')
-  const conditionalAcks = {}
+  // No automatic rating branching - LLM decides all branching
 
-  for (const ratingId of ratingIds) {
-    // Find the acknowledgement that comes after this rating
-    const ratingIndex = order.indexOf(ratingId)
-    const nextId = order[ratingIndex + 1]
+  // Process LLM-generated branches (convert them to nodes)
+  const llmBranchNodes = {}
+  const branchTerminals = [] // Track branch terminal nodes that need linking
+  for (const [id, node] of Object.entries(nodes)) {
+    if (node._llmBranch) {
+      const branchInfo = processLLMBranch(node._llmBranch, id, nodes, brief)
+      llmBranchNodes[id] = branchInfo
 
-    if (nextId && nodes[nextId]?.tags?.includes('acknowledgement')) {
-      // Create two conditional acknowledgements: positive and negative
-      const positiveAckId = `${ratingId}-positive-ack`
-      const negativeAckId = `${ratingId}-negative-ack`
+      // Collect all terminal nodes from this branch
+      branchInfo.allTerminalNodes.forEach(terminalId => {
+        branchTerminals.push({ terminalId, parentId: id })
+      })
 
-      // Positive acknowledgement (rating 4-5)
-      nodes[positiveAckId] = {
-        type: 'message',
-        text: getPositiveRatingAck(brief.tone),
-        next: 'end', // Will be linked in next phase
-        tags: ['acknowledgement', 'positive']
-      }
-
-      // Negative acknowledgement (rating 1-2) with optional followup
-      const hasFollowup = Math.random() > 0.5 // 50% chance to add followup question
-      if (hasFollowup) {
-        const followupId = `${ratingId}-followup`
-        nodes[followupId] = {
-          type: 'text',
-          prompt: 'What could we improve to make your experience better?',
-          next: 'end',
-          tags: ['followup']
-        }
-        nodes[negativeAckId] = {
-          type: 'message',
-          text: getNegativeRatingAck(brief.tone),
-          next: followupId,
-          tags: ['acknowledgement', 'negative']
-        }
-      } else {
-        nodes[negativeAckId] = {
-          type: 'message',
-          text: getNegativeRatingAck(brief.tone),
-          next: 'end',
-          tags: ['acknowledgement', 'negative']
-        }
-      }
-
-      // Store the conditional routing info
-      conditionalAcks[nextId] = { positiveAckId, negativeAckId, ratingId }
+      delete node._llmBranch
     }
   }
 
-  // Link next pointers linearly, with conditional branches for rating acknowledgements
+  // Link next pointers linearly, with conditional branches from LLM
   for (let i = 0; i < order.length; i++) {
     const id = order[i]
     const node = nodes[id]
     if (node.type === 'end') continue
     const nextId = order[i + 1] || 'end'
 
-    // Check if this is a rating with conditional acknowledgements
-    if (node.type === 'rating' && conditionalAcks[nextId]) {
-      const { positiveAckId, negativeAckId } = conditionalAcks[nextId]
-      // Route based on rating: 1-2 = negative, 4-5 = positive, 3 = skip to next
+    // Check if this node has LLM-generated branches
+    if (llmBranchNodes[id]) {
+      const branchInfo = llmBranchNodes[id]
       node.next = {
-        if: [
-          { when: { lt: { answer: 3 } }, goto: negativeAckId },
-          { when: { gt: { answer: 3 } }, goto: positiveAckId }
-        ],
-        else: order[i + 2] || 'end' // Rating of 3 skips acknowledgement
+        if: branchInfo.conditions,
+        else: branchInfo.elseNodes[0] || nextId
       }
     } else {
       node.next = nextId
     }
   }
 
-  // Link the conditional acknowledgement nodes to continue the flow
-  for (const [ackId, info] of Object.entries(conditionalAcks)) {
-    const ackIndex = order.indexOf(ackId)
-    const continueId = order[ackIndex + 1] || 'end'
-
-    if (nodes[info.positiveAckId]) {
-      nodes[info.positiveAckId].next = continueId
-    }
-    // Negative ack already has next set (either to followup or continueId)
-    if (nodes[info.negativeAckId] && nodes[info.negativeAckId].next === 'end') {
-      const followupId = `${info.ratingId}-followup`
-      if (!nodes[followupId]) {
-        nodes[info.negativeAckId].next = continueId
-      } else {
-        nodes[followupId].next = continueId
+  // Link branch terminal nodes back to the main flow
+  for (const { terminalId, parentId } of branchTerminals) {
+    const parentIndex = order.indexOf(parentId)
+    if (parentIndex >= 0) {
+      const continueId = order[parentIndex + 1] || 'end'
+      if (nodes[terminalId]) {
+        nodes[terminalId].next = continueId
       }
     }
   }
@@ -141,6 +103,95 @@ function structureToConfig(blocks, brief) {
     flow: { start, nodes },
   }
 }
+
+/**
+ * Process LLM-generated branch rules into nodes and conditions
+ */
+function processLLMBranch(branchRule, parentId, nodes, brief) {
+  const conditions = []
+  const elseNodes = []
+  const allTerminalNodes = [] // All terminal nodes that need linking back to main flow
+
+  // Process each condition branch
+  if (branchRule.conditions && Array.isArray(branchRule.conditions)) {
+    branchRule.conditions.forEach((cond, idx) => {
+      // Convert the condition
+      const when = convertLLMCondition(cond.when)
+
+      // Convert the follow-up blocks to nodes
+      const followUpNodes = convertFollowUpBlocks(cond.then, `${parentId}-branch${idx}`, nodes, brief)
+
+      if (followUpNodes.length > 0 && when) {
+        conditions.push({
+          when,
+          goto: followUpNodes[0] // First node in the branch
+        })
+        // Last node in this branch is a terminal
+        allTerminalNodes.push(followUpNodes[followUpNodes.length - 1])
+      }
+    })
+  }
+
+  // Process else branch
+  if (branchRule.else && Array.isArray(branchRule.else)) {
+    const elseFollowUps = convertFollowUpBlocks(branchRule.else, `${parentId}-else`, nodes, brief)
+    elseNodes.push(...elseFollowUps)
+    // Last node in else branch is a terminal
+    if (elseFollowUps.length > 0) {
+      allTerminalNodes.push(elseFollowUps[elseFollowUps.length - 1])
+    }
+  }
+
+  return { conditions, elseNodes, allTerminalNodes }
+}
+
+/**
+ * Convert LLM condition format to internal format
+ */
+function convertLLMCondition(when) {
+  if (!when || typeof when !== 'object') return null
+
+  if (when.lessThan !== undefined) {
+    return { lt: { answer: when.lessThan } }
+  }
+  if (when.greaterThan !== undefined) {
+    return { gt: { answer: when.greaterThan } }
+  }
+  if (when.equals !== undefined) {
+    return { equals: { answer: when.equals } }
+  }
+  if (when.includes !== undefined) {
+    return { in: { answer: [when.includes] } }
+  }
+
+  return null
+}
+
+/**
+ * Convert follow-up blocks from LLM into nodes
+ */
+function convertFollowUpBlocks(blocks, prefix, nodes, brief) {
+  if (!Array.isArray(blocks)) return []
+
+  const nodeIds = []
+  blocks.forEach((block, idx) => {
+    const nodeId = `${prefix}-${idx}`
+    const node = toNode(block)
+    nodes[nodeId] = node
+    nodeIds.push(nodeId)
+
+    // Link nodes sequentially within the branch
+    if (idx > 0) {
+      const prevId = nodeIds[idx - 1]
+      nodes[prevId].next = nodeId
+    }
+  })
+
+  // Terminal node's next will be set in the main linking phase
+
+  return nodeIds
+}
+
 
 function kindPrefix(kind) {
   switch (kind) {
@@ -233,28 +284,5 @@ function getChoiceAcknowledgement(tone) {
   return messages[tone] || 'Thank you'
 }
 
-function getPositiveRatingAck(tone = ['warm']) {
-  const toneWord = tone[0] || 'warm'
-  const messages = {
-    warm: 'I\'m really glad to hear that!',
-    inviting: 'That\'s wonderful to hear, thank you!',
-    professional: 'Thank you for the positive feedback',
-    friendly: 'Great to hear! Thanks for sharing',
-    casual: 'Awesome, thanks!'
-  }
-  return messages[toneWord] || 'I\'m really glad to hear that!'
-}
-
-function getNegativeRatingAck(tone = ['warm']) {
-  const toneWord = tone[0] || 'warm'
-  const messages = {
-    warm: 'I\'m sorry to hear that. We\'ll work to do better',
-    inviting: 'Thank you for your honesty. We truly appreciate your feedback and will work to improve',
-    professional: 'We appreciate your feedback and will work to address your concerns',
-    friendly: 'Sorry to hear that! We\'ll definitely work on improving',
-    casual: 'Sorry about that. We\'ll do better'
-  }
-  return messages[toneWord] || 'I\'m sorry to hear that. We\'ll try to do better'
-}
 
 module.exports = { structureToConfig }

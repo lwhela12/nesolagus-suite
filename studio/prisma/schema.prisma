@@ -52,6 +52,10 @@ model Draft {
   // Generated output
   config          Json                      // SurveyConfig JSON
   flowLayout      Json?                     // Flow editor positions { blockId: { x, y } }
+  dashboardConfig Json?                     // Dashboard configuration JSON
+  dashboardLayout Json?                     // Visual layout metadata for dashboard builder
+  dashboardPreview Json?                    // Seeded preview analytics (summary, question stats, etc.)
+  dashboardPreviewResponses Json?           // Raw seeded survey responses for dashboard preview
   methodBrief     Json?                     // AI-extracted brief
 
   // Status tracking
@@ -97,6 +101,7 @@ model Deployment {
   vercelDeploymentId String?               // Vercel deployment ID
   vercelUrl       String?                   // Deployment URL
   configSnapshot  Json                      // Config at deployment time
+  dashboardSnapshot Json?                  // Dashboard config snapshot at deployment time
 
   // Status
   status          DeploymentStatus @default(PENDING)

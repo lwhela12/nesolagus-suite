@@ -144,21 +144,21 @@ export default function GeneratePage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800">
+    <div className="min-h-screen bg-gradient-to-b from-secondary to-background dark:from-card dark:to-background">
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
-        <div className="mb-8">
+        <div className="mb-8 animate-fade-in">
           <Link
             href="/"
-            className="inline-flex items-center text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 mb-4"
+            className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors mb-4"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back to Home
           </Link>
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
+          <h1 className="text-4xl font-bold text-foreground">
             Generate Survey
           </h1>
-          <p className="mt-2 text-lg text-gray-600 dark:text-gray-300">
+          <p className="mt-2 text-lg text-muted-foreground">
             Upload discovery and methodology documents to generate an AI-powered survey
           </p>
         </div>
@@ -166,20 +166,20 @@ export default function GeneratePage() {
         {/* Content */}
         <div className="max-w-4xl mx-auto">
           {state.step === "loading" && (
-            <Card>
+            <Card className="card-elevated animate-fade-in">
               <CardHeader>
                 <CardTitle>Loading Survey...</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="flex items-center justify-center py-8">
-                  <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900"></div>
+                  <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
                 </div>
               </CardContent>
             </Card>
           )}
 
           {state.step === "form" && (
-            <Card>
+            <Card className="card-elevated animate-fade-in">
               <CardHeader>
                 <CardTitle>Survey Generation</CardTitle>
                 <CardDescription>
@@ -194,7 +194,7 @@ export default function GeneratePage() {
           )}
 
           {state.step === "generating" && (
-            <Card>
+            <Card className="card-elevated animate-fade-in">
               <CardHeader>
                 <CardTitle>Generating Survey...</CardTitle>
                 <CardDescription>
@@ -211,7 +211,7 @@ export default function GeneratePage() {
           )}
 
           {state.step === "complete" && state.config && (
-            <div>
+            <div className="animate-fade-in">
               <GeneratedSurveyView
                 config={state.config}
                 draftId={state.draftId!}
@@ -221,15 +221,15 @@ export default function GeneratePage() {
           )}
 
           {state.step === "error" && (
-            <Card className="border-red-200 dark:border-red-800">
+            <Card className="card-elevated border-destructive/50 animate-fade-in">
               <CardHeader>
-                <CardTitle className="text-red-600 dark:text-red-400">
+                <CardTitle className="text-destructive">
                   Generation Failed
                 </CardTitle>
                 <CardDescription>{state.error}</CardDescription>
               </CardHeader>
               <CardContent>
-                <Button onClick={handleReset}>Try Again</Button>
+                <Button variant="gradient" onClick={handleReset}>Try Again</Button>
               </CardContent>
             </Card>
           )}

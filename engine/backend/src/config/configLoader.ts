@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { logger } from '../utils/logger';
+import type { DashboardConfig } from '@nesolagus/config';
 
 export interface SurveyConfig {
   survey: {
@@ -30,6 +31,7 @@ export interface SurveyConfig {
       [key: string]: any;
     };
   };
+  dashboard?: DashboardConfig;
 }
 
 export interface ThemeConfig {
@@ -64,6 +66,7 @@ export interface ThemeConfig {
 export interface ConfigLoader {
   getSurvey(): Promise<SurveyConfig>;
   getTheme(): Promise<ThemeConfig>;
+  getDashboard(): Promise<DashboardConfig | null>;
 }
 
 /**
@@ -178,6 +181,20 @@ export class FileConfigLoader implements ConfigLoader {
       return this.themeCache;
     } catch (error) {
       logger.error('Failed to load theme config:', error);
+      throw error;
+    }
+  }
+
+  async getDashboard(): Promise<DashboardConfig | null> {
+    try {
+      const surveyConfig = await this.getSurvey();
+      if (surveyConfig?.dashboard) {
+        return surveyConfig.dashboard;
+      }
+      logger.debug('Dashboard config not defined for current client');
+      return null;
+    } catch (error) {
+      logger.error('Failed to load dashboard config:', error);
       throw error;
     }
   }

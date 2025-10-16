@@ -26,10 +26,11 @@ export default async function ClientsPage() {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
-      {/* Header */}
-      <header className="border-b bg-white px-6 py-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
+    <div className="min-h-screen bg-gradient-to-b from-secondary to-background dark:from-card dark:to-background">
+      {/* Main Content */}
+      <main className="max-w-7xl mx-auto px-6 py-8">
+        {/* Header */}
+        <div className="mb-8 flex items-center justify-between animate-fade-in">
           <div className="flex items-center gap-4">
             <Link href="/">
               <Button variant="ghost" size="sm">
@@ -38,34 +39,34 @@ export default async function ClientsPage() {
               </Button>
             </Link>
             <div>
-              <h1 className="text-2xl font-bold">Clients</h1>
-              <p className="text-sm text-gray-500">
+              <h1 className="text-4xl font-bold text-foreground">Clients</h1>
+              <p className="text-sm text-muted-foreground mt-1">
                 {clients.length} {clients.length === 1 ? "client" : "clients"}
               </p>
             </div>
           </div>
 
           <Link href="/generate">
-            <Button>
+            <Button variant="gradient" size="lg">
               <Plus className="h-4 w-4 mr-2" />
               New Survey
             </Button>
           </Link>
         </div>
-      </header>
 
-      {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-6 py-8">
+        {/* Content */}
         {clients.length === 0 ? (
-          <Card>
+          <Card className="card-elevated animate-fade-in">
             <CardContent className="flex flex-col items-center justify-center py-12">
-              <div className="text-6xl mb-4">📋</div>
+              <div className="flex h-20 w-20 items-center justify-center rounded-full bg-secondary mb-4">
+                <FileText className="h-10 w-10 text-primary" />
+              </div>
               <h3 className="text-xl font-semibold mb-2">No clients yet</h3>
-              <p className="text-gray-600 mb-6">
+              <p className="text-muted-foreground mb-6">
                 Create your first survey to get started
               </p>
               <Link href="/generate">
-                <Button>
+                <Button variant="gradient" size="lg">
                   <Plus className="h-4 w-4 mr-2" />
                   Generate Survey
                 </Button>
@@ -74,8 +75,8 @@ export default async function ClientsPage() {
           </Card>
         ) : (
           <div className="space-y-6">
-            {clients.map((client) => (
-              <Card key={client.id}>
+            {clients.map((client, index) => (
+              <Card key={client.id} className="card-elevated hover-lift animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <div>
@@ -99,7 +100,7 @@ export default async function ClientsPage() {
                 </CardHeader>
                 <CardContent>
                   {client.drafts.length === 0 ? (
-                    <div className="text-center py-8 text-gray-500">
+                    <div className="text-center py-8 text-muted-foreground">
                       No surveys yet for this client
                     </div>
                   ) : (
@@ -107,10 +108,10 @@ export default async function ClientsPage() {
                       {client.drafts.map((draft) => (
                         <div
                           key={draft.id}
-                          className="flex items-center justify-between p-4 rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors"
+                          className="flex items-center justify-between p-4 rounded-lg border bg-card hover:bg-accent/50 transition-all"
                         >
                           <div className="flex items-center gap-4 flex-1">
-                            <FileText className="h-5 w-5 text-gray-400" />
+                            <FileText className="h-5 w-5 text-muted-foreground" />
                             <div className="flex-1">
                               <div className="flex items-center gap-2">
                                 <span className="font-medium">
@@ -119,18 +120,18 @@ export default async function ClientsPage() {
                                 <span
                                   className={`text-xs px-2 py-1 rounded-full ${
                                     draft.status === "GENERATED"
-                                      ? "bg-green-100 text-green-700"
+                                      ? "bg-primary/10 text-primary border border-primary/20"
                                       : draft.status === "GENERATING"
-                                      ? "bg-blue-100 text-blue-700"
+                                      ? "bg-blue-100 text-blue-700 dark:bg-blue-900/20 dark:text-blue-400"
                                       : draft.status === "VALIDATION_FAILED"
-                                      ? "bg-red-100 text-red-700"
-                                      : "bg-gray-100 text-gray-700"
+                                      ? "bg-destructive/10 text-destructive border border-destructive/20"
+                                      : "bg-muted text-muted-foreground"
                                   }`}
                                 >
                                   {draft.status}
                                 </span>
                               </div>
-                              <div className="flex items-center gap-4 text-sm text-gray-500 mt-1">
+                              <div className="flex items-center gap-4 text-sm text-muted-foreground mt-1">
                                 <span className="flex items-center gap-1">
                                   <Calendar className="h-3 w-3" />
                                   {new Date(draft.createdAt).toLocaleDateString()}
@@ -149,14 +150,14 @@ export default async function ClientsPage() {
                           <div className="flex items-center gap-2">
                             {draft.status === "GENERATED" && (
                               <>
-                                <Link href={`/preview/${draft.id}`}>
+                                <Link href={`/editor/${draft.id}/preview`}>
                                   <Button variant="outline" size="sm">
                                     Preview
                                   </Button>
                                 </Link>
-                                <Link href={`/generate?draft=${draft.id}`}>
+                                <Link href={`/editor/${draft.id}/flow`}>
                                   <Button variant="default" size="sm">
-                                    View Details
+                                    Open Editor
                                   </Button>
                                 </Link>
                               </>

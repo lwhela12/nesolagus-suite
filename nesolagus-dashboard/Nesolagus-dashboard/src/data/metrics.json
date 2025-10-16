@@ -1,0 +1,21 @@
+{
+  "kpis": {
+    "totalResponses": 1250,
+    "completedSurveys": 950,
+    "completionRatePct": 76,
+    "optInRatePct": 68,
+    "avgCompletionTimeMin": 18.5
+  },
+  "funnel": [
+    { "label": "Started",   "pct": 82 },
+    { "label": "Halfway",   "pct": 74 },
+    { "label": "Completed", "pct": 61 },
+    { "label": "Share OK",  "pct": 45 }
+  ],
+  "spectrum": [
+    { "label": "Cultural Connectors", "pct": 22 },
+    { "label": "Creative Catalysts",  "pct": 18 },
+    { "label": "Community Builders",  "pct": 16 },
+    { "label": "Heritage Keepers",    "pct": 15 }
+  ]
+}

@@ -1,0 +1,7 @@
+[
+  { "tag": "Motivation", "patterns": ["#1 most important", "most important thing", "why", "motivates", "impact"] },
+  { "tag": "Relationship", "patterns": ["type of relationship", "connect with the arts", "touchpoints", "how do you currently connect"] },
+  { "tag": "Awareness & Comms", "patterns": ["how would you prefer to hear", "updates", "communications", "stay in touch"] },
+  { "tag": "Perception", "patterns": ["role of arts", "how essential", "perception", "spectrum"] }
+]
+

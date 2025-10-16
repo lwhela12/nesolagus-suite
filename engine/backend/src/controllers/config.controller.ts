@@ -53,6 +53,38 @@ class ConfigController {
   }
 
   /**
+   * GET /api/config/dashboard
+   * Returns the dashboard configuration if available
+   */
+  async getDashboard(_req: Request, res: Response): Promise<void> {
+    try {
+      const configLoader = getConfigLoader();
+      const dashboard = await configLoader.getDashboard();
+
+      if (!dashboard) {
+        res.status(404).json({
+          success: false,
+          error: 'Dashboard configuration not found'
+        });
+        return;
+      }
+
+      res.json({
+        success: true,
+        data: dashboard
+      });
+    } catch (error: any) {
+      logger.error('Error loading dashboard config:', error);
+      res.status(500).json({
+        success: false,
+        error: 'Failed to load dashboard configuration',
+        message: error.message
+      });
+      return;
+    }
+  }
+
+  /**
    * GET /api/config/metadata
    * Returns combined metadata from both configs
    */

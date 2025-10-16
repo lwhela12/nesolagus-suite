@@ -1,0 +1,11 @@
+{
+  "brand": {
+    "name": "GHAC Admin"
+  },
+  "features": {
+    "showNarratives": true,
+    "showMap": false,
+    "showPersonas": false,
+    "showPdfExport": true
+  }
+}

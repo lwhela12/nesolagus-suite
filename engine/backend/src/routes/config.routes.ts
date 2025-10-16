@@ -9,6 +9,9 @@ router.get('/survey', configController.getSurvey);
 // Get theme/branding configuration
 router.get('/theme', configController.getTheme);
 
+// Get dashboard configuration
+router.get('/dashboard', configController.getDashboard);
+
 // Get combined metadata
 router.get('/metadata', configController.getMetadata);
 

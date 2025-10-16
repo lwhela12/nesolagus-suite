@@ -1,0 +1,406 @@
+"filename", "language", "Markdown", "YAML", "Shell Script", "JavaScript", "JSON", "TypeScript", "MS SQL", "JSON with Comments", "HTML", "XML", "TypeScript JSX", "PostCSS", "comment", "blank", "total"
+"/Users/lucaswhelan/nesolagus-suite/.claude/settings.local.json", "JSON", 0, 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 1, 22
+"/Users/lucaswhelan/nesolagus-suite/IMPLEMENTATION_STATUS.md", "Markdown", 237, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 333
+"/Users/lucaswhelan/nesolagus-suite/PHASE_1_COMPLETE.md", "Markdown", 330, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 93, 423
+"/Users/lucaswhelan/nesolagus-suite/README.md", "Markdown", 221, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 86, 307
+"/Users/lucaswhelan/nesolagus-suite/docs/DESIGN.md", "Markdown", 1170, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 242, 1412
+"/Users/lucaswhelan/nesolagus-suite/docs/PRD.md", "Markdown", 457, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 111, 568
+"/Users/lucaswhelan/nesolagus-suite/engine/DEPLOYMENT.md", "Markdown", 121, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 35, 156
+"/Users/lucaswhelan/nesolagus-suite/engine/PORT_CHANGES.md", "Markdown", 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 54
+"/Users/lucaswhelan/nesolagus-suite/engine/QUICK_START.md", "Markdown", 45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 62
+"/Users/lucaswhelan/nesolagus-suite/engine/README.md", "Markdown", 117, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 43, 160
+"/Users/lucaswhelan/nesolagus-suite/engine/TESTING.md", "Markdown", 326, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 115, 441
+"/Users/lucaswhelan/nesolagus-suite/engine/VERCEL_DEPLOYMENT.md", "Markdown", 138, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 38, 176
+"/Users/lucaswhelan/nesolagus-suite/engine/VERCEL_FRONTEND_SETUP.md", "Markdown", 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 23, 86
+"/Users/lucaswhelan/nesolagus-suite/engine/VIDEOASK_WEBHOOK_SETUP.md", "Markdown", 130, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 150
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/.eslintrc.json", "JSON with Comments", 0, 0, 0, 0, 0, 0, 0, 31, 0, 0, 0, 0, 0, 0, 31
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/check-all-blocks.sql", "MS SQL", 0, 0, 0, 0, 0, 0, 24, 0, 0, 0, 0, 0, 2, 1, 27
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/check-answer-schema.sql", "MS SQL", 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 2, 1, 5
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/check-answer-storage-detail.sql", "MS SQL", 0, 0, 0, 0, 0, 0, 15, 0, 0, 0, 0, 0, 1, 0, 16
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/check-answer-values.sql", "MS SQL", 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 2, 1, 25
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/check-b7-b9-specific.sql", "MS SQL", 0, 0, 0, 0, 0, 0, 23, 0, 0, 0, 0, 0, 3, 2, 28
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/check-b9-full-record.sql", "MS SQL", 0, 0, 0, 0, 0, 0, 23, 0, 0, 0, 0, 0, 2, 1, 26
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/check-b9-response.sql", "MS SQL", 0, 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 1, 0, 14
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/check-complex-answers.sql", "MS SQL", 0, 0, 0, 0, 0, 0, 30, 0, 0, 0, 0, 0, 3, 2, 35
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/check-data.sql", "MS SQL", 0, 0, 0, 0, 0, 0, 18, 0, 0, 0, 0, 0, 5, 4, 27
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/check-latest-b9.sql", "MS SQL", 0, 0, 0, 0, 0, 0, 28, 0, 0, 0, 0, 0, 2, 1, 31
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/check-metadata-complexity.sql", "MS SQL", 0, 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 2, 1, 19
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/check-metadata-content.sql", "MS SQL", 0, 0, 0, 0, 0, 0, 21, 0, 0, 0, 0, 0, 2, 1, 24
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/check-question-flow.sql", "MS SQL", 0, 0, 0, 0, 0, 0, 35, 0, 0, 0, 0, 0, 4, 1, 40
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/check-rating-answers.sql", "MS SQL", 0, 0, 0, 0, 0, 0, 24, 0, 0, 0, 0, 0, 3, 2, 29
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/check-rating-storage.sql", "MS SQL", 0, 0, 0, 0, 0, 0, 26, 0, 0, 0, 0, 0, 3, 1, 30
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/check-semantic-answers.sql", "MS SQL", 0, 0, 0, 0, 0, 0, 25, 0, 0, 0, 0, 0, 2, 1, 28
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/diagnose-question-mapping.sql", "MS SQL", 0, 0, 0, 0, 0, 0, 14, 0, 0, 0, 0, 0, 1, 0, 15
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/package-lock.json", "JSON", 0, 0, 0, 0, 7056, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7057
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/package.json", "JSON", 0, 0, 0, 0, 61, 0, 0, 0, 0, 0, 0, 0, 0, 1, 62
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/railway.json", "JSON", 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/config/configLoader.ts", "TypeScript", 0, 0, 0, 0, 0, 176, 0, 0, 0, 0, 0, 0, 33, 29, 238
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/controllers/admin.controller.ts", "TypeScript", 0, 0, 0, 0, 0, 943, 0, 0, 0, 0, 0, 0, 44, 103, 1090
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/controllers/config.controller.ts", "TypeScript", 0, 0, 0, 0, 0, 92, 0, 0, 0, 0, 0, 0, 19, 11, 122
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/controllers/preview.controller.ts", "TypeScript", 0, 0, 0, 0, 0, 378, 0, 0, 0, 0, 0, 0, 65, 73, 516
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/controllers/survey.controller.ts", "TypeScript", 0, 0, 0, 0, 0, 123, 0, 0, 0, 0, 0, 0, 12, 28, 163
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/database/init.sql", "MS SQL", 0, 0, 0, 0, 0, 0, 61, 0, 0, 0, 0, 0, 9, 8, 78
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/database/initialize.ts", "TypeScript", 0, 0, 0, 0, 0, 87, 0, 0, 0, 0, 0, 0, 7, 15, 109
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/database/seed.sql", "MS SQL", 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 1, 0, 8
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/database/seed.ts", "TypeScript", 0, 0, 0, 0, 0, 26, 0, 0, 0, 0, 0, 0, 1, 7, 34
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/database/survey-structure.json", "JSON", 0, 0, 0, 0, 1570, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1571
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/index.ts", "TypeScript", 0, 0, 0, 0, 0, 88, 0, 0, 0, 0, 0, 0, 11, 15, 114
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/middleware/auth.ts", "TypeScript", 0, 0, 0, 0, 0, 39, 0, 0, 0, 0, 0, 0, 2, 8, 49
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/middleware/clerkAuth.ts", "TypeScript", 0, 0, 0, 0, 0, 74, 0, 0, 0, 0, 0, 0, 8, 15, 97
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/middleware/errorHandler.ts", "TypeScript", 0, 0, 0, 0, 0, 37, 0, 0, 0, 0, 0, 0, 1, 7, 45
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/middleware/validateRequest.ts", "TypeScript", 0, 0, 0, 0, 0, 23, 0, 0, 0, 0, 0, 0, 0, 4, 27
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/routes/admin-mock.routes.ts", "TypeScript", 0, 0, 0, 0, 0, 133, 0, 0, 0, 0, 0, 0, 10, 23, 166
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/routes/admin.routes.ts", "TypeScript", 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 4, 8, 34
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/routes/clerkAdmin.routes.ts", "TypeScript", 0, 0, 0, 0, 0, 15, 0, 0, 0, 0, 0, 0, 3, 6, 24
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/routes/config.routes.ts", "TypeScript", 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 4, 7, 19
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/routes/preview.routes.ts", "TypeScript", 0, 0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 9, 8, 37
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/routes/survey.routes.ts", "TypeScript", 0, 0, 0, 0, 0, 29, 0, 0, 0, 0, 0, 0, 4, 6, 39
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/routes/webhook.routes.ts", "TypeScript", 0, 0, 0, 0, 0, 249, 0, 0, 0, 0, 0, 0, 25, 24, 298
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/services/conditionalRouting.ts", "TypeScript", 0, 0, 0, 0, 0, 125, 0, 0, 0, 0, 0, 0, 62, 31, 218
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/services/survey.service.ts", "TypeScript", 0, 0, 0, 0, 0, 239, 0, 0, 0, 0, 0, 0, 13, 29, 281
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/services/surveyEngine.ts", "TypeScript", 0, 0, 0, 0, 0, 503, 0, 0, 0, 0, 0, 0, 50, 69, 622
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/utils/logger.ts", "TypeScript", 0, 0, 0, 0, 0, 36, 0, 0, 0, 0, 0, 0, 0, 9, 45
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/validators/admin.validators.ts", "TypeScript", 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 1, 6
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/validators/survey.validators.ts", "TypeScript", 0, 0, 0, 0, 0, 46, 0, 0, 0, 0, 0, 0, 2, 4, 52
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/tsconfig.json", "JSON with Comments", 0, 0, 0, 0, 0, 0, 0, 30, 0, 0, 0, 0, 0, 0, 30
+"/Users/lucaswhelan/nesolagus-suite/engine/config/clients/README.md", "Markdown", 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 59
+"/Users/lucaswhelan/nesolagus-suite/engine/config/clients/acme-corp.json", "JSON", 0, 0, 0, 0, 179, 0, 0, 0, 0, 0, 0, 0, 0, 0, 179
+"/Users/lucaswhelan/nesolagus-suite/engine/config/clients/default.json", "JSON", 0, 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 1, 49
+"/Users/lucaswhelan/nesolagus-suite/engine/config/clients/example-complex.json", "JSON", 0, 0, 0, 0, 233, 0, 0, 0, 0, 0, 0, 0, 0, 1, 234
+"/Users/lucaswhelan/nesolagus-suite/engine/config/clients/example-simple.json", "JSON", 0, 0, 0, 0, 75, 0, 0, 0, 0, 0, 0, 0, 0, 1, 76
+"/Users/lucaswhelan/nesolagus-suite/engine/config/schema/survey.schema.json", "JSON", 0, 0, 0, 0, 120, 0, 0, 0, 0, 0, 0, 0, 0, 1, 121
+"/Users/lucaswhelan/nesolagus-suite/engine/config/schema/theme.schema.json", "JSON", 0, 0, 0, 0, 114, 0, 0, 0, 0, 0, 0, 0, 0, 1, 115
+"/Users/lucaswhelan/nesolagus-suite/engine/config/survey.example.json", "JSON", 0, 0, 0, 0, 130, 0, 0, 0, 0, 0, 0, 0, 0, 1, 131
+"/Users/lucaswhelan/nesolagus-suite/engine/config/theme.example.json", "JSON", 0, 0, 0, 0, 79, 0, 0, 0, 0, 0, 0, 0, 0, 1, 80
+"/Users/lucaswhelan/nesolagus-suite/engine/docker-compose.yml", "YAML", 0, 69, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 73
+"/Users/lucaswhelan/nesolagus-suite/engine/docs/CONFIGURATION_GUIDE.md", "Markdown", 452, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 122, 574
+"/Users/lucaswhelan/nesolagus-suite/engine/docs/CONVERSION.md", "Markdown", 559, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 119, 678
+"/Users/lucaswhelan/nesolagus-suite/engine/docs/DEPLOYMENT_GUIDE.md", "Markdown", 461, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 153, 614
+"/Users/lucaswhelan/nesolagus-suite/engine/docs/QUESTION_TYPES.md", "Markdown", 522, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 142, 664
+"/Users/lucaswhelan/nesolagus-suite/engine/docs/SETUP_WIZARD_GUIDE.md", "Markdown", 134, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 61, 195
+"/Users/lucaswhelan/nesolagus-suite/engine/examples/simple-feedback/theme.json", "JSON", 0, 0, 0, 0, 25, 0, 0, 0, 0, 0, 0, 0, 0, 1, 26
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/.eslintrc.json", "JSON with Comments", 0, 0, 0, 0, 0, 0, 0, 45, 0, 0, 0, 0, 0, 0, 45
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/index.html", "HTML", 0, 0, 0, 0, 0, 0, 0, 0, 30, 0, 0, 0, 2, 4, 36
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/package-lock.json", "JSON", 0, 0, 0, 0, 9906, 0, 0, 0, 0, 0, 0, 0, 0, 1, 9907
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/package.json", "JSON", 0, 0, 0, 0, 67, 0, 0, 0, 0, 0, 0, 0, 0, 1, 68
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/App.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 68, 0, 4, 7, 79
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/AdminOverview.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 56, 0, 0, 12, 68
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/Analytics.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 391, 0, 2, 51, 444
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/ClerkPrivateRoute.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 0, 2, 6, 25
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/PrivateRoute.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 14, 0, 0, 5, 19
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/QuestionBreakdown.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 238, 0, 0, 30, 268
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/ResponseDetail.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 369, 0, 0, 46, 415
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/ResponsesList.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 390, 0, 3, 40, 433
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/dashboard/DashboardRenderer.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 256, 0, 0, 21, 277
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/dashboard/helpers.ts", "TypeScript", 0, 0, 0, 0, 0, 61, 0, 0, 0, 0, 0, 0, 0, 9, 70
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/dashboard/types.ts", "TypeScript", 0, 0, 0, 0, 0, 39, 0, 0, 0, 0, 0, 0, 0, 8, 47
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/dashboard/useDashboardConfig.ts", "TypeScript", 0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 9, 59
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/dashboard/useDashboardData.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 76, 0, 0, 15, 91
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/ui/Badge.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 25, 0, 1, 4, 30
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/ui/Buttons.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 47, 0, 1, 4, 52
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/ui/Card.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 0, 1, 6, 28
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/ui/Spinner.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 1, 4, 17
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/ui/Table.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 35, 0, 1, 6, 42
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/ui/icons.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 91, 0, 1, 15, 107
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/ErrorBoundary.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 89, 0, 1, 16, 106
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/ChatInterface.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 356, 0, 21, 50, 427
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/ChatMessage.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 351, 0, 23, 35, 409
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/ProgressBar.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 170, 0, 1, 17, 188
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionRenderer.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 1, 17, 81
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/ContactForm.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 92, 0, 0, 13, 105
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/Demographics.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 292, 0, 6, 31, 329
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/FinalMessage.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 65, 0, 0, 6, 71
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/MixedMedia.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 207, 0, 3, 21, 231
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/MultiChoice.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 161, 0, 6, 17, 184
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/QuickReply.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 139, 0, 1, 15, 155
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/Ranking.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 317, 0, 2, 30, 349
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/Scale.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 159, 0, 2, 18, 179
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/SemanticDifferential.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 146, 0, 0, 17, 163
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/SingleChoice.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 234, 0, 4, 21, 259
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/TextInput.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 148, 0, 2, 14, 164
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/VideoAskQuestion.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 169, 0, 6, 26, 201
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/VideoAutoplay.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 324, 0, 15, 33, 372
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/VideoRecorder.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 150, 0, 3, 18, 171
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/QuestionTypes/YesNo.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 57, 0, 0, 6, 63
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/TypingIndicator.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 89, 0, 1, 9, 99
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Survey/WelcomeScreen.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 152, 0, 0, 18, 170
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/contexts/ConfigContext.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 119, 0, 9, 18, 146
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/contexts/DynamicThemeProvider.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 29, 0, 5, 5, 39
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/hooks/redux.ts", "TypeScript", 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 1, 5
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/index.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 0, 0, 2, 13
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/pages/AdminDashboard.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 203, 0, 6, 29, 238
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/pages/AdminDisabled.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 99, 0, 0, 15, 114
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/pages/AdminLogin.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 146, 0, 0, 20, 166
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/pages/ClerkSignIn.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 75, 0, 0, 7, 82
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/pages/ClerkSignUp.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 75, 0, 0, 7, 82
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/pages/SurveyPage.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 219, 0, 3, 26, 248
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/services/api.ts", "TypeScript", 0, 0, 0, 0, 0, 220, 0, 0, 0, 0, 0, 0, 9, 34, 263
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/services/clerkApi.ts", "TypeScript", 0, 0, 0, 0, 0, 64, 0, 0, 0, 0, 0, 0, 7, 17, 88
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/store/slices/adminSlice.ts", "TypeScript", 0, 0, 0, 0, 0, 70, 0, 0, 0, 0, 0, 0, 2, 7, 79
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/store/slices/surveySlice.ts", "TypeScript", 0, 0, 0, 0, 0, 212, 0, 0, 0, 0, 0, 0, 13, 13, 238
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/store/store.ts", "TypeScript", 0, 0, 0, 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 2, 13
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/styled.d.ts", "TypeScript", 0, 0, 0, 0, 0, 107, 0, 0, 0, 0, 0, 0, 0, 1, 108
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/styles/GlobalStyle.ts", "TypeScript", 0, 0, 0, 0, 0, 168, 0, 0, 0, 0, 0, 0, 1, 1, 170
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/styles/theme.ts", "TypeScript", 0, 0, 0, 0, 0, 104, 0, 0, 0, 0, 0, 0, 1, 0, 105
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/types/survey.ts", "TypeScript", 0, 0, 0, 0, 0, 81, 0, 0, 0, 0, 0, 0, 0, 7, 88
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/utils/questionTextMapping.ts", "TypeScript", 0, 0, 0, 0, 0, 177, 0, 0, 0, 0, 0, 0, 29, 25, 231
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/utils/tracking.ts", "TypeScript", 0, 0, 0, 0, 0, 59, 0, 0, 0, 0, 0, 0, 2, 11, 72
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/vite-env.d.ts", "TypeScript", 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 2, 2, 11
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/tsconfig.json", "JSON with Comments", 0, 0, 0, 0, 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 24
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/tsconfig.node.json", "JSON", 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/vite.config.ts", "TypeScript", 0, 0, 0, 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 1, 16
+"/Users/lucaswhelan/nesolagus-suite/engine/package-lock.json", "JSON", 0, 0, 0, 0, 867, 0, 0, 0, 0, 0, 0, 0, 0, 1, 868
+"/Users/lucaswhelan/nesolagus-suite/engine/package.json", "JSON", 0, 0, 0, 0, 45, 0, 0, 0, 0, 0, 0, 0, 0, 1, 46
+"/Users/lucaswhelan/nesolagus-suite/engine/scripts/setup-wizard.js", "JavaScript", 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 13, 27, 295
+"/Users/lucaswhelan/nesolagus-suite/engine/scripts/start-dev.sh", "Shell Script", 0, 0, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 11, 69
+"/Users/lucaswhelan/nesolagus-suite/engine/scripts/start-docker.sh", "Shell Script", 0, 0, 28, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 10, 45
+"/Users/lucaswhelan/nesolagus-suite/engine/scripts/start-local.sh", "Shell Script", 0, 0, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 13, 76
+"/Users/lucaswhelan/nesolagus-suite/engine/scripts/test-webhook.js", "JavaScript", 0, 0, 0, 89, 0, 0, 0, 0, 0, 0, 0, 0, 6, 18, 113
+"/Users/lucaswhelan/nesolagus-suite/engine/scripts/validate-config.js", "JavaScript", 0, 0, 0, 119, 0, 0, 0, 0, 0, 0, 0, 0, 3, 20, 142
+"/Users/lucaswhelan/nesolagus-suite/engine/vercel.json", "JSON", 0, 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 1, 22
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/README.md", "Markdown", 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 14, 37
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/docs/DASHBOARD_STRATEGIC_ANALYSIS.md", "Markdown", 399, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 139, 538
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/docs/DUAL_DASHBOARD_STRATEGY.md", "Markdown", 630, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 102, 732
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/docs/SESSION_LOG.md", "Markdown", 901, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 248, 1149
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/docs/community-intelligence-positioning.md", "Markdown", 111, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 43, 154
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/docs/discovery-recap.md", "Markdown", 129, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 26, 155
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/docs/product-brief.md", "Markdown", 38, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 48
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/eslint.config.mjs", "JavaScript", 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 26
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/next.config.ts", "TypeScript", 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 1, 3, 8
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/package-lock.json", "JSON", 0, 0, 0, 0, 7381, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7382
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/package.json", "JSON", 0, 0, 0, 0, 34, 0, 0, 0, 0, 0, 0, 0, 0, 1, 35
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/postcss.config.mjs", "JavaScript", 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/public/data/ct_towns.geojson", "JSON", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/public/data/ct_zcta_by_town.geojson", "JSON", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/public/data/ct_zctas.geojson", "JSON", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/public/file.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/public/globe.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/public/next.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/public/vercel.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/public/window.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/scripts/inspect-xlsx.js", "JavaScript", 0, 0, 0, 38, 0, 0, 0, 0, 0, 0, 0, 0, 2, 8, 48
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/analysis/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 53, 0, 3, 12, 68
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/analytics/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 764, 0, 3, 60, 827
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/api/export/[type]/route.ts", "TypeScript", 0, 0, 0, 0, 0, 53, 0, 0, 0, 0, 0, 0, 1, 10, 64
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/api/export/csv/route.ts", "TypeScript", 0, 0, 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 5, 5, 34
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/api/export/engagement-metrics/route.ts", "TypeScript", 0, 0, 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 5, 5, 34
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/api/export/narratives/route.ts", "TypeScript", 0, 0, 0, 0, 0, 61, 0, 0, 0, 0, 0, 0, 0, 6, 67
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/api/media/audio/route.ts", "TypeScript", 0, 0, 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 0, 2, 26
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/api/media/methodology/route.ts", "TypeScript", 0, 0, 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 0, 2, 26
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/api/metrics/route.ts", "TypeScript", 0, 0, 0, 0, 0, 166, 0, 0, 0, 0, 0, 0, 11, 16, 193
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/api/models/distribution/route.ts", "TypeScript", 0, 0, 0, 0, 0, 57, 0, 0, 0, 0, 0, 0, 0, 4, 61
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/api/narratives/route.ts", "TypeScript", 0, 0, 0, 0, 0, 86, 0, 0, 0, 0, 0, 0, 5, 12, 103
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/api/participants/route.ts", "TypeScript", 0, 0, 0, 0, 0, 154, 0, 0, 0, 0, 0, 0, 13, 12, 179
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/api/personas/export/route.ts", "TypeScript", 0, 0, 0, 0, 0, 68, 0, 0, 0, 0, 0, 0, 3, 10, 81
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/api/question-breakdown/route.ts", "TypeScript", 0, 0, 0, 0, 0, 118, 0, 0, 0, 0, 0, 0, 11, 20, 149
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/api/rank/priorities/route.ts", "TypeScript", 0, 0, 0, 0, 0, 59, 0, 0, 0, 0, 0, 0, 0, 3, 62
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/community-pulse/loading.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 1, 13
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/community-pulse/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 394, 0, 15, 32, 441
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/globals.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 22, 0, 5, 27
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/layout.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 29, 0, 0, 4, 33
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/not-found.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 0, 0, 1, 17
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 516, 0, 12, 23, 551
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/personas/[id]/email/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 461, 0, 9, 17, 487
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/personas/[id]/prospects/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 433, 0, 17, 24, 474
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/personas/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 659, 0, 26, 31, 716
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/print/layout.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 0, 1, 3, 31
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/print/report/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 279, 0, 10, 22, 311
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/reports/loading.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 1, 13
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/reports/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 111, 0, 0, 14, 125
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/robots.txt/route.ts", "TypeScript", 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 3, 16
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/settings/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1070, 0, 10, 54, 1134
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/splash-page-backup.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 165, 0, 7, 12, 184
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/splash/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 184, 0, 7, 17, 208
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/strategic-plan/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 445, 0, 10, 21, 476
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/zzz/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 1, 4
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/ChartFunnel.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 29, 0, 2, 4, 35
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/ClientThemeVars.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 0, 2, 6, 25
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/DownloadPDF.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 0, 0, 2, 13
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/SpectrumDonut.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 0, 2, 5, 31
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/auth/LoginWidget.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 95, 0, 65, 9, 169
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/auth/MONOREPO_USAGE.md", "Markdown", 206, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 49, 255
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/auth/README.md", "Markdown", 169, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 55, 224
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/auth/index.ts", "TypeScript", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 5, 2, 8
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/ghac-dashboard.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 80, 0, 8, 7, 95
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/maps/CTMap.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 66, 0, 2, 8, 76
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/maps/CTParticipantMap.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 244, 0, 16, 18, 278
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/print/AutoPrint.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 0, 0, 4, 15
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/ui/ClientThemeVars.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 26, 0, 5, 6, 37
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/ui/app-header.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 0, 1, 3, 22
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/ui/community-spectrum.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 71, 0, 0, 5, 76
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/ui/engagement-funnel.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 65, 0, 4, 9, 78
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/ui/global-header.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 37, 0, 3, 4, 44
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/ui/gradient-bar.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39, 0, 0, 4, 43
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/ui/primary-button.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 0, 5, 6, 42
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/ui/sidebar.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 127, 0, 11, 9, 147
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/data/archetype_models.json", "JSON", 0, 0, 0, 0, 106, 0, 0, 0, 0, 0, 0, 0, 0, 2, 108
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/data/archetype_rules.json", "JSON", 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 2, 8
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/data/archetypes.json", "JSON", 0, 0, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 2, 20
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/data/client.config.json", "JSON", 0, 0, 0, 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 1, 12
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/data/methodology.json", "JSON", 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 2, 8
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/data/metrics.json", "JSON", 0, 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 1, 22
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/data/narratives-export.json", "JSON", 0, 0, 0, 0, 398, 0, 0, 0, 0, 0, 0, 0, 0, 0, 398
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/data/themes.json", "JSON", 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 2, 8
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/data/zip_centroids.ts", "TypeScript", 0, 0, 0, 0, 0, 26, 0, 0, 0, 0, 0, 0, 1, 2, 29
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/data/zip_to_city.json", "JSON", 0, 0, 0, 0, 64, 0, 0, 0, 0, 0, 0, 0, 0, 1, 65
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/lib/comprehensive-xlsx-parser.ts", "TypeScript", 0, 0, 0, 0, 0, 262, 0, 0, 0, 0, 0, 0, 26, 55, 343
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/lib/data.ts", "TypeScript", 0, 0, 0, 0, 0, 125, 0, 0, 0, 0, 0, 0, 6, 8, 139
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/lib/xlsx-parser.ts", "TypeScript", 0, 0, 0, 0, 0, 135, 0, 0, 0, 0, 0, 0, 3, 30, 168
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/tsconfig.json", "JSON with Comments", 0, 0, 0, 0, 0, 0, 0, 43, 0, 0, 0, 0, 0, 1, 44
+"/Users/lucaswhelan/nesolagus-suite/package-lock.json", "JSON", 0, 0, 0, 0, 17385, 0, 0, 0, 0, 0, 0, 0, 0, 1, 17386
+"/Users/lucaswhelan/nesolagus-suite/package.json", "JSON", 0, 0, 0, 0, 47, 0, 0, 0, 0, 0, 0, 0, 0, 1, 48
+"/Users/lucaswhelan/nesolagus-suite/packages/config/README.md", "Markdown", 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 42
+"/Users/lucaswhelan/nesolagus-suite/packages/config/package.json", "JSON", 0, 0, 0, 0, 23, 0, 0, 0, 0, 0, 0, 0, 0, 1, 24
+"/Users/lucaswhelan/nesolagus-suite/packages/dashboard-widgets/package.json", "JSON", 0, 0, 0, 0, 29, 0, 0, 0, 0, 0, 0, 0, 0, 1, 30
+"/Users/lucaswhelan/nesolagus-suite/packages/dashboard-widgets/src/components/FunnelChart.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 92, 0, 0, 12, 104
+"/Users/lucaswhelan/nesolagus-suite/packages/dashboard-widgets/src/components/InsightHighlight.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 93, 0, 0, 9, 102
+"/Users/lucaswhelan/nesolagus-suite/packages/dashboard-widgets/src/components/KpiStatCard.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 159, 0, 0, 5, 164
+"/Users/lucaswhelan/nesolagus-suite/packages/dashboard-widgets/src/components/SegmentDonut.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 151, 0, 0, 13, 164
+"/Users/lucaswhelan/nesolagus-suite/packages/dashboard-widgets/src/index.ts", "TypeScript", 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 1, 10
+"/Users/lucaswhelan/nesolagus-suite/packages/dashboard-widgets/src/theme.ts", "TypeScript", 0, 0, 0, 0, 0, 38, 0, 0, 0, 0, 0, 0, 0, 4, 42
+"/Users/lucaswhelan/nesolagus-suite/packages/dashboard-widgets/tsconfig.build.json", "JSON", 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 1, 11
+"/Users/lucaswhelan/nesolagus-suite/packages/dashboard-widgets/tsconfig.json", "JSON with Comments", 0, 0, 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 1, 17
+"/Users/lucaswhelan/nesolagus-suite/packages/survey-components/README.md", "Markdown", 62, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 83
+"/Users/lucaswhelan/nesolagus-suite/packages/survey-components/package.json", "JSON", 0, 0, 0, 0, 34, 0, 0, 0, 0, 0, 0, 0, 0, 1, 35
+"/Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/ProgressBar.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 170, 0, 1, 17, 188
+"/Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionRenderer.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 63, 0, 2, 17, 82
+"/Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionTypes/ContactForm.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 92, 0, 0, 13, 105
+"/Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionTypes/Demographics.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 292, 0, 6, 31, 329
+"/Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionTypes/FinalMessage.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 65, 0, 0, 6, 71
+"/Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionTypes/MixedMedia.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 207, 0, 3, 21, 231
+"/Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionTypes/MultiChoice.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 161, 0, 6, 17, 184
+"/Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionTypes/QuickReply.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 139, 0, 1, 15, 155
+"/Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionTypes/Scale.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 159, 0, 2, 18, 179
+"/Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionTypes/SemanticDifferential.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 146, 0, 0, 17, 163
+"/Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionTypes/SingleChoice.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 239, 0, 4, 21, 264
+"/Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionTypes/TextInput.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 148, 0, 2, 14, 164
+"/Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionTypes/VideoAskQuestion.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 169, 0, 6, 26, 201
+"/Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionTypes/VideoAutoplay.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 324, 0, 15, 33, 372
+"/Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionTypes/VideoRecorder.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 152, 0, 3, 18, 173
+"/Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/QuestionTypes/YesNo.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 57, 0, 0, 6, 63
+"/Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/TypingIndicator.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 91, 0, 1, 10, 102
+"/Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/components/WelcomeScreen.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 154, 0, 0, 17, 171
+"/Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/index.ts", "TypeScript", 0, 0, 0, 0, 0, 19, 0, 0, 0, 0, 0, 0, 5, 3, 27
+"/Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/types/styled.d.ts", "TypeScript", 0, 0, 0, 0, 0, 71, 0, 0, 0, 0, 0, 0, 0, 2, 73
+"/Users/lucaswhelan/nesolagus-suite/packages/survey-components/src/types/survey.ts", "TypeScript", 0, 0, 0, 0, 0, 81, 0, 0, 0, 0, 0, 0, 0, 7, 88
+"/Users/lucaswhelan/nesolagus-suite/packages/survey-components/tsconfig.json", "JSON with Comments", 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 1, 23
+"/Users/lucaswhelan/nesolagus-suite/scripts/README.md", "Markdown", 237, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 90, 327
+"/Users/lucaswhelan/nesolagus-suite/scripts/deploy-client.sh", "Shell Script", 0, 0, 113, 0, 0, 0, 0, 0, 0, 0, 0, 0, 27, 32, 172
+"/Users/lucaswhelan/nesolagus-suite/scripts/generate.js", "JavaScript", 0, 0, 0, 210, 0, 0, 0, 0, 0, 0, 0, 0, 17, 39, 266
+"/Users/lucaswhelan/nesolagus-suite/scripts/test-client.sh", "Shell Script", 0, 0, 70, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 18, 105
+"/Users/lucaswhelan/nesolagus-suite/scripts/validate.js", "JavaScript", 0, 0, 0, 268, 0, 0, 0, 0, 0, 0, 0, 0, 28, 48, 344
+"/Users/lucaswhelan/nesolagus-suite/studio/DOCKER_SETUP.md", "Markdown", 222, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 105, 327
+"/Users/lucaswhelan/nesolagus-suite/studio/PHASE_2.1_COMPLETE.md", "Markdown", 263, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 82, 345
+"/Users/lucaswhelan/nesolagus-suite/studio/PHASE_2.2_COMPLETE.md", "Markdown", 375, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 471
+"/Users/lucaswhelan/nesolagus-suite/studio/PHASE_2_PLAN.md", "Markdown", 318, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 92, 410
+"/Users/lucaswhelan/nesolagus-suite/studio/README.md", "Markdown", 128, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 159
+"/Users/lucaswhelan/nesolagus-suite/studio/SETUP.md", "Markdown", 214, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 87, 301
+"/Users/lucaswhelan/nesolagus-suite/studio/app/api/clients/[slug]/theme/route.ts", "TypeScript", 0, 0, 0, 0, 0, 106, 0, 0, 0, 0, 0, 0, 11, 12, 129
+"/Users/lucaswhelan/nesolagus-suite/studio/app/api/drafts/[id]/preview-data/route.ts", "TypeScript", 0, 0, 0, 0, 0, 103, 0, 0, 0, 0, 0, 0, 0, 10, 113
+"/Users/lucaswhelan/nesolagus-suite/studio/app/api/drafts/[id]/preview-data/seed/route.ts", "TypeScript", 0, 0, 0, 0, 0, 82, 0, 0, 0, 0, 0, 0, 0, 9, 91
+"/Users/lucaswhelan/nesolagus-suite/studio/app/api/drafts/[id]/route.ts", "TypeScript", 0, 0, 0, 0, 0, 167, 0, 0, 0, 0, 0, 0, 1, 17, 185
+"/Users/lucaswhelan/nesolagus-suite/studio/app/api/generate/route.ts", "TypeScript", 0, 0, 0, 0, 0, 157, 0, 0, 0, 0, 0, 0, 22, 21, 200
+"/Users/lucaswhelan/nesolagus-suite/studio/app/clients/[slug]/theme/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 48, 0, 3, 7, 58
+"/Users/lucaswhelan/nesolagus-suite/studio/app/clients/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 184, 0, 4, 5, 193
+"/Users/lucaswhelan/nesolagus-suite/studio/app/dashboard/[id]/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 104, 0, 0, 10, 114
+"/Users/lucaswhelan/nesolagus-suite/studio/app/flow/[id]/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 89, 0, 2, 10, 101
+"/Users/lucaswhelan/nesolagus-suite/studio/app/generate/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 205, 0, 6, 30, 241
+"/Users/lucaswhelan/nesolagus-suite/studio/app/layout.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 34, 0, 0, 4, 38
+"/Users/lucaswhelan/nesolagus-suite/studio/app/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 104, 0, 4, 8, 116
+"/Users/lucaswhelan/nesolagus-suite/studio/app/preview/[draftId]/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 45, 0, 2, 8, 55
+"/Users/lucaswhelan/nesolagus-suite/studio/components/dashboard/CanvasWidgetPreview.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 113, 0, 0, 10, 123
+"/Users/lucaswhelan/nesolagus-suite/studio/components/dashboard/DashboardCanvas.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 221, 0, 4, 22, 247
+"/Users/lucaswhelan/nesolagus-suite/studio/components/dashboard/DashboardEditor.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 245, 0, 5, 20, 270
+"/Users/lucaswhelan/nesolagus-suite/studio/components/dashboard/WidgetInspector.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 325, 0, 0, 25, 350
+"/Users/lucaswhelan/nesolagus-suite/studio/components/dashboard/catalog.ts", "TypeScript", 0, 0, 0, 0, 0, 165, 0, 0, 0, 0, 0, 0, 0, 10, 175
+"/Users/lucaswhelan/nesolagus-suite/studio/components/dashboard/palette.ts", "TypeScript", 0, 0, 0, 0, 0, 34, 0, 0, 0, 0, 0, 0, 0, 3, 37
+"/Users/lucaswhelan/nesolagus-suite/studio/components/flow/AIRegenerationPanel.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 172, 0, 3, 21, 196
+"/Users/lucaswhelan/nesolagus-suite/studio/components/flow/BlockEditPanel.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 160, 0, 2, 16, 178
+"/Users/lucaswhelan/nesolagus-suite/studio/components/flow/BlockNode.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 86, 0, 11, 12, 109
+"/Users/lucaswhelan/nesolagus-suite/studio/components/flow/BlockTypeSelector.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 90, 0, 0, 9, 99
+"/Users/lucaswhelan/nesolagus-suite/studio/components/flow/ConditionalLogicBuilder.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 260, 0, 4, 23, 287
+"/Users/lucaswhelan/nesolagus-suite/studio/components/flow/FlowEditor.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 300, 0, 27, 53, 380
+"/Users/lucaswhelan/nesolagus-suite/studio/components/flow/editors/ChoiceEditor.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 139, 0, 0, 14, 153
+"/Users/lucaswhelan/nesolagus-suite/studio/components/flow/editors/MessageEditor.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 71, 0, 0, 7, 78
+"/Users/lucaswhelan/nesolagus-suite/studio/components/flow/editors/ScaleEditor.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 70, 0, 0, 7, 77
+"/Users/lucaswhelan/nesolagus-suite/studio/components/flow/editors/TextInputEditor.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 54, 0, 0, 6, 60
+"/Users/lucaswhelan/nesolagus-suite/studio/components/flow/layout.ts", "TypeScript", 0, 0, 0, 0, 0, 284, 0, 0, 0, 0, 0, 0, 49, 45, 378
+"/Users/lucaswhelan/nesolagus-suite/studio/components/flow/types.ts", "TypeScript", 0, 0, 0, 0, 0, 116, 0, 0, 0, 0, 0, 0, 17, 8, 141
+"/Users/lucaswhelan/nesolagus-suite/studio/components/generation/DocumentUpload.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 130, 0, 4, 16, 150
+"/Users/lucaswhelan/nesolagus-suite/studio/components/generation/GeneratedSurveyView.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 331, 0, 15, 25, 371
+"/Users/lucaswhelan/nesolagus-suite/studio/components/generation/GenerationForm.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 159, 0, 5, 22, 186
+"/Users/lucaswhelan/nesolagus-suite/studio/components/generation/GenerationProgress.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 73, 0, 3, 7, 83
+"/Users/lucaswhelan/nesolagus-suite/studio/components/layout/AppHeader.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 88, 0, 3, 8, 99
+"/Users/lucaswhelan/nesolagus-suite/studio/components/layout/ThemeProvider.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 3, 10
+"/Users/lucaswhelan/nesolagus-suite/studio/components/preview/DeviceToggle.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 0, 0, 6, 38
+"/Users/lucaswhelan/nesolagus-suite/studio/components/preview/InlineThemeEditor.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 314, 0, 11, 24, 349
+"/Users/lucaswhelan/nesolagus-suite/studio/components/preview/MessageHistory.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 83, 0, 1, 11, 95
+"/Users/lucaswhelan/nesolagus-suite/studio/components/preview/PreviewRenderer.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 424, 0, 29, 62, 515
+"/Users/lucaswhelan/nesolagus-suite/studio/components/preview/SurveyPreview.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 139, 0, 6, 16, 161
+"/Users/lucaswhelan/nesolagus-suite/studio/components/preview/TestModePanel.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 153, 0, 6, 19, 178
+"/Users/lucaswhelan/nesolagus-suite/studio/components/theme/ThemeEditor.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 296, 0, 12, 33, 341
+"/Users/lucaswhelan/nesolagus-suite/studio/components/ui/badge.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 31, 0, 0, 5, 36
+"/Users/lucaswhelan/nesolagus-suite/studio/components/ui/button.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 52, 0, 0, 5, 57
+"/Users/lucaswhelan/nesolagus-suite/studio/components/ui/card.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 71, 0, 0, 8, 79
+"/Users/lucaswhelan/nesolagus-suite/studio/components/ui/input.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 0, 0, 4, 25
+"/Users/lucaswhelan/nesolagus-suite/studio/components/ui/label.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 0, 0, 4, 24
+"/Users/lucaswhelan/nesolagus-suite/studio/components/ui/progress.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 23, 0, 0, 3, 26
+"/Users/lucaswhelan/nesolagus-suite/studio/components/ui/scroll-area.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 42, 0, 0, 5, 47
+"/Users/lucaswhelan/nesolagus-suite/studio/components/ui/select.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 145, 0, 0, 14, 159
+"/Users/lucaswhelan/nesolagus-suite/studio/components/ui/separator.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 26, 0, 0, 3, 29
+"/Users/lucaswhelan/nesolagus-suite/studio/components/ui/sheet.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 124, 0, 0, 15, 139
+"/Users/lucaswhelan/nesolagus-suite/studio/components/ui/switch.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 0, 0, 4, 28
+"/Users/lucaswhelan/nesolagus-suite/studio/components/ui/tabs.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 47, 0, 0, 6, 53
+"/Users/lucaswhelan/nesolagus-suite/studio/components/ui/textarea.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 0, 0, 4, 24
+"/Users/lucaswhelan/nesolagus-suite/studio/data/db.json", "JSON", 0, 0, 0, 0, 196, 0, 0, 0, 0, 0, 0, 0, 0, 0, 196
+"/Users/lucaswhelan/nesolagus-suite/studio/design-document.md", "Markdown", 189, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 91, 280
+"/Users/lucaswhelan/nesolagus-suite/studio/docker-compose.yml", "YAML", 0, 43, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 6, 69
+"/Users/lucaswhelan/nesolagus-suite/studio/docs/CONVERSION.md", "Markdown", 559, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 119, 678
+"/Users/lucaswhelan/nesolagus-suite/studio/docs/QUESTION_TYPES.md", "Markdown", 522, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 142, 664
+"/Users/lucaswhelan/nesolagus-suite/studio/hooks/useDashboardPreview.ts", "TypeScript", 0, 0, 0, 0, 0, 88, 0, 0, 0, 0, 0, 0, 0, 9, 97
+"/Users/lucaswhelan/nesolagus-suite/studio/lib/brand.ts", "TypeScript", 0, 0, 0, 0, 0, 139, 0, 0, 0, 0, 0, 0, 17, 24, 180
+"/Users/lucaswhelan/nesolagus-suite/studio/lib/dashboardPreview.ts", "TypeScript", 0, 0, 0, 0, 0, 131, 0, 0, 0, 0, 0, 0, 0, 21, 152
+"/Users/lucaswhelan/nesolagus-suite/studio/lib/dashboardPreviewLLM.ts", "TypeScript", 0, 0, 0, 0, 0, 396, 0, 0, 0, 0, 0, 0, 0, 46, 442
+"/Users/lucaswhelan/nesolagus-suite/studio/lib/db.ts", "TypeScript", 0, 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 0, 3, 6, 18
+"/Users/lucaswhelan/nesolagus-suite/studio/lib/pipeline-adapter.ts", "TypeScript", 0, 0, 0, 0, 0, 87, 0, 0, 0, 0, 0, 0, 20, 12, 119
+"/Users/lucaswhelan/nesolagus-suite/studio/lib/preview-api.ts", "TypeScript", 0, 0, 0, 0, 0, 55, 0, 0, 0, 0, 0, 0, 13, 14, 82
+"/Users/lucaswhelan/nesolagus-suite/studio/lib/survey-theme.ts", "TypeScript", 0, 0, 0, 0, 0, 68, 0, 0, 0, 0, 0, 0, 1, 1, 70
+"/Users/lucaswhelan/nesolagus-suite/studio/lib/utils.ts", "TypeScript", 0, 0, 0, 0, 0, 40, 0, 0, 0, 0, 0, 0, 15, 7, 62
+"/Users/lucaswhelan/nesolagus-suite/studio/next-env.d.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 2, 6
+"/Users/lucaswhelan/nesolagus-suite/studio/next.config.js", "JavaScript", 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 0, 0, 6, 7, 37
+"/Users/lucaswhelan/nesolagus-suite/studio/package-lock.json", "JSON", 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 1, 13
+"/Users/lucaswhelan/nesolagus-suite/studio/package.json", "JSON", 0, 0, 0, 0, 79, 0, 0, 0, 0, 0, 0, 0, 0, 1, 80
+"/Users/lucaswhelan/nesolagus-suite/studio/postcss.config.js", "JavaScript", 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7
+"/Users/lucaswhelan/nesolagus-suite/studio/prd.md", "Markdown", 201, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 145, 346
+"/Users/lucaswhelan/nesolagus-suite/studio/prisma/migrations/20251013224611_new/migration.sql", "MS SQL", 0, 0, 0, 0, 0, 0, 67, 0, 0, 0, 0, 0, 18, 22, 107
+"/Users/lucaswhelan/nesolagus-suite/studio/prisma/migrations/20251014011949_add_client_theme/migration.sql", "MS SQL", 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 3
+"/Users/lucaswhelan/nesolagus-suite/studio/prisma/migrations/20251015000657_add_flow_layout/migration.sql", "MS SQL", 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 3
+"/Users/lucaswhelan/nesolagus-suite/studio/prisma/migrations/20251016164042_add_dashboard_preview/migration.sql", "MS SQL", 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 2, 2, 8
+"/Users/lucaswhelan/nesolagus-suite/studio/prisma/migrations/20251016183954_add_dashboard_preview/migration.sql", "MS SQL", 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 7, 1, 10
+"/Users/lucaswhelan/nesolagus-suite/studio/prisma/migrations/20251017100000_add_dashboard_preview_responses/migration.sql", "MS SQL", 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 1, 1, 4
+"/Users/lucaswhelan/nesolagus-suite/studio/scripts/cli.js", "JavaScript", 0, 0, 0, 56, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 65
+"/Users/lucaswhelan/nesolagus-suite/studio/scripts/init-db.sh", "Shell Script", 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 6, 19
+"/Users/lucaswhelan/nesolagus-suite/studio/scripts/web.js", "JavaScript", 0, 0, 0, 413, 0, 0, 0, 0, 0, 0, 0, 0, 1, 9, 423
+"/Users/lucaswhelan/nesolagus-suite/studio/src/contracts/survey-config.schema.json", "JSON", 0, 0, 0, 0, 238, 0, 0, 0, 0, 0, 0, 0, 0, 2, 240
+"/Users/lucaswhelan/nesolagus-suite/studio/src/contracts/types.js", "JavaScript", 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 43, 9, 53
+"/Users/lucaswhelan/nesolagus-suite/studio/src/llm/index.js", "JavaScript", 0, 0, 0, 64, 0, 0, 0, 0, 0, 0, 0, 0, 11, 7, 82
+"/Users/lucaswhelan/nesolagus-suite/studio/src/pipeline/index.js", "JavaScript", 0, 0, 0, 53, 0, 0, 0, 0, 0, 0, 0, 0, 15, 13, 81
+"/Users/lucaswhelan/nesolagus-suite/studio/src/pipeline/steps/convertToEngineFormat.js", "JavaScript", 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 80, 59, 394
+"/Users/lucaswhelan/nesolagus-suite/studio/src/pipeline/steps/draftQuestions.js", "JavaScript", 0, 0, 0, 107, 0, 0, 0, 0, 0, 0, 0, 0, 7, 9, 123
+"/Users/lucaswhelan/nesolagus-suite/studio/src/pipeline/steps/extractBrief.js", "JavaScript", 0, 0, 0, 75, 0, 0, 0, 0, 0, 0, 0, 0, 8, 9, 92
+"/Users/lucaswhelan/nesolagus-suite/studio/src/pipeline/steps/generateSurveyDirect.js", "JavaScript", 0, 0, 0, 406, 0, 0, 0, 0, 0, 0, 0, 0, 7, 36, 449
+"/Users/lucaswhelan/nesolagus-suite/studio/src/pipeline/steps/structureToConfig.js", "JavaScript", 0, 0, 0, 199, 0, 0, 0, 0, 0, 0, 0, 0, 47, 43, 289
+"/Users/lucaswhelan/nesolagus-suite/studio/src/pipeline/steps/validateAndRepair.js", "JavaScript", 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 10, 9, 67
+"/Users/lucaswhelan/nesolagus-suite/studio/src/utils/id.js", "JavaScript", 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 9
+"/Users/lucaswhelan/nesolagus-suite/studio/src/utils/loadEnv.js", "JavaScript", 0, 0, 0, 29, 0, 0, 0, 0, 0, 0, 0, 0, 7, 10, 46
+"/Users/lucaswhelan/nesolagus-suite/studio/src/validation/duration.js", "JavaScript", 0, 0, 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 8, 7, 63
+"/Users/lucaswhelan/nesolagus-suite/studio/src/validation/jsonSchemaValidator.js", "JavaScript", 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 25
+"/Users/lucaswhelan/nesolagus-suite/studio/src/validation/lints.js", "JavaScript", 0, 0, 0, 105, 0, 0, 0, 0, 0, 0, 0, 0, 28, 15, 148
+"/Users/lucaswhelan/nesolagus-suite/studio/src/validation/validator.js", "JavaScript", 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 0, 8, 9, 80
+"/Users/lucaswhelan/nesolagus-suite/studio/styled.d.ts", "TypeScript", 0, 0, 0, 0, 0, 51, 0, 0, 0, 0, 0, 0, 0, 2, 53
+"/Users/lucaswhelan/nesolagus-suite/studio/styles/globals.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 98, 13, 25, 136
+"/Users/lucaswhelan/nesolagus-suite/studio/survey.config.json", "JSON", 0, 0, 0, 0, 133, 0, 0, 0, 0, 0, 0, 0, 0, 0, 133
+"/Users/lucaswhelan/nesolagus-suite/studio/tailwind.config.ts", "TypeScript", 0, 0, 0, 0, 0, 103, 0, 0, 0, 0, 0, 0, 0, 3, 106
+"/Users/lucaswhelan/nesolagus-suite/studio/tsconfig.json", "JSON with Comments", 0, 0, 0, 0, 0, 0, 0, 31, 0, 0, 0, 0, 0, 1, 32
+"/Users/lucaswhelan/nesolagus-suite/studio/tsconfig.tsbuildinfo", "JSON", 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"Total", "-", 11497, 112, 314, 2983, 46877, 9048, 504, 242, 30, 5, 22953, 120, 1900, 7533, 104118

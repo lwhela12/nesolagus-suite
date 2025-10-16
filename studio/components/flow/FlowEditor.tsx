@@ -19,6 +19,8 @@ import { Maximize2, RefreshCw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import BlockNode from './BlockNode';
 import { SurveyBlock, FlowLayout, BLOCK_TYPE_INFO } from './types';
+import { BlockEditPanel } from './BlockEditPanel';
+import { BlockTypeSelector } from './BlockTypeSelector';
 import {
   configToNodesAndEdges,
   getLayoutedElements,
@@ -49,9 +51,95 @@ export function FlowEditor({
   // Handle edit block
   const handleEditBlock = useCallback((blockId: string) => {
     setSelectedBlockId(blockId);
-    // TODO: Open side panel for editing
-    console.log('Edit block:', blockId);
   }, []);
+
+  // Handle save block
+  const handleSaveBlock = useCallback(
+    (blockId: string, updates: Partial<SurveyBlock>) => {
+      const newBlocks = {
+        ...config.blocks,
+        [blockId]: {
+          ...config.blocks[blockId],
+          ...updates,
+        },
+      };
+
+      onConfigChange({
+        ...config,
+        blocks: newBlocks,
+      });
+    },
+    [config, onConfigChange]
+  );
+
+  // Handle close edit panel
+  const handleCloseEditPanel = useCallback(() => {
+    setSelectedBlockId(null);
+  }, []);
+
+  // Handle add new block
+  const handleAddBlock = useCallback(
+    (blockType: string) => {
+      // Find the highest block number
+      const blockIds = Object.keys(config.blocks || {});
+      const maxBlockNum = blockIds
+        .filter(id => id.match(/^b\d+$/))
+        .map(id => parseInt(id.substring(1)))
+        .reduce((max, num) => Math.max(max, num), -1);
+
+      const newBlockId = `b${maxBlockNum + 1}`;
+
+      // Create new block with defaults based on type
+      const newBlock: SurveyBlock = {
+        id: newBlockId,
+        type: blockType,
+        content: 'New question...',
+        variable: `var_${newBlockId}`,
+        next: undefined,
+      };
+
+      // Type-specific defaults
+      if (blockType === 'single-choice' || blockType === 'multi-choice') {
+        newBlock.options = [
+          { id: 'option-1', label: 'Option 1', value: 'option-1' },
+          { id: 'option-2', label: 'Option 2', value: 'option-2' },
+        ];
+      }
+
+      if (blockType === 'multi-choice') {
+        newBlock.maxSelections = 2;
+      }
+
+      if (blockType === 'scale') {
+        newBlock.options = Array.from({ length: 10 }, (_, i) => ({
+          id: `${i + 1}`,
+          value: `${i + 1}`,
+          label: i === 0 ? 'Low' : i === 9 ? 'High' : `${i + 1}`,
+          emoji: i < 3 ? '😞' : i < 5 ? '😐' : i < 7 ? '🙂' : i < 9 ? '😊' : '🤩',
+        }));
+      }
+
+      if (blockType === 'dynamic-message') {
+        newBlock.autoAdvance = true;
+        newBlock.autoAdvanceDelay = 2000;
+      }
+
+      // Add to config
+      const newBlocks = {
+        ...config.blocks,
+        [newBlockId]: newBlock,
+      };
+
+      onConfigChange({
+        ...config,
+        blocks: newBlocks,
+      });
+
+      // Open the editor for the new block
+      setSelectedBlockId(newBlockId);
+    },
+    [config, onConfigChange]
+  );
 
   // Handle delete block
   const handleDeleteBlock = useCallback(
@@ -151,16 +239,35 @@ export function FlowEditor({
     [nodes, onFlowLayoutChange]
   );
 
-  // Handle connection (not implemented yet - would require updating config)
+  // Handle connection - update config when edges are dragged
   const onConnect = useCallback(
     (connection: Connection) => {
-      // For now, just show the visual connection
-      setEdges((eds) => addEdge(connection, eds));
+      if (!connection.source || !connection.target) return;
 
-      // TODO: Update config to reflect new connection
-      console.log('Connection created:', connection);
+      const sourceBlockId = connection.source;
+      const targetBlockId = connection.target;
+
+      // Update the source block's next field to point to target
+      const sourceBlock = config.blocks[sourceBlockId];
+      if (!sourceBlock) return;
+
+      // Update config
+      const newBlocks = {
+        ...config.blocks,
+        [sourceBlockId]: {
+          ...sourceBlock,
+          next: targetBlockId,
+        },
+      };
+
+      onConfigChange({
+        ...config,
+        blocks: newBlocks,
+      });
+
+      console.log(`Connected ${sourceBlockId} → ${targetBlockId}`);
     },
-    [setEdges]
+    [config, onConfigChange]
   );
 
   // Auto-layout button
@@ -188,26 +295,29 @@ export function FlowEditor({
     }
   }, [reactFlowInstance]);
 
+  const selectedBlock = selectedBlockId ? config.blocks?.[selectedBlockId] : null;
+
   return (
-    <div className={className || "w-full h-[700px] border rounded-lg bg-gray-50 relative"}>
-      <ReactFlow
-        nodes={nodes}
-        edges={edges}
-        onNodesChange={onNodesChange}
-        onEdgesChange={onEdgesChange}
-        onNodeDragStop={handleNodeDragStop}
-        onConnect={onConnect}
-        onInit={setReactFlowInstance}
-        nodeTypes={nodeTypes}
-        fitView
-        fitViewOptions={{ padding: 0.2 }}
-        minZoom={0.1}
-        maxZoom={2}
-        defaultEdgeOptions={{
-          type: 'smoothstep',
-          animated: false,
-        }}
-      >
+    <>
+      <div className={className || "w-full h-[700px] border rounded-lg bg-gray-50 relative"}>
+        <ReactFlow
+          nodes={nodes}
+          edges={edges}
+          onNodesChange={onNodesChange}
+          onEdgesChange={onEdgesChange}
+          onNodeDragStop={handleNodeDragStop}
+          onConnect={onConnect}
+          onInit={setReactFlowInstance}
+          nodeTypes={nodeTypes}
+          fitView
+          fitViewOptions={{ padding: 0.2 }}
+          minZoom={0.1}
+          maxZoom={2}
+          defaultEdgeOptions={{
+            type: 'smoothstep',
+            animated: false,
+          }}
+        >
         <Background color="#e2e8f0" gap={20} />
         <Controls />
         <MiniMap
@@ -254,5 +364,16 @@ export function FlowEditor({
         </Panel>
       </ReactFlow>
     </div>
+
+      <BlockEditPanel
+        block={selectedBlock}
+        open={selectedBlockId !== null}
+        onClose={handleCloseEditPanel}
+        onSave={handleSaveBlock}
+        allBlocks={config.blocks || {}}
+      />
+
+      <BlockTypeSelector onAddBlock={handleAddBlock} />
+    </>
   );
 }

@@ -7,6 +7,7 @@ import { AppError } from '../middleware/errorHandler';
 import { logger } from '../utils/logger';
 import { format } from 'fast-csv';
 import surveyStructure from '../database/survey-structure.json';
+import { getConfigLoader } from '../config/configLoader';
 
 // Helper: Remove Handlebars-style template tokens from content used in admin UI
 function sanitizeQuestionText(input: string): string {
@@ -1057,6 +1058,28 @@ class AdminController {
     } catch (error) {
       next(error);
       return;
+    }
+  }
+
+  async getDashboardConfig(_req: Request, res: Response, next: NextFunction) {
+    try {
+      const configLoader = getConfigLoader();
+      const dashboard = await configLoader.getDashboard();
+
+      if (!dashboard) {
+        res.status(404).json({
+          success: false,
+          message: 'Dashboard configuration not found'
+        });
+        return;
+      }
+
+      res.json({
+        success: true,
+        dashboard
+      });
+    } catch (error) {
+      next(error);
     }
   }
 

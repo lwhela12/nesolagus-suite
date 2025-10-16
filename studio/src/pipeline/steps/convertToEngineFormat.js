@@ -70,8 +70,7 @@ function convertToEngineFormat(config, brief) {
       blocks[routerId] = createRouterBlock(
         routerId,
         block.variable,
-        routerInfo.condition,
-        routerInfo.thenBlock,
+        routerInfo.conditions,
         routerInfo.elseBlock
       )
     }
@@ -297,8 +296,10 @@ function convertNext(next, nodeIdMap) {
   if (next && typeof next === 'object' && next.if && next.else) {
     return {
       _needsRouter: true,
-      condition: next.if[0], // Take first condition for now
-      thenBlock: nodeIdMap[next.if[0]?.goto] || next.if[0]?.goto,
+      conditions: next.if.map(cond => ({
+        when: cond.when,
+        goto: nodeIdMap[cond.goto] || cond.goto
+      })),
       elseBlock: nodeIdMap[next.else] || next.else
     }
   }
@@ -309,7 +310,7 @@ function convertNext(next, nodeIdMap) {
 /**
  * Create a router block for conditional routing
  */
-function createRouterBlock(routerId, variable, condition, thenBlock, elseBlock) {
+function createRouterBlock(routerId, variable, conditions, elseBlock) {
   const routerBlock = {
     id: routerId,
     type: 'dynamic-message',
@@ -318,37 +319,58 @@ function createRouterBlock(routerId, variable, condition, thenBlock, elseBlock) 
     autoAdvanceDelay: 0
   }
 
-  // Convert condition format
-  if (condition && condition.when) {
-    const when = condition.when
-    let operator, value
+  // Build nested if/then/else structure for multiple conditions
+  function buildConditionalNext(condArray, finalElse) {
+    if (!condArray || condArray.length === 0) {
+      return finalElse
+    }
+
+    const [first, ...rest] = condArray
+
+    // Convert the first condition
+    const ifCondition = convertCondition(first.when, variable)
+
+    if (!ifCondition) {
+      // If conversion failed, skip to next condition
+      return buildConditionalNext(rest, finalElse)
+    }
+
+    // Build the else branch (either another condition or the final else)
+    const elseBranch = rest.length > 0
+      ? buildConditionalNext(rest, finalElse)
+      : finalElse
+
+    return {
+      if: ifCondition,
+      then: first.goto,
+      else: elseBranch
+    }
+  }
+
+  // Helper to convert condition format from internal to engine format
+  function convertCondition(when, variable) {
+    if (!when) return null
 
     if (when.lt) {
-      operator = 'lessThan'
-      value = when.lt.answer
+      return { variable, lessThan: when.lt.answer }
     } else if (when.gt) {
-      operator = 'greaterThan'
-      value = when.gt.answer
+      return { variable, greaterThan: when.gt.answer }
     } else if (when.equals) {
-      operator = 'equals'
-      value = when.equals.answer
+      return { variable, equals: when.equals.answer }
+    } else if (when.in) {
+      return { variable, in: when.in.answer }
     }
 
-    if (operator && value !== undefined) {
-      routerBlock.conditionalNext = {
-        if: {
-          variable: variable,
-          [operator]: value
-        },
-        then: thenBlock,
-        else: elseBlock
-      }
-    } else {
-      // Fallback: no condition, just use else
-      routerBlock.next = elseBlock
-    }
+    return null
+  }
+
+  // Build the conditional structure
+  const conditionalNext = buildConditionalNext(conditions, elseBlock)
+
+  if (conditionalNext && typeof conditionalNext === 'object' && conditionalNext.if) {
+    routerBlock.conditionalNext = conditionalNext
   } else {
-    // No condition, just route to else
+    // Fallback: no valid conditions, just route to else
     routerBlock.next = elseBlock
   }
 

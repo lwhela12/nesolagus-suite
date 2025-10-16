@@ -1,6 +1,7 @@
 import { logger } from '../utils/logger';
 import { createClient } from 'redis';
 import { getConfigLoader, SurveyConfig } from '../config/configLoader';
+import { evaluateConditionalNext, evaluateCondition } from './conditionalRouting';
 
 interface SurveyState {
   surveyId: string;
@@ -343,9 +344,9 @@ class SurveyEngine {
         };
       }
       nextBlockId = onEmpty.next || currentBlock.next;
-    } 
-    // Handle different navigation patterns
-    else if ('next' in currentBlock) {
+    }
+    // Handle different navigation patterns (only if next is a string, not a conditional object)
+    else if ('next' in currentBlock && typeof currentBlock.next === 'string') {
       nextBlockId = currentBlock.next as string;
       // Debug logging for VideoAsk questions
       if (currentQuestionId === 'b12' || currentQuestionId === 'b7') {
@@ -376,17 +377,25 @@ class SurveyEngine {
       }
     }
 
-    // Handle conditionalNext in current block
-    if (!nextBlockId && 'conditionalNext' in currentBlock) {
-      const conditionalNext = currentBlock.conditionalNext as any;
-      nextBlockId = this.evaluateConditionalNext(conditionalNext, state.variables);
+    // Handle conditional routing - check both new format (next) and legacy format (conditionalNext)
+    if (!nextBlockId) {
+      const blockVariable = 'variable' in currentBlock ? (currentBlock as any).variable : undefined;
+
+      // New format: next field with if/else array
+      if ('next' in currentBlock && typeof currentBlock.next === 'object') {
+        nextBlockId = evaluateConditionalNext(currentBlock.next as any, state.variables, blockVariable);
+      }
+      // Legacy format: conditionalNext field
+      else if ('conditionalNext' in currentBlock) {
+        nextBlockId = evaluateConditionalNext(currentBlock.conditionalNext as any, state.variables, blockVariable);
+      }
     }
 
     // Handle conditional display
     if (nextBlockId) {
       const nextBlock = this.blocks[nextBlockId as keyof typeof this.blocks];
       if (nextBlock && 'showIf' in nextBlock) {
-        const shouldShow = this.evaluateCondition(nextBlock.showIf, state.variables);
+        const shouldShow = evaluateCondition(nextBlock.showIf as any, state.variables);
         if (!shouldShow) {
           // Skip to next question
           state.currentBlockId = nextBlockId;
@@ -426,69 +435,6 @@ class SurveyEngine {
 
     logger.warn('No next block found');
     return null;
-  }
-
-  private evaluateConditionalNext(conditionalNext: any, variables: Record<string, any>): string | null {
-    if (!conditionalNext) return null;
-    
-    if (this.evaluateCondition(conditionalNext.if, variables)) {
-      return conditionalNext.then;
-    } else {
-      // Check if else is a nested condition
-      if (typeof conditionalNext.else === 'object' && 'if' in conditionalNext.else) {
-        // Recursively evaluate nested condition
-        return this.evaluateConditionalNext(conditionalNext.else, variables);
-      } else {
-        // Simple else value
-        return conditionalNext.else;
-      }
-    }
-  }
-
-  private evaluateCondition(condition: any, variables: Record<string, any>): boolean {
-    if ('variable' in condition && 'equals' in condition) {
-      // Handle array comparisons without mutating the originals
-      if (Array.isArray(condition.equals) && Array.isArray(variables[condition.variable])) {
-        const a = [...condition.equals].sort();
-        const b = [...variables[condition.variable]].sort();
-        return JSON.stringify(a) === JSON.stringify(b);
-      }
-      return variables[condition.variable] === condition.equals;
-    }
-
-    if ('variable' in condition && 'contains' in condition) {
-      // Check if array contains a value
-      const varValue = variables[condition.variable];
-      if (Array.isArray(varValue)) {
-        return varValue.includes(condition.contains);
-      }
-      return false;
-    }
-
-    if ('variable' in condition && 'greaterThan' in condition) {
-      return variables[condition.variable] > condition.greaterThan;
-    }
-
-    if ('variable' in condition && 'lessThan' in condition) {
-      return variables[condition.variable] < condition.lessThan;
-    }
-
-    if ('not' in condition) {
-      return !this.evaluateCondition(condition.not, variables);
-    }
-
-    if ('or' in condition) {
-      if (Array.isArray(condition.or)) {
-        return condition.or.some((cond: any) => this.evaluateCondition(cond, variables));
-      }
-      return this.evaluateCondition(condition.or, variables);
-    }
-
-    if ('and' in condition) {
-      return condition.and.every((cond: any) => this.evaluateCondition(cond, variables));
-    }
-
-    return true;
   }
 
   async calculateProgress(sessionId: string): Promise<number> {
@@ -575,7 +521,7 @@ class SurveyEngine {
       // Handle conditional content
       logger.debug(`Evaluating content condition for question ${formatted.id}:`, formatted.contentCondition);
       logger.debug('Current variables:', variables);
-      const conditionResult = this.evaluateCondition(formatted.contentCondition.if, variables);
+      const conditionResult = evaluateCondition(formatted.contentCondition.if, variables);
       logger.debug(`Condition result: ${conditionResult}`);
       const contentKey = conditionResult ? formatted.contentCondition.then : formatted.contentCondition.else;
       logger.debug(`Selected content key: ${contentKey}`);
@@ -608,18 +554,18 @@ class SurveyEngine {
     // Handle conditionalContent array (for multiple conditions)
     if (formatted.conditionalContent && Array.isArray(formatted.conditionalContent)) {
       let matchedContent = null;
-      
+
       for (const item of formatted.conditionalContent) {
         if (item.condition === 'default') {
           matchedContent = item.content;
           break;
         }
-        if (this.evaluateCondition(item.condition, variables)) {
+        if (evaluateCondition(item.condition, variables)) {
           matchedContent = item.content;
           break;
         }
       }
-      
+
       if (matchedContent && (formatted.content === 'placeholder' || formatted.content === '')) {
         formatted.content = replaceVariables(matchedContent);
       }

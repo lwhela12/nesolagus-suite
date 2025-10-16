@@ -27,4 +27,10 @@ router.delete(
   previewController.clearSession.bind(previewController)
 );
 
+// Fetch dashboard configuration for preview clients
+router.get(
+  '/dashboard',
+  previewController.getDashboardConfig.bind(previewController)
+);
+
 export default router;

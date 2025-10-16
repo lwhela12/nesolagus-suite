@@ -1,0 +1,154 @@
+"filename", "language", "TypeScript", "JSON", "JavaScript", "Markdown", "Shell Script", "JSON with Comments", "XML", "TypeScript JSX", "PostCSS", "comment", "blank", "total"
+"/Users/lucaswhelan/nesolagus-suite/.claude/settings.local.json", "JSON", 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/package.json", "JSON", 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/config/configLoader.ts", "TypeScript", 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 17
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/controllers/admin.controller.ts", "TypeScript", 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 23
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/controllers/config.controller.ts", "TypeScript", 25, 0, 0, 0, 0, 0, 0, 0, 0, 4, 3, 32
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/controllers/preview.controller.ts", "TypeScript", 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 23
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/routes/clerkAdmin.routes.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/routes/config.routes.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 3
+"/Users/lucaswhelan/nesolagus-suite/engine/backend/src/routes/preview.routes.ts", "TypeScript", 4, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 6
+"/Users/lucaswhelan/nesolagus-suite/engine/config/clients/default.json", "JSON", 0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/package.json", "JSON", 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/AdminOverview.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, -87, 0, -2, -13, -102
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/dashboard/DashboardRenderer.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 256, 0, 0, 21, 277
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/dashboard/helpers.ts", "TypeScript", 61, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 70
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/dashboard/types.ts", "TypeScript", 39, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 47
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/dashboard/useDashboardConfig.ts", "TypeScript", 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 59
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/components/Admin/dashboard/useDashboardData.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 76, 0, 0, 15, 91
+"/Users/lucaswhelan/nesolagus-suite/engine/frontend/src/services/clerkApi.ts", "TypeScript", 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/README.md", "Markdown", 0, 0, 0, 23, 0, 0, 0, 0, 0, 0, 14, 37
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/docs/DASHBOARD_STRATEGIC_ANALYSIS.md", "Markdown", 0, 0, 0, 399, 0, 0, 0, 0, 0, 0, 139, 538
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/docs/DUAL_DASHBOARD_STRATEGY.md", "Markdown", 0, 0, 0, 630, 0, 0, 0, 0, 0, 0, 102, 732
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/docs/SESSION_LOG.md", "Markdown", 0, 0, 0, 901, 0, 0, 0, 0, 0, 0, 248, 1149
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/docs/community-intelligence-positioning.md", "Markdown", 0, 0, 0, 111, 0, 0, 0, 0, 0, 0, 43, 154
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/docs/discovery-recap.md", "Markdown", 0, 0, 0, 129, 0, 0, 0, 0, 0, 0, 26, 155
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/docs/product-brief.md", "Markdown", 0, 0, 0, 38, 0, 0, 0, 0, 0, 0, 10, 48
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/eslint.config.mjs", "JavaScript", 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 5, 26
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/next.config.ts", "TypeScript", 4, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 8
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/package-lock.json", "JSON", 0, 7381, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7382
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/package.json", "JSON", 0, 34, 0, 0, 0, 0, 0, 0, 0, 0, 1, 35
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/postcss.config.mjs", "JavaScript", 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/public/data/ct_towns.geojson", "JSON", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/public/data/ct_zcta_by_town.geojson", "JSON", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/public/data/ct_zctas.geojson", "JSON", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/public/file.svg", "XML", 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/public/globe.svg", "XML", 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/public/next.svg", "XML", 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/public/vercel.svg", "XML", 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/public/window.svg", "XML", 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/scripts/inspect-xlsx.js", "JavaScript", 0, 0, 38, 0, 0, 0, 0, 0, 0, 2, 8, 48
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/analysis/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 53, 0, 3, 12, 68
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/analytics/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 764, 0, 3, 60, 827
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/api/export/[type]/route.ts", "TypeScript", 53, 0, 0, 0, 0, 0, 0, 0, 0, 1, 10, 64
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/api/export/csv/route.ts", "TypeScript", 24, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 34
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/api/export/engagement-metrics/route.ts", "TypeScript", 24, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 34
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/api/export/narratives/route.ts", "TypeScript", 61, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 67
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/api/media/audio/route.ts", "TypeScript", 24, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 26
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/api/media/methodology/route.ts", "TypeScript", 24, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 26
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/api/metrics/route.ts", "TypeScript", 166, 0, 0, 0, 0, 0, 0, 0, 0, 11, 16, 193
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/api/models/distribution/route.ts", "TypeScript", 57, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 61
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/api/narratives/route.ts", "TypeScript", 86, 0, 0, 0, 0, 0, 0, 0, 0, 5, 12, 103
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/api/participants/route.ts", "TypeScript", 154, 0, 0, 0, 0, 0, 0, 0, 0, 13, 12, 179
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/api/personas/export/route.ts", "TypeScript", 68, 0, 0, 0, 0, 0, 0, 0, 0, 3, 10, 81
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/api/question-breakdown/route.ts", "TypeScript", 118, 0, 0, 0, 0, 0, 0, 0, 0, 11, 20, 149
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/api/rank/priorities/route.ts", "TypeScript", 59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 62
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/community-pulse/loading.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 1, 13
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/community-pulse/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 394, 0, 15, 32, 441
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/globals.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 0, 22, 0, 5, 27
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/layout.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 29, 0, 0, 4, 33
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/not-found.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 16, 0, 0, 1, 17
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 516, 0, 12, 23, 551
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/personas/[id]/email/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 461, 0, 9, 17, 487
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/personas/[id]/prospects/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 433, 0, 17, 24, 474
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/personas/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 659, 0, 26, 31, 716
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/print/layout.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 27, 0, 1, 3, 31
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/print/report/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 279, 0, 10, 22, 311
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/reports/loading.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 1, 13
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/reports/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 111, 0, 0, 14, 125
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/robots.txt/route.ts", "TypeScript", 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 16
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/settings/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 1070, 0, 10, 54, 1134
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/splash-page-backup.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 165, 0, 7, 12, 184
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/splash/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 184, 0, 7, 17, 208
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/strategic-plan/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 445, 0, 10, 21, 476
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/app/zzz/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 1, 4
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/ChartFunnel.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 29, 0, 2, 4, 35
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/ClientThemeVars.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 17, 0, 2, 6, 25
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/DownloadPDF.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 11, 0, 0, 2, 13
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/SpectrumDonut.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 24, 0, 2, 5, 31
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/auth/LoginWidget.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 95, 0, 65, 9, 169
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/auth/MONOREPO_USAGE.md", "Markdown", 0, 0, 0, 206, 0, 0, 0, 0, 0, 0, 49, 255
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/auth/README.md", "Markdown", 0, 0, 0, 169, 0, 0, 0, 0, 0, 0, 55, 224
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/auth/index.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 5, 2, 8
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/ghac-dashboard.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 80, 0, 8, 7, 95
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/maps/CTMap.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 66, 0, 2, 8, 76
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/maps/CTParticipantMap.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 244, 0, 16, 18, 278
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/print/AutoPrint.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 11, 0, 0, 4, 15
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/ui/ClientThemeVars.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 26, 0, 5, 6, 37
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/ui/app-header.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 18, 0, 1, 3, 22
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/ui/community-spectrum.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 71, 0, 0, 5, 76
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/ui/engagement-funnel.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 65, 0, 4, 9, 78
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/ui/global-header.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 37, 0, 3, 4, 44
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/ui/gradient-bar.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 39, 0, 0, 4, 43
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/ui/primary-button.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 31, 0, 5, 6, 42
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/components/ui/sidebar.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 127, 0, 11, 9, 147
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/data/archetype_models.json", "JSON", 0, 106, 0, 0, 0, 0, 0, 0, 0, 0, 2, 108
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/data/archetype_rules.json", "JSON", 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 2, 8
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/data/archetypes.json", "JSON", 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 2, 20
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/data/client.config.json", "JSON", 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 1, 12
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/data/methodology.json", "JSON", 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 2, 8
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/data/metrics.json", "JSON", 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 1, 22
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/data/narratives-export.json", "JSON", 0, 398, 0, 0, 0, 0, 0, 0, 0, 0, 0, 398
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/data/themes.json", "JSON", 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 2, 8
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/data/zip_centroids.ts", "TypeScript", 26, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 29
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/data/zip_to_city.json", "JSON", 0, 64, 0, 0, 0, 0, 0, 0, 0, 0, 1, 65
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/lib/comprehensive-xlsx-parser.ts", "TypeScript", 262, 0, 0, 0, 0, 0, 0, 0, 0, 26, 55, 343
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/lib/data.ts", "TypeScript", 125, 0, 0, 0, 0, 0, 0, 0, 0, 6, 8, 139
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/src/lib/xlsx-parser.ts", "TypeScript", 135, 0, 0, 0, 0, 0, 0, 0, 0, 3, 30, 168
+"/Users/lucaswhelan/nesolagus-suite/nesolagus-dashboard/Nesolagus-dashboard/tsconfig.json", "JSON with Comments", 0, 0, 0, 0, 0, 43, 0, 0, 0, 0, 1, 44
+"/Users/lucaswhelan/nesolagus-suite/package-lock.json", "JSON", 0, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32
+"/Users/lucaswhelan/nesolagus-suite/package.json", "JSON", 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2
+"/Users/lucaswhelan/nesolagus-suite/packages/config/README.md", "Markdown", 0, 0, 0, 30, 0, 0, 0, 0, 0, 0, 12, 42
+"/Users/lucaswhelan/nesolagus-suite/packages/config/package.json", "JSON", 0, 23, 0, 0, 0, 0, 0, 0, 0, 0, 1, 24
+"/Users/lucaswhelan/nesolagus-suite/packages/dashboard-widgets/package.json", "JSON", 0, 29, 0, 0, 0, 0, 0, 0, 0, 0, 1, 30
+"/Users/lucaswhelan/nesolagus-suite/packages/dashboard-widgets/src/components/FunnelChart.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 92, 0, 0, 12, 104
+"/Users/lucaswhelan/nesolagus-suite/packages/dashboard-widgets/src/components/InsightHighlight.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 93, 0, 0, 9, 102
+"/Users/lucaswhelan/nesolagus-suite/packages/dashboard-widgets/src/components/KpiStatCard.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 159, 0, 0, 5, 164
+"/Users/lucaswhelan/nesolagus-suite/packages/dashboard-widgets/src/components/SegmentDonut.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 94, 0, 0, 12, 106
+"/Users/lucaswhelan/nesolagus-suite/packages/dashboard-widgets/src/index.ts", "TypeScript", 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 10
+"/Users/lucaswhelan/nesolagus-suite/packages/dashboard-widgets/src/theme.ts", "TypeScript", 38, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 42
+"/Users/lucaswhelan/nesolagus-suite/packages/dashboard-widgets/tsconfig.build.json", "JSON", 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 1, 11
+"/Users/lucaswhelan/nesolagus-suite/packages/dashboard-widgets/tsconfig.json", "JSON with Comments", 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 1, 17
+"/Users/lucaswhelan/nesolagus-suite/scripts/deploy-client.sh", "Shell Script", 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 1, 6
+"/Users/lucaswhelan/nesolagus-suite/scripts/generate.js", "JavaScript", 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 1, 11
+"/Users/lucaswhelan/nesolagus-suite/scripts/validate.js", "JavaScript", 0, 0, 39, 0, 0, 0, 0, 0, 0, 0, 7, 46
+"/Users/lucaswhelan/nesolagus-suite/studio/app/api/drafts/[id]/preview-data/route.ts", "TypeScript", 73, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 83
+"/Users/lucaswhelan/nesolagus-suite/studio/app/api/drafts/[id]/route.ts", "TypeScript", 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15
+"/Users/lucaswhelan/nesolagus-suite/studio/app/dashboard/[id]/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 103, 0, 0, 10, 113
+"/Users/lucaswhelan/nesolagus-suite/studio/components/dashboard/CanvasWidgetPreview.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 113, 0, 0, 10, 123
+"/Users/lucaswhelan/nesolagus-suite/studio/components/dashboard/DashboardEditor.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 219, 0, 5, 20, 244
+"/Users/lucaswhelan/nesolagus-suite/studio/components/dashboard/WidgetInspector.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 324, 0, 0, 25, 349
+"/Users/lucaswhelan/nesolagus-suite/studio/components/dashboard/catalog.ts", "TypeScript", 165, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 175
+"/Users/lucaswhelan/nesolagus-suite/studio/components/dashboard/palette.ts", "TypeScript", 34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 37
+"/Users/lucaswhelan/nesolagus-suite/studio/components/flow/AIRegenerationPanel.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 172, 0, 3, 21, 196
+"/Users/lucaswhelan/nesolagus-suite/studio/components/flow/BlockEditPanel.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 160, 0, 2, 16, 178
+"/Users/lucaswhelan/nesolagus-suite/studio/components/flow/BlockTypeSelector.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 90, 0, 0, 9, 99
+"/Users/lucaswhelan/nesolagus-suite/studio/components/flow/ConditionalLogicBuilder.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 257, 0, 3, 23, 283
+"/Users/lucaswhelan/nesolagus-suite/studio/components/flow/FlowEditor.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 94, 0, 7, 20, 121
+"/Users/lucaswhelan/nesolagus-suite/studio/components/flow/editors/ChoiceEditor.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 139, 0, 0, 14, 153
+"/Users/lucaswhelan/nesolagus-suite/studio/components/flow/editors/MessageEditor.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 71, 0, 0, 7, 78
+"/Users/lucaswhelan/nesolagus-suite/studio/components/flow/editors/ScaleEditor.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 70, 0, 0, 7, 77
+"/Users/lucaswhelan/nesolagus-suite/studio/components/flow/editors/TextInputEditor.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 54, 0, 0, 6, 60
+"/Users/lucaswhelan/nesolagus-suite/studio/components/flow/layout.ts", "TypeScript", 157, 0, 0, 0, 0, 0, 0, 0, 0, 25, 25, 207
+"/Users/lucaswhelan/nesolagus-suite/studio/components/generation/GeneratedSurveyView.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 86, 0, 4, 5, 95
+"/Users/lucaswhelan/nesolagus-suite/studio/components/ui/select.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 145, 0, 0, 14, 159
+"/Users/lucaswhelan/nesolagus-suite/studio/components/ui/sheet.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 124, 0, 0, 15, 139
+"/Users/lucaswhelan/nesolagus-suite/studio/components/ui/switch.tsx", "TypeScript JSX", 0, 0, 0, 0, 0, 0, 0, 24, 0, 0, 4, 28
+"/Users/lucaswhelan/nesolagus-suite/studio/design-document.md", "Markdown", 0, 0, 0, 11, 0, 0, 0, 0, 0, 0, 1, 12
+"/Users/lucaswhelan/nesolagus-suite/studio/package.json", "JSON", 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2
+"/Users/lucaswhelan/nesolagus-suite/studio/src/pipeline/index.js", "JavaScript", 0, 0, 31, 0, 0, 0, 0, 0, 0, 9, 8, 48
+"/Users/lucaswhelan/nesolagus-suite/studio/src/pipeline/steps/convertToEngineFormat.js", "JavaScript", 0, 0, 10, 0, 0, 0, 0, 0, 0, 4, 8, 22
+"/Users/lucaswhelan/nesolagus-suite/studio/src/pipeline/steps/draftQuestions.js", "JavaScript", 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 1, 28
+"/Users/lucaswhelan/nesolagus-suite/studio/src/pipeline/steps/generateSurveyDirect.js", "JavaScript", 0, 0, 406, 0, 0, 0, 0, 0, 0, 7, 36, 449
+"/Users/lucaswhelan/nesolagus-suite/studio/src/pipeline/steps/structureToConfig.js", "JavaScript", 0, 0, 1, 0, 0, 0, 0, 0, 0, 14, 13, 28
+"Total", "-", 2214, 8165, 587, 2647, 5, 59, 5, 9552, 22, 441, 1865, 25562

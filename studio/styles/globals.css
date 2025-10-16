@@ -4,48 +4,69 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Nesolagus Brand Colors */
+    --background: 60 11% 96%; /* #F7F7F6 - Warm cream */
+    --foreground: 165 56% 12%; /* #0E2A23 - Dark teal/green */
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 165 56% 12%;
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 221.2 83.2% 53.3%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 221.2 83.2% 53.3%;
+    --popover-foreground: 165 56% 12%;
+
+    /* Primary - Nesolagus Green */
+    --primary: 141 36% 55%; /* #64B37A - Brand green */
+    --primary-foreground: 153 42% 31%; /* #2F6D49 - Dark green */
+
+    /* Secondary - Light mint surface */
+    --secondary: 146 32% 89%; /* #E6F4EA - Pale mint */
+    --secondary-foreground: 165 56% 12%;
+
+    /* Muted - Subtle backgrounds */
+    --muted: 146 32% 89%;
+    --muted-foreground: 220 9% 46%; /* #6B7280 - Gray */
+
+    /* Accent - Border green */
+    --accent: 144 38% 84%; /* #CDEBD8 - Muted green */
+    --accent-foreground: 165 56% 12%;
+
+    /* Destructive - Error states */
+    --destructive: 0 84.2% 60.2%; /* Red */
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders and inputs */
+    --border: 144 38% 84%; /* #CDEBD8 - Muted green border */
+    --input: 144 38% 84%;
+    --ring: 141 36% 55%; /* Focus ring matches primary */
+
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 217.2 91.2% 59.8%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 224.3 76.3% 48%;
+    /* Dark mode - Nesolagus variant */
+    --background: 165 56% 8%; /* #0E2A23 - Dark teal */
+    --foreground: 146 32% 89%; /* Light mint text */
+    --card: 165 50% 12%; /* Slightly lighter than bg */
+    --card-foreground: 146 32% 89%;
+    --popover: 165 50% 12%;
+    --popover-foreground: 146 32% 89%;
+
+    --primary: 141 36% 55%; /* Keep green vibrant */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 165 40% 18%; /* Dark green-gray */
+    --secondary-foreground: 146 32% 89%;
+
+    --muted: 165 40% 18%;
+    --muted-foreground: 220 9% 65%;
+
+    --accent: 165 40% 22%;
+    --accent-foreground: 146 32% 89%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 165 40% 22%;
+    --input: 165 40% 22%;
+    --ring: 141 36% 55%;
   }
 }
 
@@ -59,18 +80,56 @@
 }
 
 @layer utilities {
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  /* Modern glass morphism effect */
+  .glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(100, 179, 122, 0.2);
   }
 
-  .animate-fade-in {
-    animation: fade-in 0.5s ease-out both;
+  .glass-dark {
+    background: rgba(14, 42, 35, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(100, 179, 122, 0.2);
+  }
+
+  /* Elevated card shadows */
+  .card-elevated {
+    box-shadow: 0 4px 6px -1px rgba(100, 179, 122, 0.1),
+                0 2px 4px -1px rgba(100, 179, 122, 0.06);
+  }
+
+  .card-elevated-lg {
+    box-shadow: 0 10px 15px -3px rgba(100, 179, 122, 0.1),
+                0 4px 6px -2px rgba(100, 179, 122, 0.05);
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    background: linear-gradient(135deg, #64B37A 0%, #2F6D49 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Gradient borders */
+  .gradient-border {
+    position: relative;
+    border: 2px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(135deg, #64B37A, #2F6D49) border-box;
+  }
+
+  /* Smooth hover lift */
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(100, 179, 122, 0.1),
+                0 10px 10px -5px rgba(100, 179, 122, 0.04);
   }
 }

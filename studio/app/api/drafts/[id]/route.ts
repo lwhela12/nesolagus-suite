@@ -30,6 +30,9 @@ export async function GET(
       status: draft.status,
       config: draft.config,
       flowLayout: draft.flowLayout,
+      dashboardConfig: draft.dashboardConfig,
+      dashboardLayout: draft.dashboardLayout,
+      dashboardPreview: draft.dashboardPreview,
       methodBrief: draft.methodBrief,
       validationErrors: draft.validationErrors,
       client: draft.client,
@@ -60,7 +63,7 @@ export async function PUT(
   try {
     const { id } = params;
     const body = await request.json();
-    const { config } = body;
+    const { config, dashboardConfig, dashboardLayout, dashboardPreview } = body;
 
     if (!config) {
       return NextResponse.json(
@@ -74,6 +77,9 @@ export async function PUT(
       data: {
         config,
         status: "READY", // Mark as ready after manual edit
+        dashboardConfig: dashboardConfig ?? undefined,
+        dashboardLayout: dashboardLayout ?? undefined,
+        dashboardPreview: dashboardPreview ?? undefined,
       },
     });
 
@@ -101,7 +107,7 @@ export async function PATCH(
   try {
     const { id } = params;
     const body = await request.json();
-    const { flowLayout, config } = body;
+    const { flowLayout, config, dashboardConfig, dashboardLayout, dashboardPreview } = body;
 
     // Update flowLayout and/or config
     const updateData: any = {};
@@ -111,6 +117,15 @@ export async function PATCH(
     if (config !== undefined) {
       updateData.config = config;
       updateData.status = "READY"; // Mark as ready after manual edit
+    }
+    if (dashboardConfig !== undefined) {
+      updateData.dashboardConfig = dashboardConfig;
+    }
+    if (dashboardLayout !== undefined) {
+      updateData.dashboardLayout = dashboardLayout;
+    }
+    if (dashboardPreview !== undefined) {
+      updateData.dashboardPreview = dashboardPreview;
     }
 
     if (Object.keys(updateData).length === 0) {

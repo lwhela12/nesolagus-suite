@@ -14,6 +14,7 @@
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
+const { createEmptyDashboardConfig } = require('@nesolagus/config');
 
 // Parse command line arguments
 function parseArgs() {
@@ -232,10 +233,20 @@ async function main() {
 
     const config = JSON.parse(fs.readFileSync(outputPath, 'utf-8'));
 
+    if (!config.dashboard) {
+      console.log('\nℹ️  No dashboard definition found – adding default scaffold.');
+      config.dashboard = createEmptyDashboardConfig({
+        title: `${config?.survey?.name || 'Survey'} Dashboard`,
+      });
+      fs.writeFileSync(outputPath, JSON.stringify(config, null, 2));
+    }
+
     console.log('\n📊 Survey Summary:');
     console.log(`   Name: ${config.survey.name}`);
     console.log(`   Blocks: ${Object.keys(config.blocks).length}`);
     console.log(`   Estimated Duration: ${config.survey.metadata.estimatedMinutes} minutes`);
+    const widgetCount = Array.isArray(config.dashboard?.widgets) ? config.dashboard.widgets.length : 0;
+    console.log(`   Dashboard Widgets: ${widgetCount}`);
 
     console.log('\n🎯 Next Steps:');
     console.log(`   1. Test locally: npm run test-client ${clientSlug}`);

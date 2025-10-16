@@ -18,5 +18,6 @@ router.delete('/responses', adminController.deleteResponses);
 // Analytics
 router.get('/analytics/summary', adminController.getAnalyticsSummary);
 router.get('/analytics/questions', adminController.getQuestionStats);
+router.get('/analytics/dashboard', adminController.getDashboardConfig);
 
 export default router;

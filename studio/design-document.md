@@ -102,13 +102,25 @@ type Option = { id: string; label: string; };
 
 type Next =
  | string // node id
- | { if: Array<{ when: Condition; goto: string }>; else: string };
+ | { if: Array<{ when: Condition; goto: string }>; else: string | Next };
+ // Note: 'else' can be another Next object, enabling nested if/then/else chains
 
 type Condition =
  | { equals: { answer: string | number | boolean } }
  | { in: { answer: string[] } }
  | { gt: { answer: number } }
  | { lt: { answer: number } };
+
+// Enhanced Branching:
+// 1. Rating questions automatically generate multi-tier branches:
+//    - 3-point scales: negative, neutral, positive (3 paths)
+//    - 5-point scales: negative, neutral, positive (3 paths with different thresholds)
+//    - 7+ point scales: very-negative, negative, neutral, positive, very-positive (5 paths)
+//
+// 2. LLM can optionally generate custom branches for complex questions:
+//    - Multi-choice with follow-ups based on selected options
+//    - Text/number inputs with conditional paths based on content
+//    - Nested branching for sophisticated flows
 
 6.3 Persistence
 model Draft {

@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@clerk/clerk-sdk-node": "^4.13.23",
+    "@nesolagus/config": "*",
     "@prisma/client": "^5.8.1",
     "@types/bcryptjs": "^2.4.6",
     "@types/cors": "^2.8.17",

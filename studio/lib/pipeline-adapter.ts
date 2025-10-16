@@ -60,7 +60,7 @@ export async function generateSurvey(
 
     return {
       config: result.config,
-      methodBrief: result.methodBrief,
+      methodBrief: (result as any).methodBrief,
       metadata: {
         tokensUsed: result.provenance?.tokensUsed,
         model: result.provenance?.model,

@@ -1,0 +1,99 @@
+Date : 2025-10-16 11:53:10
+Directory : /Users/lucaswhelan/nesolagus-suite
+Total : 33 files,  1678 codes, 106 comments, 180 blanks, all 1964 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| TypeScript     |         11 |        933 |         70 |        121 |      1,124 |
+| TypeScript JSX |         13 |        455 |         13 |         36 |        504 |
+| JSON           |          5 |        255 |          0 |          0 |        255 |
+| PostCSS        |          1 |         27 |         13 |         19 |         59 |
+| MS SQL         |          3 |          8 |         10 |          4 |         22 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                     | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                        |         33 |      1,678 |        106 |        180 |      1,964 |
+| . (Files)                                                                                                                |          2 |        252 |          0 |          0 |        252 |
+| .claude                                                                                                                  |          1 |          1 |          0 |          0 |          1 |
+| engine                                                                                                                   |          3 |         41 |         53 |         12 |        106 |
+| engine/backend                                                                                                           |          3 |         41 |         53 |         12 |        106 |
+| engine/backend/src                                                                                                       |          3 |         41 |         53 |         12 |        106 |
+| engine/backend/src/controllers                                                                                           |          1 |        -42 |         -6 |        -10 |        -58 |
+| engine/backend/src/services                                                                                              |          2 |         83 |         59 |         22 |        164 |
+| packages                                                                                                                 |          1 |         57 |          0 |          1 |         58 |
+| packages/dashboard-widgets                                                                                               |          1 |         57 |          0 |          1 |         58 |
+| packages/dashboard-widgets/src                                                                                           |          1 |         57 |          0 |          1 |         58 |
+| packages/dashboard-widgets/src/components                                                                                |          1 |         57 |          0 |          1 |         58 |
+| studio                                                                                                                   |         26 |      1,327 |         53 |        167 |      1,547 |
+| studio (Files)                                                                                                           |          3 |         27 |          0 |          0 |         27 |
+| studio/app                                                                                                               |          6 |        162 |          5 |         11 |        178 |
+| studio/app (Files)                                                                                                       |          2 |         49 |          4 |          2 |         55 |
+| studio/app/api                                                                                                           |          2 |        112 |          0 |          9 |        121 |
+| studio/app/api/drafts                                                                                                    |          2 |        112 |          0 |          9 |        121 |
+| studio/app/api/drafts/[id]                                                                                               |          2 |        112 |          0 |          9 |        121 |
+| studio/app/api/drafts/[id]/preview-data                                                                                  |          2 |        112 |          0 |          9 |        121 |
+| studio/app/api/drafts/[id]/preview-data (Files)                                                                          |          1 |         30 |          0 |          0 |         30 |
+| studio/app/api/drafts/[id]/preview-data/seed                                                                             |          1 |         82 |          0 |          9 |         91 |
+| studio/app/clients                                                                                                       |          1 |          0 |          1 |          0 |          1 |
+| studio/app/dashboard                                                                                                     |          1 |          1 |          0 |          0 |          1 |
+| studio/app/dashboard/[id]                                                                                                |          1 |          1 |          0 |          0 |          1 |
+| studio/components                                                                                                        |          9 |        349 |          8 |         33 |        390 |
+| studio/components/dashboard                                                                                              |          3 |        248 |          4 |         22 |        274 |
+| studio/components/flow                                                                                                   |          2 |          4 |          1 |          0 |          5 |
+| studio/components/generation                                                                                             |          1 |          1 |          0 |          0 |          1 |
+| studio/components/layout                                                                                                 |          2 |         95 |          3 |         11 |        109 |
+| studio/components/ui                                                                                                     |          1 |          1 |          0 |          0 |          1 |
+| studio/hooks                                                                                                             |          1 |         88 |          0 |          9 |         97 |
+| studio/lib                                                                                                               |          3 |        666 |         17 |         91 |        774 |
+| studio/prisma                                                                                                            |          3 |          8 |         10 |          4 |         22 |
+| studio/prisma/migrations                                                                                                 |          3 |          8 |         10 |          4 |         22 |
+| studio/prisma/migrations/20251016164042_add_dashboard_preview                                                            |          1 |          4 |          2 |          2 |          8 |
+| studio/prisma/migrations/20251016183954_add_dashboard_preview                                                            |          1 |          2 |          7 |          1 |         10 |
+| studio/prisma/migrations/20251017100000_add_dashboard_preview_responses                                                  |          1 |          2 |          1 |          1 |          4 |
+| studio/styles                                                                                                            |          1 |         27 |         13 |         19 |         59 |
++--------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                                                                                 | language       | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| /Users/lucaswhelan/nesolagus-suite/.claude/settings.local.json                                                           | JSON           |          1 |          0 |          0 |          1 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/controllers/preview.controller.ts                                  | TypeScript     |        -42 |         -6 |        -10 |        -58 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/services/conditionalRouting.ts                                     | TypeScript     |        125 |         62 |         31 |        218 |
+| /Users/lucaswhelan/nesolagus-suite/engine/backend/src/services/surveyEngine.ts                                           | TypeScript     |        -42 |         -3 |         -9 |        -54 |
+| /Users/lucaswhelan/nesolagus-suite/package-lock.json                                                                     | JSON           |        249 |          0 |          0 |        249 |
+| /Users/lucaswhelan/nesolagus-suite/package.json                                                                          | JSON           |          3 |          0 |          0 |          3 |
+| /Users/lucaswhelan/nesolagus-suite/packages/dashboard-widgets/src/components/SegmentDonut.tsx                            | TypeScript JSX |         57 |          0 |          1 |         58 |
+| /Users/lucaswhelan/nesolagus-suite/studio/app/api/drafts/[id]/preview-data/route.ts                                      | TypeScript     |         30 |          0 |          0 |         30 |
+| /Users/lucaswhelan/nesolagus-suite/studio/app/api/drafts/[id]/preview-data/seed/route.ts                                 | TypeScript     |         82 |          0 |          9 |         91 |
+| /Users/lucaswhelan/nesolagus-suite/studio/app/clients/page.tsx                                                           | TypeScript JSX |          0 |          1 |          0 |          1 |
+| /Users/lucaswhelan/nesolagus-suite/studio/app/dashboard/[id]/page.tsx                                                    | TypeScript JSX |          1 |          0 |          0 |          1 |
+| /Users/lucaswhelan/nesolagus-suite/studio/app/layout.tsx                                                                 | TypeScript JSX |         15 |          0 |          0 |         15 |
+| /Users/lucaswhelan/nesolagus-suite/studio/app/page.tsx                                                                   | TypeScript JSX |         34 |          4 |          2 |         40 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/dashboard/DashboardCanvas.tsx                                       | TypeScript JSX |        221 |          4 |         22 |        247 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/dashboard/DashboardEditor.tsx                                       | TypeScript JSX |         26 |          0 |          0 |         26 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/dashboard/WidgetInspector.tsx                                       | TypeScript JSX |          1 |          0 |          0 |          1 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/flow/ConditionalLogicBuilder.tsx                                    | TypeScript JSX |          3 |          1 |          0 |          4 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/flow/types.ts                                                       | TypeScript     |          1 |          0 |          0 |          1 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/generation/GeneratedSurveyView.tsx                                  | TypeScript JSX |          1 |          0 |          0 |          1 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/layout/AppHeader.tsx                                                | TypeScript JSX |         88 |          3 |          8 |         99 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/layout/ThemeProvider.tsx                                            | TypeScript JSX |          7 |          0 |          3 |         10 |
+| /Users/lucaswhelan/nesolagus-suite/studio/components/ui/button.tsx                                                       | TypeScript JSX |          1 |          0 |          0 |          1 |
+| /Users/lucaswhelan/nesolagus-suite/studio/hooks/useDashboardPreview.ts                                                   | TypeScript     |         88 |          0 |          9 |         97 |
+| /Users/lucaswhelan/nesolagus-suite/studio/lib/brand.ts                                                                   | TypeScript     |        139 |         17 |         24 |        180 |
+| /Users/lucaswhelan/nesolagus-suite/studio/lib/dashboardPreview.ts                                                        | TypeScript     |        131 |          0 |         21 |        152 |
+| /Users/lucaswhelan/nesolagus-suite/studio/lib/dashboardPreviewLLM.ts                                                     | TypeScript     |        396 |          0 |         46 |        442 |
+| /Users/lucaswhelan/nesolagus-suite/studio/package.json                                                                   | JSON           |          1 |          0 |          0 |          1 |
+| /Users/lucaswhelan/nesolagus-suite/studio/prisma/migrations/20251016164042_add_dashboard_preview/migration.sql           | MS SQL         |          4 |          2 |          2 |          8 |
+| /Users/lucaswhelan/nesolagus-suite/studio/prisma/migrations/20251016183954_add_dashboard_preview/migration.sql           | MS SQL         |          2 |          7 |          1 |         10 |
+| /Users/lucaswhelan/nesolagus-suite/studio/prisma/migrations/20251017100000_add_dashboard_preview_responses/migration.sql | MS SQL         |          2 |          1 |          1 |          4 |
+| /Users/lucaswhelan/nesolagus-suite/studio/styles/globals.css                                                             | PostCSS        |         27 |         13 |         19 |         59 |
+| /Users/lucaswhelan/nesolagus-suite/studio/tailwind.config.ts                                                             | TypeScript     |         25 |          0 |          0 |         25 |
+| /Users/lucaswhelan/nesolagus-suite/studio/tsconfig.tsbuildinfo                                                           | JSON           |          1 |          0 |          0 |          1 |
+| Total                                                                                                                    |                |      1,678 |        106 |        180 |      1,964 |
++--------------------------------------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
